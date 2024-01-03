@@ -78,7 +78,7 @@ nav ul li a {
 .product-image img {
   width: 100%;
   height: auto;
-  min-height: 550px; /* Altura máxima más pequeña para las imágenes */
+  min-height: 650px; /* Altura máxima más pequeña para las imágenes */
   display: block;
   transition: opacity 0.3s ease;
   object-fit: cover;

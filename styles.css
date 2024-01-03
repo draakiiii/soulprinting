@@ -1,0 +1,159 @@
+body {
+  font-family: sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 40px; /* Añadido margen lateral para toda la página */
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0; /* Más espacio en el encabezado */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+}
+
+.title {
+  text-align: left;
+  font-size: 28px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: lighter;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: lighter;
+}
+
+.title-container {
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+.catalog {
+  text-align: center;
+  padding: 40px; /* Más espacio alrededor del texto del catálogo */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; /* Más espacio entre productos */
+}
+
+.product {
+  border: none; /* Borde gris claro para cada producto */
+  border-radius: 0px; /* Bordes redondeados */
+  overflow: hidden;
+  margin-bottom: 10px; /* Espacio adicional debajo de cada producto */
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  min-height: 550px; /* Altura máxima más pequeña para las imágenes */
+  display: block;
+  transition: opacity 0.3s ease;
+  object-fit: cover;
+  height: 500px;
+}
+
+.product-image .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-image:hover .default-image {
+  opacity: 0;
+}
+
+.product-image:hover .hover-image {
+  opacity: 1;
+}
+
+.product .name {
+  margin: 10px 0 5px; /* Espacio adicional debajo del nombre */
+  text-align: center; /* Centrar el nombre del producto */
+}
+
+.product .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.product .description p {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #656565;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.product .description p::before {
+  padding-top: -30px;
+  content: attr(data-label);
+  flex-basis: 50%;
+  text-align: left;
+  color: #000000;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.product .description p::after {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.product .description p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+  .product-image {
+    height: auto;
+    width: auto;
+  }
+  .catalog {
+    padding: 0px;
+  }
+  
+  .product .name, .product .description {
+    font-size: 20px;
+  }
+}

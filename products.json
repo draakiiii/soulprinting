@@ -1,0 +1,31 @@
+[
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/070/643/670/large/nomnom-figures-shadowheart-beautyshot.jpg",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/070/643/681/large/nomnom-figures-turntable-front.jpg?1703074242",
+    "name": "Shadowheart",
+    "height": "9,5 cm / 21,7 cm",
+    "price": "25€ / 60€"
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/068/788/815/large/nomnom-figures-beautyshot.jpg?1701779734",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/068/788/841/large/nomnom-figures-turntable-front.jpg?1698668417",
+    "name": "Karlach",
+    "height": "6,4 cm / 14,5 cm",
+    "price": "25€ / 60€"
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/068/407/174/large/nomnom-figures-beautyshot-01.jpg?1697723647",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/068/407/187/large/nomnom-figures-turntable-front.jpg?1697723501",
+    "name": "Oso lechuza",
+    "height": "11,4 cm",
+    "price": "30€"
+  },
+  {
+    "defaultImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYSuIM0T_gzS04Jv5NJg-0yssvq9XA28VI6PqWuWDptik7e1eeZIZAlafXdHBXMtWw129mt-3sVW-9GZcILMUKHdkRXq=s1600",
+    "hoverImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYTs-FFizUS9VUqncPgLmEAyiKR_8tqrBCsoTEIRnitGDGbWfqIbAf5CZnsFDP0bMd9cqIiBGreG4uBQb034-qF_8POHOw=s1600",
+    "name": "Astarion",
+    "height": "14,6 cm",
+    "price": "50€"
+  }
+]
+

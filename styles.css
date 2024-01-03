@@ -178,4 +178,13 @@ nav ul li a {
   .product .name, .product .description {
     font-size: 20px;
   }
+  
+  .search-sort-container {
+    display: block;
+    justify-content: center;
+  }
+
+  #search-input {
+    margin-bottom: 10px; /* Espacio entre el input y el select */
+  }
 }

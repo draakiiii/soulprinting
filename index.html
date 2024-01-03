@@ -22,8 +22,15 @@
     <section class="catalog">
       <div class="title-container">
         <h2 class="title">Catálogo</h2>
-        <p class="subtitle">Los modelos se entregarán sin pintar ni lijar y algunos casos requerirán montaje. Los pedidos no se realizan en esta web. El precio no incluye envío.</p>
-        
+        <p class="subtitle">Los modelos se entregarán sin pintar ni lijar y en algunos casos se requerirá montaje. Los pedidos no se realizan en esta web. El precio no incluye envío.</p>
+      </div>
+      <div class="search-sort-container">
+        <input type="text" id="search-input" placeholder="Buscar por nombre...">
+        <select id="sort-options">
+          <option value="recent">Lanzamientos recientes</option>
+          <option value="price-desc">Precio: de mayor a menor</option>
+          <option value="price-asc">Precio: de menor a mayor</option>
+        </select>
       </div>
       <div class="product-container">
         <!-- Los productos se cargarán aquí -->

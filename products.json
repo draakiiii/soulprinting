@@ -47,6 +47,103 @@
     "name": "Link",
     "height": "12,5 cm / 26,1 cm",
     "price": "25€ / 75€"
+  },
+  {
+    "defaultImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYS_qGBOmAmYcYPnY96L4drynzPKK_9fs1DvE8Gu8sr0eVc51U1mck9us8JkcuS42OggGJSKUWQuVHUz2lXQ-Ev7qLHc=s1600",
+    "hoverImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRU0I-CDmVON3o7XbhnOVm_TkXkDLAZ0J9sPwJS2BQd5ziYPwfZxK5qsp6_sXD3x4wckcc89YiHR2EX9T7P4KP_U17U2w=s1600",
+    "name": "Tanjiro",
+    "height": "12,5 cm / 26,1 cm",
+    "price": "30€ / 95€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=1iw_8nf25qkB9k0bvRcTObahRo8ud_xOo",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=1qvtQnAyocwD7MxcQ-gYs587RrEBex-M5",
+    "name": "Spider-man",
+    "height": "11,4 cm / 22,3 cm",
+    "price": "25€ / 65€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=1z2lJzOXlFDBjm0ls-7e3ba2gIPoNzdSs",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=1BJoCPacXjE7F56eMOvVKaOgM42bsKlU8",
+    "name": "Geralt de Rivia",
+    "height": "10,3 cm / 23,0 cm",
+    "price": "30€ / 95€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=1E6HxvmQ6aNN1sWN5QWJ0HW_8k8kyxitN",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=197AQXHAzi_MkIYLBqfMKuc67gYX_GYhW",
+    "name": "Caitlyin",
+    "height": "9,4 cm / 21,4 cm",
+    "price": "25€ / 55€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=1GtsyFOfC89Nbf0dXuKjhITd2hHaE27JI",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=154u5OAXlbfKzofHCMjKoCTGzmUGzQvuG",
+    "name": "Bulma",
+    "height": "9,0 cm / 21,0 cm",
+    "price": "25€ / 55€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=1STkp4ckPd_lUbB3kLErPgEQvTkRooDHX",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=1C42CTGEhGRtW65RTITFNtimco0Kuy2qP",
+    "name": "Señor de los Nazgûl",
+    "height": "9,0 cm / 22,3 cm",
+    "price": "35€ / 95€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=1r9k3HbSPrI8HUqoXtKLZwjYnQV1TpPMu",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=18rDIP1fPnpRcnX1OsODRQCJrJ4ixUNMd",
+    "name": "Zoro",
+    "height": "8,0 cm / 19,0 cm",
+    "price": "30€ / 75€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=11uCRk7TKc484o53H4kkBQJro_7LJFBwR",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=109ymS5Ih4ull5yq6LMwDl76mQ-YI8Mhg",
+    "name": "Pyramid Head",
+    "height": "9,0 cm / 21,4 cm",
+    "price": "30€ / 65€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=1aPTA7CmKKT0QuHBKZ4xGDoy26JtVg1O-",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=1jegJqZGI-9E0nhAIGPKdVUnPCNXk6AKs",
+    "name": "EVA-02",
+    "height": "8,3 cm / 17,9 cm",
+    "price": "25€ / 55€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=1_aunYSQIhV_IZZ816ZLEP0TCJY-lkzPR",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=1znDcL87sTD6_pDQWyDMotazYEqnPasOf",
+    "name": "Doom Canela",
+    "height": "14,1 cm",
+    "price": "25€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=1yh9lXXReCxxWhHWNqrlbbAfdZZ-mv2zy",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=1OQg-TzaT7lSsinsbrZmoqJ_3ZgIuiIxM",
+    "name": "Rei Ayanami",
+    "height": "18,9 cm",
+    "price": "35€"
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/070/737/800/large/nomnom-figures-toph-beautyshot-02.jpg?1703334380",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/070/737/807/large/nomnom-figures-turntable-left.jpg?1703334326",
+    "name": "Toph Bei Fong",
+    "height": "6,6 cm / 14,5 cm",
+    "price": "25€ / 55€"
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/058/972/247/large/nomnom-figures-beautyshot.jpg?1675348496",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/058/972/522/large/nomnom-figures-guts-berserk-version-1-3d-model-stl-5.jpg?1675348341",
+    "name": "Guts",
+    "height": "14,1 cm / 34,9 cm",
+    "price": "25€ / 95€"
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/059/775/995/large/nomnom-figures-spidergwen-beautyshot.jpg?1677118235",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/059/776/018/large/nomnom-figures-turntable-left.jpg?1677111368",
+    "name": "Spider Gwen",
+    "height": "9,0 cm / 21,0 cm",
+    "price": "25€ / 55€"
   }
 ]
-

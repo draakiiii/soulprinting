@@ -78,21 +78,22 @@ nav ul li a {
 }
 
 .product-image {
+  min-height: 650px;
+  height: auto !important;
   position: relative;
   overflow: hidden;
   margin-bottom: 10px;
-  /* Espacio entre la imagen y el texto */
 }
 
 .product-image img {
   width: 100%;
-  height: auto;
-  min-height: 650px;
-  /* Altura máxima más pequeña para las imágenes */
+  height: 100%;
+  object-fit: contain; /* Cubre el área del contenedor, recortando la imagen si es necesario */
   display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
   transition: opacity 0.3s ease;
-  object-fit: cover;
-  height: 500px;
 }
 
 .product-image .hover-image {
@@ -426,4 +427,25 @@ button:hover {
     padding: 10px 0; /* Añade un poco de padding para hacer los enlaces más accesibles */
     box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
   }
+} 
+
+@media (min-width: 769px) and (max-width: 1224px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de productos */
+    gap: 20px; /* Espacio entre productos */
+  }
+
+  .product {
+    margin-bottom: 20px; /* Espacio adicional debajo de cada producto */
+  }
+
+  .product-image {
+    height: 250px; /* Altura ajustada para este modo de pantalla */
+  }
+
+  .catalog {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
+

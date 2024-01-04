@@ -154,32 +154,35 @@ nav ul li a {
 }
 
 .search-sort-container {
+  margin-bottom: 15px;
   display: flex;
-  justify-content: flex;
-  /* Alineación a la derecha */
-  margin-bottom: 20px;
-  /* Espacio debajo del contenedor de búsqueda y ordenación */
+  justify-content: flex-end;
 }
 
 .search-sort-container p {
+  
   margin-right: auto; /* Empuja todo lo demás a la derecha */
 }
 
 #search-input {
+  height: 100%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 10px;
+  margin-top: auto;
   /* Espacio entre el input y el select */
 }
 
 #sort-options {
+  height: 100%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: auto;
 }
 
 /* Estilos para la sección de FAQ */
@@ -354,9 +357,21 @@ button:hover {
   pointer-events: none;
 }
 
-@media (min-width: 1225px) {
+@media (min-width: 1651px) {
   .product-image {
     min-height: 650px;
+  }
+}
+
+@media (min-width: 1451px) and (max-width: 1650px) {
+  .product-image {
+    min-height: 550px;
+  }
+}
+
+@media (min-width: 1225px) and (max-width: 1450px) {
+  .product-image {
+    min-height: 450px;
   }
 }
 

@@ -152,5 +152,12 @@
     "name": "Hollow Knight",
     "height": "10,6 cm",
     "price": "30€"
+  },
+  {
+    "defaultImage": "https://pbs.twimg.com/media/F1UIxYuX0AAxKWn?format=jpg&name=large",
+    "hoverImage": "https://cdn.thingiverse.com/assets/17/13/ae/8e/8a/large_display_4cc316da-1aba-4c5d-855a-4d5e9df62e55.png",
+    "name": "Riebeck",
+    "height": "6 cm",
+    "price": "15€"
   }
 ]

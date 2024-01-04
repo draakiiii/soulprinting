@@ -185,18 +185,45 @@ nav ul li a {
   margin-top: auto;
 }
 
-/* Estilos para la sección de FAQ */
+
+
+#faq {
+  column-count: 2; /* Divide el contenido en dos columnas */
+  column-gap: 40px; /* Espacio entre las columnas */
+  padding: 20px; /* Espaciado interno */
+  margin-top: 20px; /* Espacio superior */
+  background-color: #f9f9f9; /* Fondo claro para la sección */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+  overflow: hidden; /* Asegura que todo el contenido se contenga dentro del borde redondeado */
+}
+
+#topfaq {
+  margin-top: -20px !important;
+}
+
+#faq dt,
+#faq dd {
+  -webkit-column-break-inside: avoid; /* Evita que los títulos y contenidos se dividan entre columnas en WebKit/Mozilla */
+  page-break-inside: avoid; /* Evita que los títulos y contenidos se dividan entre columnas en IE/Edge */
+  break-inside: avoid-column; /* Estándar para evitar divisiones en columnas */
+}
+
 #faq dt {
-  font-size: 20px;
-  color: #333;
-  margin-top: 20px;
+  font-size: 22px; /* Tamaño de fuente más grande para las preguntas */
+  color: #333; /* Color oscuro para mejor contraste */
+  border-bottom: 1px solid #ddd; /* Línea divisoria sutil */
+  padding-bottom: 10px; /* Espaciado debajo de la pregunta */
+  margin-top: 20px; /* Espacio superior para cada pregunta */
 }
 
 #faq dd {
-  font-size: 16px;
-  color: #666;
-  margin-left: 20px;
+  font-size: 16px; /* Tamaño de fuente para las respuestas */
+  color: #555; /* Color ligeramente más oscuro para las respuestas */
+  margin-left: 0; /* Alineación con las preguntas */
+  padding: 10px 0; /* Espaciado vertical para las respuestas */
 }
+
 
 /* Estilos para la página de la cesta */
 .cart-container {
@@ -376,6 +403,11 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+
+  #faq {
+    column-count: 1; /* Una sola columna en dispositivos móviles */
+    column-gap: 0; /* Sin espacio entre columnas en dispositivos móviles */
+  }
 
   .dialog-content {
     margin: 10% auto; /* Menos margen en la parte superior para dispositivos móviles */

@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
         // Aquí puedes implementar la lógica para enviar el pedido
-        alert('Tu pedido ha sido enviado. Me pondré en contacto contigo en menos de 24 horas.');
+        alert('Tu pedido ha sido recibido. Me pondré en contacto contigo en menos de 24 horas.');
         cart = [];
         // Limpia el carrito en el navegador
         localStorage.removeItem('cart');

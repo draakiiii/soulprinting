@@ -78,7 +78,6 @@ nav ul li a {
 }
 
 .product-image {
-  min-height: 650px;
   height: auto !important;
   position: relative;
   overflow: hidden;
@@ -355,6 +354,12 @@ button:hover {
   pointer-events: none;
 }
 
+@media (min-width: 1225px) {
+  .product-image {
+    min-height: 650px;
+  }
+}
+
 @media (max-width: 768px) {
 
   .dialog-content {
@@ -375,7 +380,6 @@ button:hover {
   }
 
   .product-image img {
-    min-height: 200px;
     /* Cambia la posición a relativa para que la imagen no se recorte */
     position: relative;
     top: auto;
@@ -431,7 +435,7 @@ button:hover {
     padding: 10px 0; /* Añade un poco de padding para hacer los enlaces más accesibles */
     box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
   }
-} 
+}
 
 @media (min-width: 769px) and (max-width: 1224px) {
   .product-container {
@@ -444,7 +448,7 @@ button:hover {
   }
 
   .product-image {
-    height: 250px; /* Altura ajustada para este modo de pantalla */
+    min-height: 450px; /* Altura ajustada para este modo de pantalla */
   }
 
   .catalog {

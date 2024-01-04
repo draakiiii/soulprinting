@@ -370,6 +370,7 @@ button:hover {
   }
 
   .product-image img {
+    min-height: 200px;
     /* Cambia la posición a relativa para que la imagen no se recorte */
     position: relative;
     top: auto;

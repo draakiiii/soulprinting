@@ -1,5 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   let products = [];
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
   fetch('products.json')
     .then(response => response.json())
@@ -10,21 +11,28 @@ document.addEventListener('DOMContentLoaded', function() {
     .catch(error => console.error('Error loading products:', error));
 
   const searchInput = document.getElementById('search-input');
-  searchInput.addEventListener('input', function() {
+  searchInput.addEventListener('input', function () {
     const filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchInput.value.toLowerCase()));
     displayProducts(filteredProducts);
   });
 
+  document.getElementById('confirm-purchase').addEventListener('click', function () {
+    localStorage.setItem('cart', JSON.stringify(cart));
+    if (cart.length === 0) {
+      alert('Tu cesta de la compra está vacía.');
+      return;
+    } else window.location.href = 'cart.html';
+  });
+
   const sortOptions = document.getElementById('sort-options');
-  sortOptions.addEventListener('change', function() {
+  sortOptions.addEventListener('change', function () {
     let sortedProducts;
     if (sortOptions.value === 'price-asc') {
       sortedProducts = [...products].sort((a, b) => extractHighestPrice(a.price) - extractHighestPrice(b.price));
     } else if (sortOptions.value === 'price-desc') {
       sortedProducts = [...products].sort((a, b) => extractHighestPrice(b.price) - extractHighestPrice(a.price));
     } else {
-      // Aquí puedes implementar la lógica para "Lanzamientos recientes"
-      sortedProducts = [...products]; // Esto es solo un placeholder
+      sortedProducts = products;
     }
     displayProducts(sortedProducts);
   });
@@ -38,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const productContainer = document.querySelector('.product-container');
     productContainer.innerHTML = '';
 
-    products.forEach(product => {
+    products.forEach((product, index) => {
       const productElement = document.createElement('div');
       productElement.classList.add('product');
       productElement.innerHTML = `
@@ -51,21 +59,14 @@ document.addEventListener('DOMContentLoaded', function() {
           <p data-label="Altura">${product.height}</p>
           <p data-label="Precio">${product.price}</p>
         </div>
+        <button class="add-to-cart" data-product-id="${product.id}">Agregar a la cesta</button>
       `;
       productContainer.appendChild(productElement);
 
-      const productImage = productElement.querySelector('.product-image');
-      const defaultImage = productImage.querySelector('.default-image');
-      const hoverImage = productImage.querySelector('.hover-image');
-
-      productImage.addEventListener('touchstart', function() {
-        defaultImage.style.opacity = '0';
-        hoverImage.style.opacity = '1';
-      });
-
-      productImage.addEventListener('touchend', function() {
-        defaultImage.style.opacity = '1';
-        hoverImage.style.opacity = '0';
+      const addToCartButton = productElement.querySelector('.add-to-cart');
+      addToCartButton.addEventListener('click', function () {
+        cart.push(product);
+        console.log(cart); // Para depuración: imprime la cesta en la consola cada vez que se agrega un producto
       });
     });
   }

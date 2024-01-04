@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cesta de compra</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <p>draakiiii - cesta de compra</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Catálogo</a></li>
+        <li><a href="faq.html">Antes de comprar</a></li>
+        <li><a href="#">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="cart">
+
+      <div class="checkout-container-top">
+        <button id="checkout-button-top">Finalizar compra</button>
+      </div>
+      
+      <div class="cart-container">
+        <!-- Los productos del carrito se cargarán aquí -->
+      </div>
+
+      <div class="checkout-container-bottom">
+        <button id="checkout-button-bottom">Finalizar compra</button>
+      </div>
+
+      <div class="dialog" id="checkout-dialog">
+        <div class="dialog-content">
+          <span class="close-button" id="close-button">&times;</span>
+          <div class="checkout-container" id="checkout-form">
+            <div class="checkout-container" id="checkout-form">
+              <input type="text" id="name-input" placeholder="Nombre...">
+              <input type="text" id="email-input" placeholder="Email (opcional)...">
+              <input type="text" id="twitter-input" placeholder="Twitter (opcional)...">
+              <textarea id="notes-input" placeholder="Observaciones..." rows="5"></textarea>
+              <button id="checkout-button">Finalizar compra</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('DeIfgGqMtsWtFM_GR');
+    })();
+  </script>
+  <script src="cart.js"></script>
+</body>
+
+</html>

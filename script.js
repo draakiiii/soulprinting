@@ -67,7 +67,28 @@ document.addEventListener('DOMContentLoaded', function () {
       addToCartButton.addEventListener('click', function () {
         cart.push(product);
         console.log(cart); // Para depuración: imprime la cesta en la consola cada vez que se agrega un producto
+        showNotification(`Ha añadido ${product.name} a la cesta`);
       });
     });
   }
+  function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.classList.add('notification');
+    notification.textContent = message;
+  
+    const container = document.getElementById('notification-container');
+    container.appendChild(notification);
+  
+    // Hacer que la notificación sea visible
+    setTimeout(() => {
+      notification.style.opacity = 1;
+    }, 100);
+  
+    // Ocultar y eliminar la notificación después de 3 segundos
+    setTimeout(() => {
+      notification.style.opacity = 0;
+      notification.addEventListener('transitionend', () => notification.remove());
+    }, 3000);
+  }
+
 });

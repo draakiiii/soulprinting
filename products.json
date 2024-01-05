@@ -233,7 +233,7 @@
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/070/737/800/large/nomnom-figures-toph-beautyshot-02.jpg?1703334380",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/070/737/794/large/nomnom-figures-scaling.jpg?1703334294",
-    "name": "Toph Bei Fong",
+    "name": "Toph Bei Fong - Avatar",
     "options": [
       {
         "height": "6,6 cm",
@@ -309,6 +309,17 @@
     ]
   },
   {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/059/340/641/large/nomnom-figures-stray-beautyshot.jpg?1676182257",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/059/340/696/large/nomnom-figures-scaling.jpg?1676181833",
+    "name": "Stray",
+    "options": [
+      {
+        "height": "11,4 cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/063/114/516/large/nomnom-figures-cloud-beautyshot.jpg?1684765193",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/063/114/576/large/nomnom-figures-scaling.jpg?1684764642",
     "name": "Cloud - Final Fantasy VII",
@@ -375,22 +386,11 @@
     "options": [
       {
         "height": "17,2 cm",
-        "price": "35€"
+        "price": "45€"
       },
       {
         "height": "39,4 cm",
         "price": "125€"
-      }
-    ]
-  },
-  {
-    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/059/340/641/large/nomnom-figures-stray-beautyshot.jpg?1676182257",
-    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/059/340/696/large/nomnom-figures-scaling.jpg?1676181833",
-    "name": "Stray",
-    "options": [
-      {
-        "height": "11,4 cm",
-        "price": "25€"
       }
     ]
   },

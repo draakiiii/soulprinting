@@ -150,21 +150,19 @@ document.addEventListener('DOMContentLoaded', function () {
         cart.forEach(product => {   
             total += parseFloat(product.price);
         });
-        console.log('Total: ' + total + '€');
     
         const formattedCart = formatCartForEmail(cart);
         const templateParams = {
             nombre: document.getElementById('name-input').value,
             cesta: formattedCart,
             email: document.getElementById('email-input').value,
+            precio: document.getElementById('total-price').textContent,
             observaciones: document.getElementById('notes-input').value
         };
     
         emailjs.send('service_wg7uw2n', 'template_1lrf8gi', templateParams)
             .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
             }, function (error) {
-                console.log('FAILED...', error);
             });
     
         alert('Tu pedido ha sido recibido. Me pondré en contacto contigo en menos de 24 horas.');

@@ -3,224 +3,425 @@
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/070/643/670/large/nomnom-figures-shadowheart-beautyshot.jpg",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/070/643/662/large/nomnom-figures-scaling.jpg?1703074218",
     "name": "Shadowheart - Baldur's Gate 3",
-    "height": "9,5 cm / 21,7 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "9,5 cm",
+        "price": "25€"
+      },
+      {
+        "height": "21,7 cm",
+        "price": "45€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/068/788/815/large/nomnom-figures-beautyshot.jpg?1701779734",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/068/788/831/large/nomnom-figures-scaling.jpg?1698668402",
     "name": "Karlach - Baldur's Gate 3",
-    "height": "6,4 cm / 14,5 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "6,4 cm",
+        "price": "25€"
+      },
+      {
+        "height": "14,5 cm",
+        "price": "60€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/068/407/174/large/nomnom-figures-beautyshot-01.jpg?1697723647",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/068/407/182/large/nomnom-figures-scaling.jpg?1697723493",
     "name": "Oso lechuza bebé - Baldur's Gate 3",
-    "height": "11,4 cm",
-    "price": "25€"
+    "options": [
+      {
+        "height": "11,4 cm",
+        "price": "25€"
+      }
+    ]
   },
   {
     "defaultImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYSuIM0T_gzS04Jv5NJg-0yssvq9XA28VI6PqWuWDptik7e1eeZIZAlafXdHBXMtWw129mt-3sVW-9GZcILMUKHdkRXq=s1600",
     "hoverImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYTs-FFizUS9VUqncPgLmEAyiKR_8tqrBCsoTEIRnitGDGbWfqIbAf5CZnsFDP0bMd9cqIiBGreG4uBQb034-qF_8POHOw=s1600",
     "name": "Astarion - Baldur's Gate 3",
-    "height": "14,6 cm",
-    "price": "40€"
+    "options": [
+      {
+        "height": "14,6 cm",
+        "price": "40€"
+      }
+    ]
   },
   {
     "defaultImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYQSvaMsKPGau7OyWFsrSQFNeWHJ2qBOh1WNRgdjIWeMtxKkaOIkcKbK7YKZqJEgv_712m9m2Oh1V8OKEmEg9cHkeBsX=s1600",
     "hoverImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYQOl5W04F_43qzNP1MBnNgWq3Vs6EESBLhD24CIH3kuzC-7joTFyYuYRZ8BvlS16zwLm_lq_EjL5CtnCqKXA8A8Wt62nA=s1600  ",
     "name": "Lae'zel - Baldur's Gate 3",
-    "height": "15 cm",
-    "price": "40€"
+    "options": [
+      {
+        "height": "15 cm",
+        "price": "40€"
+      }
+    ]
   },
   {
     "defaultImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYQtz107DLIDZfwRetT-SM788vGjvBrNqQB5arZF_2igJCPjktgH15GCgC5GBL5DY7_WeJRBDXSlX2lWH7U3famHI3l5Hg=s1600",
     "hoverImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYSl1CLTFcETJteuZjJkQEbwoqFtkv7pF3mA6DjHQASmHmNqkfTve8RNJZHeLwfzp98XOyYr35p6iB0etKFDGF65uH7iew=s1600",
     "name": "Gale - Baldur's Gate 3",
-    "height": "14,7 cm",
-    "price": "45€"
+    "options": [
+      {
+        "height": "14,7 cm",
+        "price": "45€"
+      }
+    ]
   },
   {
     "defaultImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYRQr-R97bCGLOqLJGIgXgXfD5d_xYFjtpWW4e019yKWZcxflziBh9oQDijtiafwk1ydDztpNHca-LDKuBt18clA4IdVVg=s1600",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/064/563/886/large/nomnom-figures-scaling.jpg?1688221313",
     "name": "Link - Zelda: TOTK",
-    "height": "12,5 cm / 26,1 cm",
-    "price": "25€ / 70€"
+    "options": [
+      {
+        "height": "12,5 cm",
+        "price": "25€"
+      },
+      {
+        "height": "26,1 cm",
+        "price": "70€"
+      }
+    ]
   },
   {
     "defaultImage": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYS_qGBOmAmYcYPnY96L4drynzPKK_9fs1DvE8Gu8sr0eVc51U1mck9us8JkcuS42OggGJSKUWQuVHUz2lXQ-Ev7qLHc=s1600",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/066/027/393/large/nomnom-figures-scaling.jpg?1691846203",
     "name": "Tanjiro - Demon Slayer",
-    "height": "12,5 cm / 26,1 cm",
-    "price": "25€ / 95€"
+    "options": [
+      {
+        "height": "12,5 cm",
+        "price": "25€"
+      },
+      {
+        "height": "26,1 cm",
+        "price": "95€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1iw_8nf25qkB9k0bvRcTObahRo8ud_xOo",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/066/986/947/large/nomnom-figures-scaling.jpg?1694263751",
     "name": "Spider-man Miles Morales",
-    "height": "11,4 cm / 22,3 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "11,4 cm",
+        "price": "25€"
+      },
+      {
+        "height": "22,3 cm",
+        "price": "55€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1z2lJzOXlFDBjm0ls-7e3ba2gIPoNzdSs",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/067/994/721/large/nomnom-figures-scaling.jpg?1696743174",
     "name": "Geralt de Rivia - The Witcher",
-    "height": "10,3 cm / 23,0 cm",
-    "price": "25€ / 95€"
+    "options": [
+      {
+        "height": "10,3 cm",
+        "price": "25€"
+      },
+      {
+        "height": "23,0 cm",
+        "price": "95€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1E6HxvmQ6aNN1sWN5QWJ0HW_8k8kyxitN",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/067/969/355/large/nomnom-figures-scaling.jpg?1696664267",
     "name": "Caitlyn - Arcane",
-    "height": "9,4 cm / 21,4 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "9,4 cm",
+        "price": "25€"
+      },
+      {
+        "height": "21,4 cm",
+        "price": "55€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1GtsyFOfC89Nbf0dXuKjhITd2hHaE27JI",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/068/536/292/large/nomnom-figures-scaling.jpg?1698071256",
     "name": "Bulma - Dragon Ball",
-    "height": "9,0 cm / 21,0 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "9,0 cm",
+        "price": "25€"
+      },
+      {
+        "height": "21,0 cm",
+        "price": "55€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1STkp4ckPd_lUbB3kLErPgEQvTkRooDHX",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/068/497/745/large/nomnom-figures-scaling.jpg?1697976642",
     "name": "Señor de los Nazgûl - El Señor de los Anillos",
-    "height": "9,0 cm / 22,3 cm",
-    "price": "25€ / 95€"
+    "options": [
+      {
+        "height": "9,0 cm",
+        "price": "25€"
+      },
+      {
+        "height": "22,3 cm",
+        "price": "95€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1r9k3HbSPrI8HUqoXtKLZwjYnQV1TpPMu",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/069/892/603/large/nomnom-figures-scaling.jpg?1701262316",
     "name": "Zoro - One Piece",
-    "height": "8,0 cm / 19,0 cm",
-    "price": "25€ / 65€"
-  },
-  {
-    "defaultImage": "https://drive.google.com/uc?export=view&id=11uCRk7TKc484o53H4kkBQJro_7LJFBwR",
-    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/068/407/359/large/nomnom-figures-scaling.jpg?1697723844",
-    "name": "Pyramid Head - Silent Hill",
-    "height": "9,0 cm / 21,4 cm",
-    "price": "25€ / 65€"
+    "options": [
+      {
+        "height": "8,0 cm",
+        "price": "25€"
+      },
+      {
+        "height": "19,0 cm",
+        "price": "65€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1aPTA7CmKKT0QuHBKZ4xGDoy26JtVg1O-",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/070/836/333/large/nomnom-figures-scaling.jpg?1703685893",
     "name": "EVA-02 - Evangelion",
-    "height": "8,3 cm / 17,9 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "8,3 cm",
+        "price": "25€"
+      },
+      {
+        "height": "17,9 cm",
+        "price": "55€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1_aunYSQIhV_IZZ816ZLEP0TCJY-lkzPR",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/070/576/430/large/nomnom-figures-scaling.jpg?1702902509",
     "name": "Doom Canela",
-    "height": "14,1 cm",
-    "price": "25€"
+    "options": [
+      {
+        "height": "14,1 cm",
+        "price": "25€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1yh9lXXReCxxWhHWNqrlbbAfdZZ-mv2zy",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/069/853/309/large/nomnom-figures-scale-parts.jpg?1701174673",
     "name": "Rei Ayanami - Evangelion",
-    "height": "18,9 cm",
-    "price": "25€"
+    "options": [
+      {
+        "height": "18,9 cm",
+        "price": "25€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/070/737/800/large/nomnom-figures-toph-beautyshot-02.jpg?1703334380",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/070/737/794/large/nomnom-figures-scaling.jpg?1703334294",
     "name": "Toph Bei Fong",
-    "height": "6,6 cm / 14,5 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "6,6 cm",
+        "price": "25€"
+      },
+      {
+        "height": "14,5 cm",
+        "price": "55€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/058/972/247/large/nomnom-figures-beautyshot.jpg?1675348496",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/058/972/264/large/nomnom-figures-guts-scaling.jpg?1675347952",
     "name": "Guts - Berserk",
-    "height": "14,1 cm / 34,9 cm",
-    "price": "25€ / 85€"
+    "options": [
+      {
+        "height": "14,1 cm",
+        "price": "25€"
+      },
+      {
+        "height": "34,9 cm",
+        "price": "85€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/059/775/995/large/nomnom-figures-spidergwen-beautyshot.jpg?1677118235",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/059/776/018/large/nomnom-figures-turntable-left.jpg?1677111368",
     "name": "Spider Gwen",
-    "height": "9,0 cm / 21,0 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "9,0 cm",
+        "price": "25€"
+      },
+      {
+        "height": "21,0 cm",
+        "price": "55€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/044/308/126/large/nomnom-figures-final.jpg?1639637165",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/044/308/180/large/nomnom-figures-turnaround.jpg?1639637297",
     "name": "Hollow Knight",
-    "height": "10,6 cm",
-    "price": "25€"
+    "options": [
+      {
+        "height": "10,6 cm",
+        "price": "25€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1M0UtcClJeLCP7XEUMn2a9B7Oior2KZ-m",
     "hoverImage": "https://cdn.thingiverse.com/assets/17/13/ae/8e/8a/large_display_4cc316da-1aba-4c5d-855a-4d5e9df62e55.png",
     "name": "Riebeck - Outer Wilds",
-    "height": "6 cm",
-    "price": "12€"
+    "options": [
+      {
+        "height": "6 cm",
+        "price": "12€"
+      }
+    ]
   },
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1xDxBs7_fEaVEsxHi1lXLsZiB2GwEriml",
     "hoverImage": "https://drive.google.com/uc?export=view&id=1wyMS2HAOhfhlgfEFBpBKKydSWpbZXfTu",
     "name": "Leon - Resident Evil",
-    "height": "14,8 cm",
-    "price": "35€"
+    "options": [
+      {
+        "height": "14,8 cm",
+        "price": "35€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/063/114/516/large/nomnom-figures-cloud-beautyshot.jpg?1684765193",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/063/114/576/large/nomnom-figures-scaling.jpg?1684764642",
     "name": "Cloud - Final Fantasy VII",
-    "height": "10,3 cm / 23,2 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "10,3 cm",
+        "price": "25€"
+      },
+      {
+        "height": "23,2 cm",
+        "price": "55€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/061/553/215/large/nomnom-figures-sepiroth-beautyshot.jpg?1681106478",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/061/553/213/large/nomnom-figures-scaling.jpg?1681106435",
     "name": "Sephiroth - Final Fantasy VII",
-    "height": "16,6 cm / 37,6 cm",
-    "price": "30€ / 70€"
+    "options": [
+      {
+        "height": "16,6 cm",
+        "price": "30€"
+      },
+      {
+        "height": "37,6 cm",
+        "price": "70€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/061/522/095/large/nomnom-figures-thehunter-beautyshot.jpg?1681020008",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/061/522/121/large/nomnom-figures-scaling.jpg?1681019227",
     "name": "Cazador - Bloodborne",
-    "height": "10,4 cm / 22,6 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "10,4 cm",
+        "price": "25€"
+      },
+      {
+        "height": "22,6 cm",
+        "price": "55€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/061/522/132/large/nomnom-figures-aragorn-beautyshot.jpg?1681020312",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/061/522/146/large/nomnom-figures-scaling.jpg?1681019266",
     "name": "Aragorn - El Señor de los Anillos",
-    "height": "10,6 cm / 25,9 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "10,6 cm",
+        "price": "25€"
+      },
+      {
+        "height": "25,9 cm",
+        "price": "55€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/061/474/890/large/nomnom-figures-malenia-beautyshot.jpg?1680879521",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/061/474/900/large/nomnom-figures-scaling.jpg?1680879435",
     "name": "Malenia - Elden Ring",
-    "height": "17,2 cm / 39,4 cm",
-    "price": "35€ / 150€"
+    "options": [
+      {
+        "height": "17,2 cm",
+        "price": "35€"
+      },
+      {
+        "height": "39,4 cm",
+        "price": "150€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/059/340/641/large/nomnom-figures-stray-beautyshot.jpg?1676182257",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/059/340/696/large/nomnom-figures-scaling.jpg?1676181833",
     "name": "Stray",
-    "height": "11,4 cm",
-    "price": "25€"
+    "options": [
+      {
+        "height": "11,4 cm",
+        "price": "25€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/049/494/862/large/nomnom-figures-beautyshot.jpg?1652643464",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/049/494/877/large/nomnom-figures-scaling.jpg?1652643455",
     "name": "Princesa Mononoke",
-    "height": "8,0 cm / 19,0 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "8,0 cm",
+        "price": "25€"
+      },
+      {
+        "height": "19,0 cm",
+        "price": "55€"
+      }
+    ]
   },
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/059/316/492/large/nomnom-figures-2b-beautyshot.jpg?1676116902",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/059/316/674/large/nomnom-figures-scaling.jpg?1676116809",
     "name": "2b - Nier Automata",
-    "height": "10,0 cm / 23,4 cm",
-    "price": "25€ / 55€"
+    "options": [
+      {
+        "height": "10,0 cm",
+        "price": "25€"
+      },
+      {
+        "height": "23,4 cm",
+        "price": "55€"
+      }
+    ]
   }
 ]

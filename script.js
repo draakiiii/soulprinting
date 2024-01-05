@@ -47,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
     productContainer.innerHTML = '';
 
     products.forEach((product, index) => {
+      const heights = product.options.map(option => option.height).join(' / ');
+      const prices = product.options.map(option => option.price).join(' / ');
+
       const productElement = document.createElement('div');
       productElement.classList.add('product');
       productElement.innerHTML = `
@@ -54,19 +57,23 @@ document.addEventListener('DOMContentLoaded', function () {
           <img src="${product.defaultImage}" alt="${product.name}" class="default-image">
           <img src="${product.hoverImage}" alt="${product.name}" class="hover-image">
         </div>
-        <div class="name">${product.name}</div>
-        <div class="description">
-          <p data-label="Altura">${product.height}</p>
-          <p data-label="Precio">${product.price}</p>
+        <div class="product-details">
+          <div class="name">${product.name}</div>
+          <div class="description">
+            <p data-label="Altura">${heights}</p>
+            <p data-label="Precio">${prices}</p>
+          </div>
+          <button class="add-to-cart" data-product-id="${product.id}">Agregar a la cesta</button>
         </div>
-        <button class="add-to-cart" data-product-id="${product.id}">Agregar a la cesta</button>
       `;
       productContainer.appendChild(productElement);
 
       const addToCartButton = productElement.querySelector('.add-to-cart');
       addToCartButton.addEventListener('click', function () {
-        cart.push(product);
-        console.log(cart); // Para depuración: imprime la cesta en la consola cada vez que se agrega un producto
+        // Suponiendo que siempre se agrega la primera opción por defecto
+        const selectedProduct = { ...product, selectedOptionIndex: 0 };
+        cart.push(selectedProduct);
+        localStorage.setItem('cart', JSON.stringify(cart));
         showNotification(`Ha añadido ${product.name} a la cesta`);
       });
     });

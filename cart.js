@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    updateCart();
+
 
     if (cart.length === 0) {
         window.location.href = 'index.html';
@@ -17,39 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('checkout-dialog').style.display = 'none';
     });
 
-    function displayCartItems(cart) {
-        if (cart.length === 0) {
-            window.location.href = 'index.html';
-          }
+    
 
-        const cartContainer = document.querySelector('.cart-container');
-        cartContainer.innerHTML = '';
-
-        cart.forEach((product, index) => {
-            const productElement = document.createElement('div');
-            productElement.classList.add('product');
-            productElement.innerHTML = `
-          <div class="product-image">
-            <img src="${product.defaultImage}" alt="${product.name}" class="default-image">
-            <img src="${product.hoverImage}" alt="${product.name}" class="hover-image">
-          </div>
-          <div class="name">${product.name}</div>
-          <div class="description">
-            <p data-label="Altura">${product.height}</p>
-            <p data-label="Precio">${product.price}</p>
-          </div>
-          <button class="remove-from-cart" data-product-id="${product.id}">Eliminar de la cesta</button>
-        `;
-            cartContainer.appendChild(productElement);
-
-            const removeFromCartButton = productElement.querySelector('.remove-from-cart');
-            removeFromCartButton.addEventListener('click', function () {
-                cart.splice(index, 1);
-                localStorage.setItem('cart', JSON.stringify(cart));
-                displayCartItems(cart);
-            });
-        });
-    }
     // Función para validar el formulario
     function validateForm() {
         const nameInput = document.getElementById('name-input');
@@ -68,17 +39,113 @@ document.addEventListener('DOMContentLoaded', function () {
         return true;
     }
 
+    function displayCartItems(cart) {
+        const cartContainer = document.querySelector('.cart-container');
+        cartContainer.innerHTML = '';
+        let allSizesSelected = true;
+    
+        cart.forEach((product, index) => {
+            const productElement = document.createElement('div');
+            productElement.classList.add('product');
+            productElement.innerHTML = `
+            <div class="product-image">
+                <img src="${product.defaultImage}" alt="${product.name}" class="default-image">
+                <img src="${product.hoverImage}" alt="${product.name}" class="hover-image">
+            </div>
+            <div class="name">${product.name}</div>
+            <div class="description">
+                <div style="display: flex; justify-content: space-between;">
+                    <p data-label="Altura"></p>
+                    <select class="product-size" data-product-id="${product.id}" style="margin-left: auto;">
+                    </select>
+                </div>
+                <p data-label="Precio" class="product-price"></p>
+            </div>
+            <button class="remove-from-cart" data-product-id="${product.id}">Eliminar de la cesta</button>
+            `;
+            cartContainer.appendChild(productElement);
+    
+            const productSizeSelect = productElement.querySelector('.product-size');
+            const productPriceElement = productElement.querySelector('.product-price');
+    
+            product.options.forEach((option, i) => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option.price;
+                optionElement.text = option.height;
+                if (product.selectedOptionIndex === i) {
+                    optionElement.selected = true;
+                    productPriceElement.textContent = option.price;
+                }
+                productSizeSelect.appendChild(optionElement);
+            });
+    
+            if (product.options.length === 1) {
+                productSizeSelect.style.display = 'none'; // Ocultar si solo hay una opción
+                product.selectedOptionIndex = 0; // Seleccionar automáticamente la única opción
+                productPriceElement.textContent = product.options[0].price;
+            } else {
+                productSizeSelect.style.display = 'block';
+                if (product.selectedOptionIndex === undefined) {
+                    allSizesSelected = false; // Si alguna opción no está seleccionada, deshabilitar el botón de compra
+                }
+            }
+    
+            productSizeSelect.addEventListener('change', function (event) {
+                const selectedOptionIndex = event.target.selectedIndex;
+                product.selectedOptionIndex = selectedOptionIndex;
+                productPriceElement.textContent = product.options[selectedOptionIndex].price;
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCart();
+            });
+    
+            const removeFromCartButton = productElement.querySelector('.remove-from-cart');
+            removeFromCartButton.addEventListener('click', function () {
+                cart.splice(index, 1);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCart();
+            });
+        });
+    
+        document.getElementById('checkout-button-top').disabled = !allSizesSelected;
+        document.getElementById('checkout-button-bottom').disabled = !allSizesSelected;
+        updateTotalPrice(cart);
+    }
+
+    function updateTotalPrice(cart) {
+        let totalPrice = 0;
+        cart.forEach(product => {
+            if (product.selectedOptionIndex !== undefined) {
+                totalPrice += parseFloat(product.options[product.selectedOptionIndex].price.replace('€', ''));
+            }
+        });
+        document.getElementById('total-price').textContent = `${totalPrice.toFixed(2)}€`;
+    }
+
+    function updateCart() {
+        if (cart.length === 0) {
+            window.location.href = 'index.html';
+        } else {
+            displayCartItems(cart);
+        }
+    }
+
     // Función para finalizar la compra
     function checkout() {
         if (cart.length === 0) {
             showNotification('Tu cesta de la compra está vacía.', "red");
             return;
         }
-
+    
         if (!validateForm()) {
             return;
         }
-
+    
+        let total = 0;
+        cart.forEach(product => {   
+            total += parseFloat(product.price);
+        });
+        console.log('Total: ' + total + '€');
+    
         const formattedCart = formatCartForEmail(cart);
         const templateParams = {
             nombre: document.getElementById('name-input').value,
@@ -86,18 +153,16 @@ document.addEventListener('DOMContentLoaded', function () {
             email: document.getElementById('email-input').value,
             observaciones: document.getElementById('notes-input').value
         };
-
+    
         emailjs.send('service_wg7uw2n', 'template_1lrf8gi', templateParams)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
             }, function (error) {
                 console.log('FAILED...', error);
             });
-
-        // Aquí puedes implementar la lógica para enviar el pedido
+    
         alert('Tu pedido ha sido recibido. Me pondré en contacto contigo en menos de 24 horas.');
         cart = [];
-        // Limpia el carrito en el navegador
         localStorage.removeItem('cart');
         window.location.href = 'index.html';
     }
@@ -105,10 +170,14 @@ document.addEventListener('DOMContentLoaded', function () {
     function formatCartForEmail(cart) {
         let formattedCart = '';
         cart.forEach((product, index) => {
-            formattedCart += `Producto ${index + 1}:\n`;
-            formattedCart += `Nombre: ${product.name}\n`;
-            formattedCart += `Altura: ${product.height}\n`;
-            formattedCart += `Precio: ${product.price}\n\n`;
+            // Asegúrate de que la opción seleccionada esté definida
+            if (product.selectedOptionIndex !== undefined) {
+                const selectedOption = product.options[product.selectedOptionIndex];
+                formattedCart += `Producto ${index + 1}:\n`;
+                formattedCart += `Nombre: ${product.name}\n`;
+                formattedCart += `Altura: ${selectedOption.height}\n`;
+                formattedCart += `Precio: ${selectedOption.price}\n\n`;
+            }
         });
         return formattedCart;
     }

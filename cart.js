@@ -119,12 +119,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateTotalPrice(cart) {
         let totalPrice = 0;
+        let priceWithoutShipping = 0;
         cart.forEach(product => {
             if (product.selectedOptionIndex !== undefined) {
                 totalPrice += parseFloat(product.options[product.selectedOptionIndex].price.replace('€', ''));
             }
         });
+    
+        // Añadir costos de envío si el precio total es menor a 50€
+        const shippingCost = totalPrice > 0 && totalPrice < 50 ? 5 : 0;
+        priceWithoutShipping = totalPrice;
+        totalPrice += shippingCost;
+
+        // Aplicar descuento si hay más de dos productos
+        const discount = cart.length > 1 ? 0.1 * totalPrice : 0;
+        totalPrice -= discount;
+    
+        // Actualizar el DOM con el precio total, el descuento y los costos de envío
+        document.getElementById('subtotal-price').textContent = `${priceWithoutShipping.toFixed(2)}€`;
         document.getElementById('total-price').textContent = `${totalPrice.toFixed(2)}€`;
+        document.getElementById('discount').textContent = discount > 0 ? `- ${discount.toFixed(2)}€ (Descuento)` : '';
+        document.getElementById('shipping-cost').textContent = shippingCost > 0 ? `+ ${shippingCost.toFixed(2)}€ (Envío)` : 'Envío gratuito';
     }
 
     function updateCart() {

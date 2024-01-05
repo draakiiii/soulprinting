@@ -423,5 +423,16 @@
         "price": "55€"
       }
     ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/067/252/237/large/nomnom-figures-chibiportal-beautyshot.jpg?1701780302",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/067/252/242/large/nomnom-figures-scaling.jpg?1694936456",
+    "name": "Glados - Portal",
+    "options": [
+      {
+        "height": "7,2 cm",
+        "price": "25€"
+      }
+    ]
   }
 ]

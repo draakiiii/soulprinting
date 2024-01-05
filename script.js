@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('confirm-purchase').addEventListener('click', function () {
     localStorage.setItem('cart', JSON.stringify(cart));
     if (cart.length === 0) {
-      alert('Tu cesta de la compra está vacía.');
+      showNotification('Tu cesta de la compra está vacía.', "red");
       return;
     } else window.location.href = 'cart.html';
   });
@@ -71,10 +71,14 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
-  function showNotification(message) {
+  
+  function showNotification(message, color = 'default') {
     const notification = document.createElement('div');
     notification.classList.add('notification');
     notification.textContent = message;
+    if (color !== 'default') {
+      notification.style.backgroundColor = color;
+    }
   
     const container = document.getElementById('notification-container');
     container.appendChild(notification);

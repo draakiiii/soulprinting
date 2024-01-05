@@ -54,15 +54,14 @@ document.addEventListener('DOMContentLoaded', function () {
     function validateForm() {
         const nameInput = document.getElementById('name-input');
         const emailInput = document.getElementById('email-input');
-        const twitterInput = document.getElementById('twitter-input');
 
         if (nameInput.value === '') {
-            alert('Por favor, introduce tu nombre.');
+            showNotification('Por favor, introduce tu nombre', 'red');
             return false;
         }
 
-        if (emailInput.value === '' && twitterInput.value === '') {
-            alert('Por favor, introduce tu email o tu cuenta de Twitter.');
+        if (emailInput.value === '') {
+            showNotification('Por favor, introduce tu email o tu cuenta de Twitter.', "red");
             return false;
         }
 
@@ -72,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Función para finalizar la compra
     function checkout() {
         if (cart.length === 0) {
-            alert('Tu cesta de la compra está vacía.');
+            showNotification('Tu cesta de la compra está vacía.', "red");
             return;
         }
 
@@ -85,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
             nombre: document.getElementById('name-input').value,
             cesta: formattedCart,
             email: document.getElementById('email-input').value,
-            twitter: document.getElementById('twitter-input').value,
             observaciones: document.getElementById('notes-input').value
         };
 
@@ -115,9 +113,30 @@ document.addEventListener('DOMContentLoaded', function () {
         return formattedCart;
     }
 
+    function showNotification(message, color = 'default') {
+        const notification = document.createElement('div');
+        notification.classList.add('notification');
+        notification.textContent = message;
+        if (color !== 'default') {
+          notification.style.backgroundColor = color;
+        }
+      
+        const container = document.getElementById('notification-container');
+        container.appendChild(notification);
+      
+        // Hacer que la notificación sea visible
+        setTimeout(() => {
+          notification.style.opacity = 1;
+        }, 100);
+      
+        // Ocultar y eliminar la notificación después de 3 segundos
+        setTimeout(() => {
+          notification.style.opacity = 0;
+          notification.addEventListener('transitionend', () => notification.remove());
+        }, 3000);
+      }
+
     document.getElementById('checkout-button').addEventListener('click', checkout);
     displayCartItems(cart);
-
-    // Resto del código...
 });
 

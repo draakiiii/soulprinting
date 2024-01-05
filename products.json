@@ -137,7 +137,7 @@
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/058/972/264/large/nomnom-figures-guts-scaling.jpg?1675347952",
     "name": "Guts - Berserk",
     "height": "14,1 cm / 34,9 cm",
-    "price": "25€ / 95€"
+    "price": "25€ / 85€"
   },
   {
     "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/059/775/995/large/nomnom-figures-spidergwen-beautyshot.jpg?1677118235",
@@ -156,8 +156,71 @@
   {
     "defaultImage": "https://drive.google.com/uc?export=view&id=1M0UtcClJeLCP7XEUMn2a9B7Oior2KZ-m",
     "hoverImage": "https://cdn.thingiverse.com/assets/17/13/ae/8e/8a/large_display_4cc316da-1aba-4c5d-855a-4d5e9df62e55.png",
-    "name": "Riebeck",
+    "name": "Riebeck - Outer Wilds",
     "height": "6 cm",
-    "price": "15€"
+    "price": "12€"
+  },
+  {
+    "defaultImage": "https://drive.google.com/uc?export=view&id=1xDxBs7_fEaVEsxHi1lXLsZiB2GwEriml",
+    "hoverImage": "https://drive.google.com/uc?export=view&id=1wyMS2HAOhfhlgfEFBpBKKydSWpbZXfTu",
+    "name": "Leon - Resident Evil",
+    "height": "14,8 cm",
+    "price": "35€"
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/063/114/516/large/nomnom-figures-cloud-beautyshot.jpg?1684765193",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/063/114/576/large/nomnom-figures-scaling.jpg?1684764642",
+    "name": "Cloud - Final Fantasy VII",
+    "height": "10,3 cm / 23,2 cm",
+    "price": "25€ / 55€"
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/061/553/215/large/nomnom-figures-sepiroth-beautyshot.jpg?1681106478",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/061/553/213/large/nomnom-figures-scaling.jpg?1681106435",
+    "name": "Sephiroth - Final Fantasy VII",
+    "height": "16,6 cm / 37,6 cm",
+    "price": "30€ / 70€"
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/061/522/095/large/nomnom-figures-thehunter-beautyshot.jpg?1681020008",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/061/522/121/large/nomnom-figures-scaling.jpg?1681019227",
+    "name": "Cazador - Bloodborne",
+    "height": "10,4 cm / 22,6 cm",
+    "price": "25€ / 55€"
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/061/522/132/large/nomnom-figures-aragorn-beautyshot.jpg?1681020312",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/061/522/146/large/nomnom-figures-scaling.jpg?1681019266",
+    "name": "Aragorn - El Señor de los Anillos",
+    "height": "10,6 cm / 25,9 cm",
+    "price": "25€ / 55€"
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/061/474/890/large/nomnom-figures-malenia-beautyshot.jpg?1680879521",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/061/474/900/large/nomnom-figures-scaling.jpg?1680879435",
+    "name": "Malenia - Elden Ring",
+    "height": "17,2 cm / 39,4 cm",
+    "price": "35€ / 150€"
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/059/340/641/large/nomnom-figures-stray-beautyshot.jpg?1676182257",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/059/340/696/large/nomnom-figures-scaling.jpg?1676181833",
+    "name": "Stray",
+    "height": "11,4 cm",
+    "price": "25€"
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/049/494/862/large/nomnom-figures-beautyshot.jpg?1652643464",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/049/494/877/large/nomnom-figures-scaling.jpg?1652643455",
+    "name": "Princesa Mononoke",
+    "height": "8,0 cm / 19,0 cm",
+    "price": "25€ / 55€"
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/059/316/492/large/nomnom-figures-2b-beautyshot.jpg?1676116902",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/059/316/674/large/nomnom-figures-scaling.jpg?1676116809",
+    "name": "2b - Nier Automata",
+    "height": "10,0 cm / 23,4 cm",
+    "price": "25€ / 55€"
   }
 ]

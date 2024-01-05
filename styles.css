@@ -364,6 +364,7 @@ button:hover {
   cursor: pointer;
 }
 
+
 /* Al final de styles.css */
 .notification-container {
   position: fixed;
@@ -378,7 +379,6 @@ button:hover {
   margin: 5px 0;
   display: block;
 }
-
 
 /* Estilo para el contenedor del total del precio */
 .total-price-container {
@@ -425,6 +425,20 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+
+  .product-size-selector {
+    width: 100%; /* El selector ocupa todo el ancho disponible */
+    margin-left: 0; /* Sin margen a la izquierda */
+  }
+
+  .product-size-container {
+    flex-direction: column; /* Los elementos se apilan verticalmente */
+    align-items: flex-start; /* Alineación al inicio */
+  }
+
+  .product-size-label {
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+  }
 
   #faq {
     column-count: 1; /* Una sola columna en dispositivos móviles */

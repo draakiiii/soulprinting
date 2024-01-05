@@ -76,27 +76,33 @@ document.addEventListener('DOMContentLoaded', function () {
                     optionElement.selected = true;
                     productPriceElement.textContent = option.price;
                 }
-                productSizeSelect.appendChild(optionElement);
-            });
-    
-            if (product.options.length === 1) {
-                productSizeSelect.style.display = 'none'; // Ocultar si solo hay una opción
-                product.selectedOptionIndex = 0; // Seleccionar automáticamente la única opción
-                productPriceElement.textContent = product.options[0].price;
-            } else {
-                productSizeSelect.style.display = 'block';
-                if (product.selectedOptionIndex === undefined) {
-                    allSizesSelected = false; // Si alguna opción no está seleccionada, deshabilitar el botón de compra
+                if (productSizeSelect) {
+                    productSizeSelect.appendChild(optionElement);
                 }
-            }
-    
-            productSizeSelect.addEventListener('change', function (event) {
-                const selectedOptionIndex = event.target.selectedIndex;
-                product.selectedOptionIndex = selectedOptionIndex;
-                productPriceElement.textContent = product.options[selectedOptionIndex].price;
-                localStorage.setItem('cart', JSON.stringify(cart));
-                updateCart();
             });
+    
+            if (productSizeSelect) {
+                if (product.options.length === 1) {
+                    productSizeSelect.style.display = 'none'; // Ocultar si solo hay una opción
+                    product.selectedOptionIndex = 0; // Seleccionar automáticamente la única opción
+                    productPriceElement.textContent = product.options[0].price;
+                } else {
+                    productSizeSelect.style.display = 'block';
+                    if (product.selectedOptionIndex === undefined) {
+                        allSizesSelected = false; // Si alguna opción no está seleccionada, deshabilitar el botón de compra
+                    }
+                }
+        
+                productSizeSelect.addEventListener('change', function (event) {
+                    const selectedOptionIndex = event.target.selectedIndex;
+                    product.selectedOptionIndex = selectedOptionIndex;
+                    productPriceElement.textContent = product.options[selectedOptionIndex].price;
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCart();
+                });
+            }
+            
+            
     
             const removeFromCartButton = productElement.querySelector('.remove-from-cart');
             removeFromCartButton.addEventListener('click', function () {

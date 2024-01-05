@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="description">
                 <div style="display: flex; justify-content: space-between;">
                     <p data-label="Altura"></p>
-                    <select class="product-size" data-product-id="${product.id}" style="margin-left: auto;">
+                    ${product.options.length > 1 ? `<select class="product-size" data-product-id="${product.id}" style="margin-left: auto;">` : `<p>${product.options[0].height}</p>`}
                     </select>
                 </div>
                 <p data-label="Precio" class="product-price"></p>

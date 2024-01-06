@@ -25,16 +25,31 @@ document.addEventListener('DOMContentLoaded', function () {
     function validateForm() {
         const nameInput = document.getElementById('name-input');
         const emailInput = document.getElementById('email-input');
+        const addressInput = document.getElementById('address-input');
+        const postalInput = document.getElementById('postal-input');
+        const notesInput = document.getElementById('notes-input'); // Assuming notes are optional and do not require validation
 
-        if (nameInput.value === '') {
+        if (nameInput.value.trim() === '') {
             showNotification('Por favor, introduce tu nombre', 'red');
             return false;
         }
 
-        if (emailInput.value === '') {
-            showNotification('Por favor, introduce tu email o tu cuenta de Twitter.', "red");
+        if (emailInput.value.trim() === '') {
+            showNotification('Por favor, introduce tu email', 'red');
             return false;
         }
+
+        if (addressInput.value.trim() === '') {
+            showNotification('Por favor, introduce tu dirección completa', 'red');
+            return false;
+        }
+
+        if (postalInput.value.trim() === '') {
+            showNotification('Por favor, introduce tu código postal', 'red');
+            return false;
+        }
+
+        // No need to validate notesInput as it's optional
 
         return true;
     }
@@ -127,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     
         // Añadir costos de envío si el precio total es menor a 50€
-        const shippingCost = totalPrice > 0 && totalPrice < 50 ? 5 : 0;
+        const shippingCost = totalPrice > 0 && totalPrice < 50 ? 6 : 0;
         priceWithoutShipping = totalPrice;
         totalPrice += shippingCost;
 
@@ -177,7 +192,9 @@ document.addEventListener('DOMContentLoaded', function () {
             cesta: formattedCart,
             email: document.getElementById('email-input').value,
             precio: document.getElementById('total-price').textContent,
-            observaciones: document.getElementById('notes-input').value
+            observaciones: document.getElementById('notes-input').value,
+            codigo_postal: document.getElementById('postal-input').value,
+            direccion: document.getElementById('address-input').value
         };
     
         emailjs.send('service_wg7uw2n', 'template_1lrf8gi', templateParams)

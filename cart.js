@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     
         // Añadir costos de envío si el precio total es menor a 50€
-        const shippingCost = totalPrice > 0 && totalPrice < 65 ? 5 : 0;
+        const shippingCost = totalPrice > 0 && totalPrice < 60 ? 5 : 0;
         priceWithoutShipping = totalPrice;
         totalPrice += shippingCost;
 
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let discount = 0;
         if (cart.length >= 2) {
             discount = 0.1 * totalPrice; // 10% de descuento por dos productos
-            let extraDiscount = Math.min(cart.length - 2, 2) * 0.05; // 5% extra por cada producto adicional, hasta un máximo del 25%
+            let extraDiscount = Math.min(cart.length - 2, 2) * 0.05; // 5% extra por cada producto adicional, hasta un máximo del 20%
             discount += extraDiscount * totalPrice;
         }
         totalPrice -= discount;

@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     
         // Añadir costos de envío si el precio total es menor a 50€
-        const shippingCost = totalPrice > 0 && totalPrice < 60 ? 5 : 0;
+        const shippingCost = totalPrice > 0 && totalPrice < 50 ? 5 : 0;
         priceWithoutShipping = totalPrice;
         totalPrice += shippingCost;
 

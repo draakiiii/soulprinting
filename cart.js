@@ -127,12 +127,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     
         // Añadir costos de envío si el precio total es menor a 50€
-        const shippingCost = totalPrice > 0 && totalPrice < 50 ? 5 : 0;
+        const shippingCost = totalPrice > 0 && totalPrice < 65 ? 5 : 0;
         priceWithoutShipping = totalPrice;
         totalPrice += shippingCost;
 
         // Aplicar descuento si hay más de dos productos
-        const discount = cart.length > 1 ? 0.1 * totalPrice : 0;
+        let discount = 0;
+        if (cart.length >= 2) {
+            discount = 0.1 * totalPrice; // 10% de descuento por dos productos
+            let extraDiscount = Math.min(cart.length - 2, 2) * 0.05; // 5% extra por cada producto adicional, hasta un máximo del 25%
+            discount += extraDiscount * totalPrice;
+        }
         totalPrice -= discount;
     
         // Actualizar el DOM con el precio total, el descuento y los costos de envío

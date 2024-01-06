@@ -10,7 +10,7 @@
       },
       {
         "height": "21,7 cm",
-        "price": "45€"
+        "price": "50€"
       }
     ]
   },
@@ -47,7 +47,7 @@
     "options": [
       {
         "height": "14,6 cm",
-        "price": "40€"
+        "price": "35€"
       }
     ]
   },
@@ -58,7 +58,7 @@
     "options": [
       {
         "height": "15 cm",
-        "price": "40€"
+        "price": "35€"
       }
     ]
   },
@@ -69,7 +69,7 @@
     "options": [
       {
         "height": "14,7 cm",
-        "price": "45€"
+        "price": "40€"
       }
     ]
   },
@@ -80,11 +80,11 @@
     "options": [
       {
         "height": "12,5 cm",
-        "price": "25€"
+        "price": "30€"
       },
       {
         "height": "26,1 cm",
-        "price": "70€"
+        "price": "75€"
       }
     ]
   },
@@ -95,11 +95,11 @@
     "options": [
       {
         "height": "12,5 cm",
-        "price": "25€"
+        "price": "30€"
       },
       {
         "height": "26,1 cm",
-        "price": "95€"
+        "price": "85€"
       }
     ]
   },
@@ -114,7 +114,7 @@
       },
       {
         "height": "22,3 cm",
-        "price": "55€"
+        "price": "60€"
       }
     ]
   },
@@ -129,7 +129,7 @@
       },
       {
         "height": "23,0 cm",
-        "price": "95€"
+        "price": "85€"
       }
     ]
   },
@@ -144,7 +144,7 @@
       },
       {
         "height": "21,4 cm",
-        "price": "55€"
+        "price": "60€"
       }
     ]
   },
@@ -185,11 +185,11 @@
     "options": [
       {
         "height": "8,0 cm",
-        "price": "25€"
+        "price": "35€"
       },
       {
         "height": "19,0 cm",
-        "price": "65€"
+        "price": "85€"
       }
     ]
   },
@@ -204,7 +204,7 @@
       },
       {
         "height": "17,9 cm",
-        "price": "55€"
+        "price": "60€"
       }
     ]
   },
@@ -241,7 +241,7 @@
       },
       {
         "height": "14,5 cm",
-        "price": "55€"
+        "price": "60€"
       }
     ]
   },
@@ -271,7 +271,7 @@
       },
       {
         "height": "21,0 cm",
-        "price": "55€"
+        "price": "60€"
       }
     ]
   },
@@ -330,7 +330,7 @@
       },
       {
         "height": "23,2 cm",
-        "price": "55€"
+        "price": "60€"
       }
     ]
   },
@@ -360,7 +360,7 @@
       },
       {
         "height": "22,6 cm",
-        "price": "55€"
+        "price": "60€"
       }
     ]
   },
@@ -375,7 +375,7 @@
       },
       {
         "height": "25,9 cm",
-        "price": "55€"
+        "price": "60€"
       }
     ]
   },
@@ -401,11 +401,11 @@
     "options": [
       {
         "height": "8,0 cm",
-        "price": "25€"
+        "price": "30€"
       },
       {
         "height": "19,0 cm",
-        "price": "55€"
+        "price": "60€"
       }
     ]
   },
@@ -435,4 +435,21 @@
       }
     ]
   }
+  ,
+  {
+    "defaultImage": "https://img-new.cgtrader.com/items/3812588/2637028507/ranni-the-witch-elden-ring-3d-model-2637028507.jpg",
+    "hoverImage": "https://img-new.cgtrader.com/items/3812588/e9aa1afc7d/ranni-the-witch-elden-ring-3d-model-e9aa1afc7d.jpg",
+    "name": "Ranni - Elden Ring",
+    "options": [
+      {
+        "height": "10,7 cm",
+        "price": "30€"
+      },
+      {
+        "height": "24,7 cm",
+        "price": "70€"
+      }
+    ]
+  }
 ]
+

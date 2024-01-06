@@ -25,22 +25,28 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const sortOptions = document.getElementById('sort-options');
-  sortOptions.addEventListener('change', function () {
-    let sortedProducts;
-    if (sortOptions.value === 'price-asc') {
-      sortedProducts = [...products].sort((a, b) => extractHighestPrice(a.price) - extractHighestPrice(b.price));
-    } else if (sortOptions.value === 'price-desc') {
-      sortedProducts = [...products].sort((a, b) => extractHighestPrice(b.price) - extractHighestPrice(a.price));
-    } else {
-      sortedProducts = products;
-    }
-    displayProducts(sortedProducts);
-  });
-
-  function extractHighestPrice(priceString) {
-    const prices = priceString.split(' / ').map(price => parseFloat(price));
-    return Math.max(...prices);
+sortOptions.addEventListener('change', function () {
+  let sortedProducts;
+  if (sortOptions.value === 'price-asc') {
+    sortedProducts = [...products].sort((a, b) => extractLowestPrice(a) - extractLowestPrice(b));
+  } else if (sortOptions.value === 'price-desc') {
+    sortedProducts = [...products].sort((a, b) => extractHighestPrice(b) - extractHighestPrice(a));
+  } else {
+    sortedProducts = products;
   }
+  displayProducts(sortedProducts);
+});
+
+function extractHighestPrice(product) {
+  const prices = product.options.map(option => parseFloat(option.price.replace('€', '')));
+  return Math.max(...prices);
+}
+
+function extractLowestPrice(product) {
+  const prices = product.options.map(option => parseFloat(option.price.replace('€', '')));
+  return Math.min(...prices);
+}
+
 
   function displayProducts(products) {
     const productContainer = document.querySelector('.product-container');

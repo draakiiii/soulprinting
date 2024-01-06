@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }, function (error) {
             });
     
-        alert('Tu pedido ha sido recibido. Me pondré en contacto contigo en menos de 24 horas.');
+        alert('Tu pedido ha sido recibido. Si en 48 horas no me he puesto en contacto contigo, por favor, contacta conmigo a través del email o la cuenta de Twitter que aparece en la sección de "Preguntas frecuentes"');
         cart = [];
         localStorage.removeItem('cart');
         window.location.href = 'index.html';

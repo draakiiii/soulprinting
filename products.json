@@ -410,6 +410,21 @@
     ]
   },
   {
+    "defaultImage": "https://img-new.cgtrader.com/items/4336959/89406386fb/ashitaka-princess-mononoke-3d-model-89406386fb.jpg",
+    "hoverImage": "https://img-new.cgtrader.com/items/4336959/3467822c5d/ashitaka-princess-mononoke-3d-model-3467822c5d.jpg",
+    "name": "Ashitaka - Princesa Mononoke",
+    "options": [
+      {
+        "height": "10,0 cm",
+        "price": "25€"
+      },
+      {
+        "height": "24,4 cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/059/316/492/large/nomnom-figures-2b-beautyshot.jpg?1676116902",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/059/316/674/large/nomnom-figures-scaling.jpg?1676116809",
     "name": "2b - Nier Automata",
@@ -452,4 +467,3 @@
     ]
   }
 ]
-

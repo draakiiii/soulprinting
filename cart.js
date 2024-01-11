@@ -194,8 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: document.getElementById('total-price').textContent,
             observaciones: document.getElementById('notes-input').value,
             codigo_postal: document.getElementById('postal-input').value,
-            direccion: document.getElementById('address-input').value,
-            telefono: document.getElementById('phone-input').value
+            direccion: document.getElementById('address-input').value
         };
     
         emailjs.send('service_wg7uw2n', 'template_1lrf8gi', templateParams)

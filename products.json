@@ -449,8 +449,7 @@
         "price": "25€"
       }
     ]
-  }
-  ,
+  },
   {
     "defaultImage": "https://img-new.cgtrader.com/items/3812588/2637028507/ranni-the-witch-elden-ring-3d-model-2637028507.jpg",
     "hoverImage": "https://img-new.cgtrader.com/items/3812588/e9aa1afc7d/ranni-the-witch-elden-ring-3d-model-e9aa1afc7d.jpg",
@@ -463,6 +462,61 @@
       {
         "height": "24,7 cm",
         "price": "70€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8906142/cb6106faed1847bbbd10b1f424fd6422/eyJ3Ijo2MjB9/1.png?token-time=1705190400&token-hash=bWgcBiKpejZlvJ2nNk1ArQ1sTnjqHUvXrKhcWv0ajPU%3D",
+    "hoverImage": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8906142/6cdd234f54cd410dae5b4a3151c2c783/eyJ3Ijo2MjB9/1.png?token-time=1705190400&token-hash=R48ACgYRL0FJUNqY1hjMUM424qwlwtIrmkGqEH0LP1A%3D",
+    "name": "Trafalgar Law - One Piece",
+    "options": [
+      {
+        "height": "17,7 cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://files.cults3d.com/uploaders/13839022/illustration-file/ae7ee9c8-b106-4280-a97c-9410e6320877/Luffy_Render_03.png",
+    "hoverImage": "https://files.cults3d.com/uploaders/13839022/illustration-file/b0556800-c9d0-4424-beee-1afbf8ad5ddc/Luffy_Render_02.png",
+    "name": "Luffy Gear 5 - One Piece",
+    "options": [
+      {
+        "height": "21,8 cm",
+        "price": "50€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://files.cults3d.com/uploaders/13839022/illustration-file/840330b1-02bd-4d36-a109-6d606a64c6a7/SonGokuDiorama.png",
+    "hoverImage": "https://files.cults3d.com/uploaders/13839022/illustration-file/96c6955d-d800-445e-a4bd-2d7704ff98c5/IMG_20231104_234002_088.jpg",
+    "name": "Dragon Ball diorama",
+    "options": [
+      {
+        "height": "30,2 cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8906142/d6825be7d52c4861ab3bb305aeb8650d/eyJxIjoxMDAsIndlYnAiOjB9/1.png?token-time=1706227200&token-hash=q4eSCM-Z4jEXHPRCdgdW4LjX86zNlD71CwnCgPvMtX0%3D",
+    "hoverImage": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8906142/9836d614c5354aeca1cf87843cd963be/eyJxIjoxMDAsIndlYnAiOjB9/1.png?token-time=1706227200&token-hash=nGUdLB3nXB-pxKGVyU0zCi2ksuqaO3jeQx4IGTmBA00%3D",
+    "name": "Beherit - Berserk",
+    "options": [
+      {
+        "height": "8,5 cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8906142/32cf670a9d164f658a66e769a484e41c/eyJxIjoxMDAsIndlYnAiOjB9/1.png?token-time=1706227200&token-hash=UbrOPf1qEiJAp2Z8MG6JWYevcPE8eEzVbEV5FdsJG1Q%3D",
+    "hoverImage": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8906142/27ff283fe42f4a8ab466d734ed71a6cc/eyJxIjoxMDAsIndlYnAiOjB9/1.png?token-time=1706227200&token-hash=QSOFs4Q4MzZJoNsqfm5Ci52fWRqMZdnkDFaHN4-pJD0%3D",
+    "name": "Busto de Kaido - One Piece",
+    "options": [
+      {
+        "height": "6,8 cm",
+        "price": "25€"
       }
     ]
   }

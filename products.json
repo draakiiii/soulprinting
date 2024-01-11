@@ -519,5 +519,110 @@
         "price": "25€"
       }
     ]
+  },
+  {
+    "defaultImage": "https://www.todorolspain.es/cdn/shop/products/Zagreus_Beautyshot.jpg?v=1680602179&width=823",
+    "hoverImage": "https://www.todorolspain.es/cdn/shop/products/Scaling_dd89579b-15eb-48cb-8e06-e7adbe5f933e.jpg?v=1680602186&width=823",
+    "name": "Zagreus - Hades",
+    "options": [
+      {
+        "height": "11,3 cm",
+        "price": "25€"
+      },
+      {
+        "height": "25,2 cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://www.todorolspain.es/cdn/shop/files/BS_01.jpg?v=1684446842&width=823",
+    "hoverImage": "https://www.todorolspain.es/cdn/shop/files/Scaling_2418ea60-9182-4204-897e-45dce02cac7b.jpg?v=1684446859&width=823",
+    "name": "Godfrey - Elden Ring",
+    "options": [
+      {
+        "height": "13,6 cm",
+        "price": "35€"
+      },
+      {
+        "height": "33,0 cm",
+        "price": "95€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://img-new.cgtrader.com/items/4276760/98850eb6fa/power-chainsaw-man-3d-model-98850eb6fa.jpg",
+    "hoverImage": "https://img-new.cgtrader.com/items/4276760/534500c74a/power-chainsaw-man-3d-model-534500c74a.jpg",
+    "name": "Power - Chainsaw man",
+    "options": [
+      {
+        "height": "11,4 cm",
+        "price": "25€"
+      },
+      {
+        "height": "28,6 cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://img-new.cgtrader.com/items/4205090/9a4f44862f/lucy-x-david-cyberpunk-edgerunners-3d-model-9a4f44862f.jpg",
+    "hoverImage": "https://img-new.cgtrader.com/items/4205090/2527afb2cc/lucy-x-david-cyberpunk-edgerunners-3d-model-2527afb2cc.jpg",
+    "name": "Lucy y David -   Cyberpunk Edgerunners",
+    "options": [
+      {
+        "height": "11,1 cm",
+        "price": "25€"
+      },
+      {
+        "height": "25,0 cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://www.todorolspain.es/cdn/shop/products/BeautyShot_e34d9922-2e1d-4e24-a4b7-0512b9b9b6c4.jpg?v=1652604906&width=823",
+    "hoverImage": "https://www.todorolspain.es/cdn/shop/products/Scaling_c92c3c61-ff9c-4659-9d06-93083a8ba849.jpg?v=1652604911&width=823",
+    "name": "Alphonse - Fullmetal Alchemist",
+    "options": [
+      {
+        "height": "6,2 cm",
+        "price": "25€"
+      },
+      {
+        "height": "15,0 cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://img-new.cgtrader.com/items/4032212/05b20d7c97/roy-mustang-fullmetal-alchemist-3d-model-05b20d7c97.jpg",
+    "hoverImage": "https://img-new.cgtrader.com/items/4032212/57c0a5f2ab/thumb/roy-mustang-fullmetal-alchemist-3d-model-57c0a5f2ab.jpg",
+    "name": "Roy Mustang - Fullmetal Alchemist",
+    "options": [
+      {
+        "height": "7,3 cm",
+        "price": "25€"
+      },
+      {
+        "height": "17,6 cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://img-new.cgtrader.com/items/3505757/325aa03aa1/edward-elric-fullmetal-alchemist-3d-model-325aa03aa1.jpg",
+    "hoverImage": "https://img-new.cgtrader.com/items/3505757/377ff02211/edward-elric-fullmetal-alchemist-3d-model-377ff02211.jpg",
+    "name": "Roy Mustang - Fullmetal Alchemist",
+    "options": [
+      {
+        "height": "7,7 cm",
+        "price": "25€"
+      },
+      {
+        "height": "18,4 cm",
+        "price": "55€"
+      }
+    ]
   }
 ]

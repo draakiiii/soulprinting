@@ -591,5 +591,42 @@
         "price": "55€"
       }
     ]
-  }
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/071/814/956/large/nomnom-figures-beautyshot-01.jpg?1706013069",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/071/814/967/large/nomnom-figures-turntable-4.jpg?1706013064",
+    "name": "Gandalf the White - Lord of the Rings",
+    "options": [
+      {
+        "height": "19,9 cm",
+        "price": "30€"
+      },
+      {
+        "height": "29,2 cm",
+        "price": "85€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdn2.myminifactory.com/assets/images/static-page/87607812-hunter-android-color-1.jpg",
+    "hoverImage": "https://cdn2.myminifactory.com/assets/images/static-page/5d797c0e-hunter-android-grey-2.jpg",
+    "name": "Aigis - Persona 3",
+    "options": [
+      {
+        "height": "21,9 cm",
+        "price": "45€"
+      }
+    ]
+},
+{
+  "defaultImage": "https://cdn2.myminifactory.com/assets/images/static-page/555331eb-chieftain-of-the-barrens-color-1.jpg",
+  "hoverImage": "https://cdn2.myminifactory.com/assets/images/static-page/9b8ee3d8-chieftain-of-the-barrens-grey-6.jpg",
+  "name": "Godfrey - Elden Ring",
+  "options": [
+    {
+      "height": "33,3 cm",
+      "price": "95€"
+    }
+  ]
+}
 ]

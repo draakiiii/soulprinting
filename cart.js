@@ -243,7 +243,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 formattedCart += `Producto ${index + 1}:\n`;
                 formattedCart += `Nombre: ${product.name}\n`;
                 formattedCart += `Altura: ${selectedOption.height}\n`;
-                formattedCart += `Precio: ${selectedOption.price}\n\n`;
+                formattedCart += `Precio: ${selectedOption.price}\n`;
+                if (product.prelacadoPrice) formattedCart += `Prelacado: Sí\n\n`;
+                else formattedCart += `Prelacado: No\n\n`;
             }
         });
         return formattedCart;

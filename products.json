@@ -628,5 +628,16 @@
       "price": "95€"
     }
   ]
+},
+{
+  "defaultImage": "https://cdna.artstation.com/p/assets/images/images/072/493/240/large/nomnom-figures-beautyshot-01.jpg?1707481921",
+  "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/072/493/247/large/nomnom-figures-turntable-2.jpg?1707481824",
+  "name": "Us - Baldur's Gate 3",
+  "options": [
+    {
+      "height": "6,1 cm",
+      "price": "20€"
+    }
+  ]
 }
 ]

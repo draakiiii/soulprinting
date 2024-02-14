@@ -14,6 +14,50 @@ body {
   margin-bottom: 5px;
 }
 
+.prelacado-checkbox {
+  /* Estilos generales para checkboxes */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.prelacado-checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.prelacado-checkbox:checked {
+  border-color: #333;
+}
+
+.prelacado-checkbox:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.prelacado-checkbox:checked:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 header {
   display: flex;
   justify-content: space-between;

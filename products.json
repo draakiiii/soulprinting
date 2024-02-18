@@ -639,5 +639,16 @@
       "price": "20€"
     }
   ]
+},
+{
+  "defaultImage": "https://scontent.fvlc6-1.fna.fbcdn.net/v/t39.30808-6/428157528_361845970046412_826321747348950182_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_ohc=nep22GZpIEoAX_b9b_U&_nc_ht=scontent.fvlc6-1.fna&oh=00_AfDdHYtmHPEBUc9qNQXy_N0oO5-CPOfp4nOxN967sH9m6Q&oe=65D75BC6",
+  "hoverImage": "https://scontent.fvlc6-2.fna.fbcdn.net/v/t39.30808-6/428214806_361845663379776_7682321347932645633_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=S_BOAvDXPEYAX9Vthx2&_nc_oc=AQmoJDmw2QURaYDVDUuL7Pe3zfVq0MHUILYPfsUQRTGLEtSDHvkcWgPTwXuJYNPdwU8&_nc_ht=scontent.fvlc6-2.fna&oh=00_AfDLW8cjLdaKXwhDFYA5AJTCSCdzD_r7EFlEAQKB6TB0-Q&oe=65D7FF42",
+  "name": "Makoto Yuki - Persona 3",
+  "options": [
+    {
+      "height": "22,0 cm",
+      "price": "40€"
+    }
+  ]
 }
 ]

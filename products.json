@@ -390,7 +390,7 @@
       },
       {
         "height": "39,4 cm",
-        "price": "95€"
+        "price": "115€"
       }
     ]
   },
@@ -641,13 +641,69 @@
   ]
 },
 {
-  "defaultImage": "https://scontent.fvlc6-1.fna.fbcdn.net/v/t39.30808-6/428157528_361845970046412_826321747348950182_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_ohc=nep22GZpIEoAX_b9b_U&_nc_ht=scontent.fvlc6-1.fna&oh=00_AfDdHYtmHPEBUc9qNQXy_N0oO5-CPOfp4nOxN967sH9m6Q&oe=65D75BC6",
-  "hoverImage": "https://scontent.fvlc6-2.fna.fbcdn.net/v/t39.30808-6/428214806_361845663379776_7682321347932645633_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=S_BOAvDXPEYAX9Vthx2&_nc_oc=AQmoJDmw2QURaYDVDUuL7Pe3zfVq0MHUILYPfsUQRTGLEtSDHvkcWgPTwXuJYNPdwU8&_nc_ht=scontent.fvlc6-2.fna&oh=00_AfDLW8cjLdaKXwhDFYA5AJTCSCdzD_r7EFlEAQKB6TB0-Q&oe=65D7FF42",
+  "defaultImage": "https://pbs.twimg.com/media/GGjNQSyboAAscJ1?format=jpg&name=large",
+  "hoverImage": "https://i.redd.it/makoto-yuki-from-persona-3-reload-3d-printed-figure-at-1-8-v0-kw4nvcsoh6kc1.png?width=1725&format=png&auto=webp&s=e0aa63e2d7a17516e08469e04b5f379b00846f81",
   "name": "Makoto Yuki - Persona 3",
   "options": [
     {
       "height": "22,0 cm",
       "price": "40€"
+    }
+  ]
+},
+{
+  "defaultImage": "https://cdna.artstation.com/p/assets/images/images/073/205/490/large/nomnom-figures-skullknight-beautyshot-01.jpg?1709136950",
+  "hoverImage": "https://cdna.artstation.com/p/assets/images/images/073/205/498/large/nomnom-figures-turntable-01.jpg?1709136934",
+  "name": "Skull Knight - Berserk",
+  "options": [
+    {
+      "height": "10,9 cm",
+      "price": "25€"
+    },
+    {
+      "height": "25,5 cm",
+      "price": "85€"
+    }
+  ]
+},
+{
+  "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/072/741/733/large/nomnom-figures-beautyshot-01.jpg?1708086828",
+  "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/072/741/759/large/nomnom-figures-turntable-1.jpg?1708086624",
+  "name": "Chibi No Face - El viaje de Chihiro",
+  "options": [
+    {
+      "height": "8,3 cm",
+      "price": "25€"
+    }
+  ]
+},
+{
+  "defaultImage": "https://cdna.artstation.com/p/assets/images/images/072/965/874/large/nomnom-figures-astarion-beautyshot-01.jpg?1708604450",
+  "hoverImage": "https://cdna.artstation.com/p/assets/images/images/072/965/896/large/nomnom-figures-turntable-1.jpg?1708604304 ",
+  "name": "Astarion - Baldur's Gate 3",
+  "options": [
+    {
+      "height": "5,6 cm",
+      "price": "25€"
+    },
+    {
+      "height": "12,8 cm",
+      "price": "55€"
+    }
+  ]
+},
+{
+  "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/073/156/499/large/nomnom-figures-beautyshot-01.jpg?1709041299",
+  "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/073/156/513/large/nomnom-figures-scaleparts.jpg?1709041280",
+  "name": "Frieren",
+  "options": [
+    {
+      "height": "8,7 cm",
+      "price": "30€"
+    },
+    {
+      "height": "20,3 cm",
+      "price": "75€"
     }
   ]
 }

@@ -171,20 +171,29 @@ document.addEventListener('DOMContentLoaded', function () {
         priceWithoutShipping = totalPrice;
         totalPrice += shippingCost;
 
-        // Aplicar descuento si hay más de dos productos
         let discount = 0;
-        if (cart.length >= 2) {
-            discount = 0.1 * totalPrice; // 10% de descuento por dos productos
-            let extraDiscount = Math.min(cart.length - 2, 2) * 0.05; // 5% extra por cada producto adicional, hasta un máximo del 20%
-            discount += extraDiscount * totalPrice;
-        }
-        totalPrice -= discount;
+
+        // Descomentar para aplicar descuento por cada producto en la cesta
+
+        //     if (cart.length >= 2) {
+        //         discount = 0.1 * totalPrice; // 10% de descuento por dos productos
+        //         let extraDiscount = Math.min(cart.length - 2, 2) * 0.05; // 5% extra por cada producto adicional, hasta un máximo del 20%
+        //         discount += extraDiscount * totalPrice;
+        //     }
+        //     totalPrice -= discount;
+        
         totalPrice += prelacadoPrice;
+
+        // Aplicar un descuento adicional del 20%
+        let additionalDiscount = 0.2 * totalPrice;
+        totalPrice -= additionalDiscount;
+
+        let finalDiscount = discount + additionalDiscount;
     
         // Actualizar el DOM con el precio total, el descuento y los costos de envío
         document.getElementById('subtotal-price').textContent = `${priceWithoutShipping.toFixed(2)}€`;
         document.getElementById('total-price').textContent = `${totalPrice.toFixed(2)}€`;
-        document.getElementById('discount').textContent = discount > 0 ? `- ${discount.toFixed(2)}€ (Descuento)` : '';
+        document.getElementById('discount').textContent = finalDiscount > 0 ? `- ${finalDiscount.toFixed(2)}€ (Descuento)` : '';
         document.getElementById('shipping-cost').textContent = shippingCost > 0 ? `+ ${shippingCost.toFixed(2)}€ (Envío)` : 'Envío gratuito';
     }
 

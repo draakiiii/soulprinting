@@ -79,24 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
             <button class="remove-from-cart" data-product-id="${product.id}">Eliminar de la cesta</button>
             `;
 
-            const prelacadoElement = document.createElement('div');
-            prelacadoElement.classList.add('prelacado');
-            prelacadoElement.innerHTML = `
-              <div class="prelacado-checkbox-container">
-                <label for="prelacado-checkbox-${product.id}">Servicio de prelacado para mejor adhesión de la pintura (5€)    </label>
-                <input type="checkbox" id="prelacado-checkbox-${product.id}" class="prelacado-checkbox" data-product-id="${product.id}">
-              </div>    
-            `;
-            productElement.appendChild(prelacadoElement);
-            
-            const prelacadoCheckbox = prelacadoElement.querySelector('.prelacado-checkbox');
-            prelacadoCheckbox.checked = product.prelacado || false;
-            prelacadoCheckbox.addEventListener('change', function () {
-              product.prelacado = this.checked;
-              product.prelacadoPrice = this.checked ? 5 : 0; // Actualiza el precio del prelacado
-              localStorage.setItem('cart', JSON.stringify(cart));
-              updateTotalPrice(cart);
-            });
 
             cartContainer.appendChild(productElement);
     
@@ -155,13 +137,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateTotalPrice(cart) {
         let totalPrice = 0;
         let priceWithoutShipping = 0;
-        let prelacadoPrice = 0;
         cart.forEach(product => {
             if (product.selectedOptionIndex !== undefined) {
                 totalPrice += parseFloat(product.options[product.selectedOptionIndex].price.replace('€', ''));
-            }
-            if (product.prelacadoPrice) {
-                prelacadoPrice += product.prelacadoPrice;
             }
             
         });
@@ -175,20 +153,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Descomentar para aplicar descuento por cada producto en la cesta
 
-        //     if (cart.length >= 2) {
-        //         discount = 0.1 * totalPrice; // 10% de descuento por dos productos
-        //         let extraDiscount = Math.min(cart.length - 2, 2) * 0.05; // 5% extra por cada producto adicional, hasta un máximo del 20%
-        //         discount += extraDiscount * totalPrice;
-        //     }
-        //     totalPrice -= discount;
+            if (cart.length >= 2) {
+                discount = 0.1 * totalPrice; // 10% de descuento por dos productos
+                let extraDiscount = Math.min(cart.length - 2, 2) * 0.05; // 5% extra por cada producto adicional, hasta un máximo del 20%
+                discount += extraDiscount * totalPrice;
+            }
+             totalPrice -= discount;
         
-        totalPrice += prelacadoPrice;
 
         // Aplicar un descuento adicional del 20%
-        let additionalDiscount = 0.2 * totalPrice;
-        totalPrice -= additionalDiscount;
+        // let additionalDiscount = 0.2 * totalPrice;
+        // totalPrice -= additionalDiscount;
 
-        let finalDiscount = discount + additionalDiscount;
+        // let finalDiscount = discount + additionalDiscount;
+        let finalDiscount = discount;
     
         // Actualizar el DOM con el precio total, el descuento y los costos de envío
         document.getElementById('subtotal-price').textContent = `${priceWithoutShipping.toFixed(2)}€`;
@@ -253,8 +231,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 formattedCart += `Nombre: ${product.name}\n`;
                 formattedCart += `Altura: ${selectedOption.height}\n`;
                 formattedCart += `Precio: ${selectedOption.price}\n`;
-                if (product.prelacadoPrice) formattedCart += `Prelacado: Sí\n\n`;
-                else formattedCart += `Prelacado: No\n\n`;
             }
         });
         return formattedCart;

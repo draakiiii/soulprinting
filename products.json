@@ -706,5 +706,20 @@
       "price": "75€"
     }
   ]
+},
+{
+  "defaultImage": "https://public-files.gumroad.com/6nh91q556ypvyuji9kofpw0dl8qd",
+  "hoverImage": "https://public-files.gumroad.com/mj6r1hn63u447j45qa6zninkvj2d",
+  "name": "Guts - Berserk",
+  "options": [
+    {
+      "height": "21 cm",
+      "price": "40€"
+    },
+    {
+      "height": "27 cm",
+      "price": "85€"
+    }
+  ]
 }
 ]

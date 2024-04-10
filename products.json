@@ -10,7 +10,7 @@
       },
       {
         "height": "21,7 cm",
-        "price": "50€"
+        "price": "45€"
       }
     ]
   },
@@ -25,7 +25,7 @@
       },
       {
         "height": "14,5 cm",
-        "price": "50€"
+        "price": "45€"
       }
     ]
   },
@@ -80,7 +80,7 @@
     "options": [
       {
         "height": "12,5 cm",
-        "price": "30€"
+        "price": "25€"
       },
       {
         "height": "26,1 cm",
@@ -95,7 +95,7 @@
     "options": [
       {
         "height": "12,5 cm",
-        "price": "30€"
+        "price": "25€"
       },
       {
         "height": "26,1 cm",
@@ -144,7 +144,7 @@
       },
       {
         "height": "21,4 cm",
-        "price": "50€"
+        "price": "45€"
       }
     ]
   },
@@ -159,7 +159,7 @@
       },
       {
         "height": "21,0 cm",
-        "price": "55€"
+        "price": "50€"
       }
     ]
   },
@@ -185,7 +185,7 @@
     "options": [
       {
         "height": "8,0 cm",
-        "price": "35€"
+        "price": "30€"
       },
       {
         "height": "19,0 cm",
@@ -204,7 +204,7 @@
       },
       {
         "height": "17,9 cm",
-        "price": "55€"
+        "price": "50€"
       }
     ]
   },
@@ -241,7 +241,7 @@
       },
       {
         "height": "14,5 cm",
-        "price": "55€"
+        "price": "50€"
       }
     ]
   },
@@ -256,7 +256,7 @@
       },
       {
         "height": "34,9 cm",
-        "price": "85€"
+        "price": "75€"
       }
     ]
   },
@@ -271,7 +271,7 @@
       },
       {
         "height": "21,0 cm",
-        "price": "55€"
+        "price": "50€"
       }
     ]
   },
@@ -330,7 +330,7 @@
       },
       {
         "height": "23,2 cm",
-        "price": "55€"
+        "price": "45€"
       }
     ]
   },
@@ -345,7 +345,22 @@
       },
       {
         "height": "37,6 cm",
-        "price": "60€"
+        "price": "50€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/073/550/769/large/nomnom-figures-beautyshot-01.jpg?1709912558",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/073/550/799/large/nomnom-figures-turntable-2.jpg?1709912404",
+    "name": "Zach - Final Fantasy VII",
+    "options": [
+      {
+        "height": "8,2 cm",
+        "price": "25€"
+      },
+      {
+        "height": "18,3 cm",
+        "price": "45€"
       }
     ]
   },
@@ -360,7 +375,7 @@
       },
       {
         "height": "22,6 cm",
-        "price": "55€"
+        "price": "50€"
       }
     ]
   },
@@ -390,7 +405,7 @@
       },
       {
         "height": "39,4 cm",
-        "price": "115€"
+        "price": "125€"
       }
     ]
   },
@@ -405,7 +420,7 @@
       },
       {
         "height": "19,0 cm",
-        "price": "60€"
+        "price": "55€"
       }
     ]
   },
@@ -420,7 +435,7 @@
       },
       {
         "height": "24,4 cm",
-        "price": "55€"
+        "price": "50€"
       }
     ]
   },
@@ -435,7 +450,7 @@
       },
       {
         "height": "23,4 cm",
-        "price": "55€"
+        "price": "50€"
       }
     ]
   },
@@ -457,11 +472,11 @@
     "options": [
       {
         "height": "10,7 cm",
-        "price": "30€"
+        "price": "25€"
       },
       {
         "height": "24,7 cm",
-        "price": "60€"
+        "price": "55€"
       }
     ]
   },
@@ -472,7 +487,7 @@
     "options": [
       {
         "height": "21,8 cm",
-        "price": "50€"
+        "price": "65€"
       }
     ]
   },
@@ -498,7 +513,7 @@
       },
       {
         "height": "25,2 cm",
-        "price": "55€"
+        "price": "50€"
       }
     ]
   },
@@ -719,6 +734,47 @@
     {
       "height": "27 cm",
       "price": "85€"
+    }
+  ]
+},
+{
+  "defaultImage": "https://cdna.artstation.com/p/assets/images/images/074/191/030/large/nomnom-figures-beautyshot-01.jpg?1711469835",
+  "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/074/191/127/large/nomnom-figures-turntable-02.jpg?1711465513",
+  "name": "Gimli y Legolas - El señor de los anillos",
+  "options": [
+    {
+      "height": "10,4 cm",
+      "price": "30€"
+    },
+    {
+      "height": "24,8 cm",
+      "price": "85€"
+    }
+  ]
+},
+{
+  "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/074/641/101/large/nomnom-figures-bigdaddy-beautyshot-01.jpg?1712591322",
+  "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/074/641/141/large/nomnom-figures-turntable-02.jpg?1712591335",
+  "name": "Bouncer - Bioshock",
+  "options": [
+    {
+      "height": "10,1 cm",
+      "price": "30€"
+    },
+    {
+      "height": "24,4 cm",
+      "price": "95€"
+    }
+  ]
+},
+{
+  "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/073/982/221/large/nomnom-figures-beautyshot-01a.jpg?1710939123",
+  "hoverImage": "https://cdna.artstation.com/p/assets/images/images/073/982/276/large/nomnom-figures-turntable-02.jpg?1710939040",
+  "name": "Chibi Ramona Flowers - Scott Pilgrim",
+  "options": [
+    {
+      "height": "8,8 cm",
+      "price": "25€"
     }
   ]
 }

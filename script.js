@@ -77,11 +77,26 @@ function displayProducts(products) {
         <div class="description">
           <p data-label="Altura">${heights}</p>
           <p data-label="Precio Original">${prices}</p>
-          <p data-label="Precio con Descuento" style="color: red;">${discountedPrices}</p>
         </div>
         <button class="add-to-cart" data-product-id="${product.id}">Agregar a la cesta</button>
       </div>
     `;
+
+    // productElement.innerHTML = `
+    //   <div class="product-image">
+    //     <img src="${product.defaultImage}" alt="${product.name}" class="default-image">
+    //     <img src="${product.hoverImage}" alt="${product.name}" class="hover-image">
+    //   </div>
+    //   <div class="product-details">
+    //     <div class="name">${product.name}</div>
+    //     <div class="description">
+    //       <p data-label="Altura">${heights}</p>
+    //       <p data-label="Precio Original">${prices}</p>
+    //       <p data-label="Precio con Descuento" style="color: red;">${discountedPrices}</p>
+    //     </div>
+    //     <button class="add-to-cart" data-product-id="${product.id}">Agregar a la cesta</button>
+    //   </div>
+    // `;
     productContainer.appendChild(productElement);
 
     const addToCartButton = productElement.querySelector('.add-to-cart');

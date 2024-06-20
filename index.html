@@ -15,7 +15,7 @@
       <ul>
         <li><a href="#">Catálogo</a></li>
         <li><a href="faq.html">Preguntas frecuentes</a></li>
-        <li id="confirm-purchase"><a href="#" >Cesta</a></li>
+        <li id="confirm-purchase"><a href="#">Cesta</a></li>
       </ul>
     </nav>
   </header>
@@ -23,40 +23,45 @@
     <section class="catalog">
       <div class="title-container" hidden>
         <h2 class="title">Catálogo</h2>
-        <p class="subtitle">Los modelos se entregarán sin pintar ni lijar y en algunos casos se requerirá montaje. Los pedidos no se realizan en esta web. El precio no incluye envío.</p>
+        <p class="subtitle">Los modelos se entregarán sin pintar ni lijar y en algunos casos se requerirá montaje. Los
+          pedidos no se realizan en esta web. El precio no incluye envío.</p>
       </div>
       <div class="search-sort-container">
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-right: auto;">
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-right: auto;">
           <div>
             <p>Envío gratuito a España para pedidos superiores a 50€</p>
             <div class="discounts">
-            <p>Descuentos por cantidad:</p>
+              <p>Descuentos por cantidad:</p>
               <p>2 productos: 10%</p>
               <p>3 productos: 15%</p>
               <p>4 o más productos: 20%</p>
             </div>
-            <!-- <div class="extra-discounts">
-            <p>20% de descuento en todos los productos durante tiempo limitado</p>
-            </div> -->
           </div>
         </div>
-        <input type="text" id="search-input" placeholder="Buscar por nombre...">
-        <select id="sort-options">
-          <option value="recent">Productos destacados</option>
-          <option value="recently-added">Añadidos recientemente</option>
-          <option value="price-desc">Precio: de mayor a menor</option>
-          <option value="price-asc">Precio: de menor a mayor</option>
-        </select>
+        <div style="display: flex; align-items: center; position: relative;">
+          <input type="text" id="search-input" placeholder="Buscar por nombre...">
+          <button id="filter-button">Filtrar por colección</button>
+          <div id="filter-dropdown" class="filter-dropdown" hidden>
+            <!-- Aquí se añadirán los checkboxes de las colecciones -->
+          </div>
+          <select id="sort-options">
+            <option value="recent">Productos destacados</option>
+            <option value="recently-added">Añadidos recientemente</option>
+            <option value="price-desc">Precio: de mayor a menor</option>
+            <option value="price-asc">Precio: de menor a mayor</option>
+          </select>
+        </div>
       </div>
       <div class="product-container">
         <!-- Los productos se cargarán aquí -->
       </div>
     </section>
   </main>
-<div id="notification-container" class="notification-container"></div>
+  <div id="notification-container" class="notification-container"></div>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script type="text/javascript">
-    (function(){
+    (function () {
       emailjs.init('rKLszUiM-CRKaJOiA');
     })();
   </script>

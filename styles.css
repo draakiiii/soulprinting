@@ -1,3 +1,37 @@
+.filter-dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  top: 100%; /* Posiciona el desplegable justo debajo del botón */
+  left: 0;
+  margin-top: 5px; /* Añade un pequeño margen superior */
+}
+
+.filter-dropdown label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#filter-button {
+  height: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  color: black;
+}
+
+#filter-button:hover {
+  background-color: #f0f0f0;
+}
+
 body {
   font-family: sans-serif;
   font-weight: 600;
@@ -205,7 +239,14 @@ nav ul li a {
 .search-sort-container {
   margin-bottom: 15px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.search-sort-container > div {
+  display: flex;
+  align-items: center;
 }
 
 .search-sort-container p {

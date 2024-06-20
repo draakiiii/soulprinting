@@ -529,6 +529,28 @@ button:hover {
 
 @media (max-width: 768px) {
 
+  
+
+  .search-sort-container {
+    flex-direction: column; /* Cambia la disposición a vertical */
+    align-items: center; /* Alinea los elementos a lo largo del eje principal */
+  }
+
+  #search-input,
+  #filter-button,
+  #sort-options {
+    width: 90%; /* Hace que cada elemento ocupe todo el ancho disponible */
+    margin-bottom: 10px; /* Añade un espacio entre los elementos */
+  }
+
+  #filter-button {
+    order: 3; /* Asegura que el botón de filtro aparezca después de las opciones de ordenamiento */
+  }
+
+  #sort-options {
+    order: 2; /* Asegura que las opciones de ordenamiento aparezcan después del input de búsqueda */
+  }
+
   .product-size-selector {
     width: 100%; /* El selector ocupa todo el ancho disponible */
     margin-left: 0; /* Sin margen a la izquierda */

@@ -408,8 +408,12 @@
     "name": "Riebeck - Outer Wilds",
     "options": [
       {
-        "height": "6 cm",
+        "height": "6 cm (recomendado)",
         "price": "12€"
+      },
+      {
+        "height": "12 cm",
+        "price": "30€"
       }
     ]
   },
@@ -498,7 +502,7 @@
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/049/494/862/large/nomnom-figures-beautyshot.jpg?1652643464",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/049/494/877/large/nomnom-figures-scaling.jpg?1652643455",
-    "name": "Princesa Mononoke -Ghibli",
+    "name": "Princesa Mononoke - Ghibli",
     "options": [
       {
         "height": "8,0 cm",
@@ -688,139 +692,199 @@
         "price": "40€"
       }
     ]
-},
-{
-  "defaultImage": "https://cdna.artstation.com/p/assets/images/images/072/493/240/large/nomnom-figures-beautyshot-01.jpg?1707481921",
-  "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/072/493/247/large/nomnom-figures-turntable-2.jpg?1707481824",
-  "name": "Us - Baldur's Gate 3",
-  "options": [
-    {
-      "height": "6,1 cm",
-      "price": "20€"
-    }
-  ]
-},
-{
-  "defaultImage": "https://pbs.twimg.com/media/GGjNQSyboAAscJ1?format=jpg&name=large",
-  "hoverImage": "https://i.redd.it/makoto-yuki-from-persona-3-reload-3d-printed-figure-at-1-8-v0-kw4nvcsoh6kc1.png?width=1725&format=png&auto=webp&s=e0aa63e2d7a17516e08469e04b5f379b00846f81",
-  "name": "Makoto Yuki - Persona 3",
-  "options": [
-    {
-      "height": "22,0 cm",
-      "price": "40€"
-    }
-  ]
-},
-{
-  "defaultImage": "https://cdna.artstation.com/p/assets/images/images/073/205/490/large/nomnom-figures-skullknight-beautyshot-01.jpg?1709136950",
-  "hoverImage": "https://cdna.artstation.com/p/assets/images/images/073/205/498/large/nomnom-figures-turntable-01.jpg?1709136934",
-  "name": "Skull Knight - Berserk",
-  "options": [
-    {
-      "height": "10,9 cm",
-      "price": "25€"
-    },
-    {
-      "height": "25,5 cm",
-      "price": "85€"
-    }
-  ]
-},
-{
-  "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/072/741/733/large/nomnom-figures-beautyshot-01.jpg?1708086828",
-  "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/072/741/759/large/nomnom-figures-turntable-1.jpg?1708086624",
-  "name": "Chibi No Face - Ghibli",
-  "options": [
-    {
-      "height": "8,3 cm",
-      "price": "25€"
-    }
-  ]
-},
-{
-  "defaultImage": "https://cdna.artstation.com/p/assets/images/images/072/965/874/large/nomnom-figures-astarion-beautyshot-01.jpg?1708604450",
-  "hoverImage": "https://cdna.artstation.com/p/assets/images/images/072/965/896/large/nomnom-figures-turntable-1.jpg?1708604304 ",
-  "name": "Astarion - Baldur's Gate 3",
-  "options": [
-    {
-      "height": "5,6 cm",
-      "price": "25€"
-    },
-    {
-      "height": "12,8 cm",
-      "price": "55€"
-    }
-  ]
-},
-{
-  "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/073/156/499/large/nomnom-figures-beautyshot-01.jpg?1709041299",
-  "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/073/156/513/large/nomnom-figures-scaleparts.jpg?1709041280",
-  "name": "Frieren",
-  "options": [
-    {
-      "height": "8,7 cm",
-      "price": "30€"
-    },
-    {
-      "height": "20,3 cm",
-      "price": "75€"
-    }
-  ]
-},
-{
-  "defaultImage": "https://public-files.gumroad.com/6nh91q556ypvyuji9kofpw0dl8qd",
-  "hoverImage": "https://public-files.gumroad.com/mj6r1hn63u447j45qa6zninkvj2d",
-  "name": "Guts - Berserk",
-  "options": [
-    {
-      "height": "21 cm",
-      "price": "35€"
-    },
-    {
-      "height": "27 cm",
-      "price": "85€"
-    }
-  ]
-},
-{
-  "defaultImage": "https://cdna.artstation.com/p/assets/images/images/074/191/030/large/nomnom-figures-beautyshot-01.jpg?1711469835",
-  "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/074/191/127/large/nomnom-figures-turntable-02.jpg?1711465513",
-  "name": "Gimli y Legolas - El señor de los anillos",
-  "options": [
-    {
-      "height": "10,4 cm",
-      "price": "30€"
-    },
-    {
-      "height": "24,8 cm",
-      "price": "85€"
-    }
-  ]
-},
-{
-  "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/074/641/101/large/nomnom-figures-bigdaddy-beautyshot-01.jpg?1712591322",
-  "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/074/641/141/large/nomnom-figures-turntable-02.jpg?1712591335",
-  "name": "Bouncer - Bioshock",
-  "options": [
-    {
-      "height": "10,1 cm",
-      "price": "30€"
-    },
-    {
-      "height": "24,4 cm",
-      "price": "95€"
-    }
-  ]
-},
-{
-  "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/073/982/221/large/nomnom-figures-beautyshot-01a.jpg?1710939123",
-  "hoverImage": "https://cdna.artstation.com/p/assets/images/images/073/982/276/large/nomnom-figures-turntable-02.jpg?1710939040",
-  "name": "Chibi Ramona Flowers - Scott Pilgrim",
-  "options": [
-    {
-      "height": "8,8 cm",
-      "price": "25€"
-    }
-  ]
-}
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/072/493/240/large/nomnom-figures-beautyshot-01.jpg?1707481921",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/072/493/247/large/nomnom-figures-turntable-2.jpg?1707481824",
+    "name": "Us - Baldur's Gate 3",
+    "options": [
+      {
+        "height": "6,1 cm",
+        "price": "20€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://pbs.twimg.com/media/GGjNQSyboAAscJ1?format=jpg&name=large",
+    "hoverImage": "https://i.redd.it/makoto-yuki-from-persona-3-reload-3d-printed-figure-at-1-8-v0-kw4nvcsoh6kc1.png?width=1725&format=png&auto=webp&s=e0aa63e2d7a17516e08469e04b5f379b00846f81",
+    "name": "Makoto Yuki - Persona 3",
+    "options": [
+      {
+        "height": "22,0 cm",
+        "price": "40€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/073/205/490/large/nomnom-figures-skullknight-beautyshot-01.jpg?1709136950",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/073/205/498/large/nomnom-figures-turntable-01.jpg?1709136934",
+    "name": "Skull Knight - Berserk",
+    "options": [
+      {
+        "height": "10,9 cm",
+        "price": "25€"
+      },
+      {
+        "height": "25,5 cm",
+        "price": "85€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/072/741/733/large/nomnom-figures-beautyshot-01.jpg?1708086828",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/072/741/759/large/nomnom-figures-turntable-1.jpg?1708086624",
+    "name": "Chibi No Face - Ghibli",
+    "options": [
+      {
+        "height": "8,3 cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/072/965/874/large/nomnom-figures-astarion-beautyshot-01.jpg?1708604450",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/072/965/896/large/nomnom-figures-turntable-1.jpg?1708604304 ",
+    "name": "Astarion - Baldur's Gate 3",
+    "options": [
+      {
+        "height": "5,6 cm",
+        "price": "25€"
+      },
+      {
+        "height": "12,8 cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/073/156/499/large/nomnom-figures-beautyshot-01.jpg?1709041299",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/073/156/513/large/nomnom-figures-scaleparts.jpg?1709041280",
+    "name": "Frieren",
+    "options": [
+      {
+        "height": "8,7 cm",
+        "price": "30€"
+      },
+      {
+        "height": "20,3 cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://public-files.gumroad.com/6nh91q556ypvyuji9kofpw0dl8qd",
+    "hoverImage": "https://public-files.gumroad.com/mj6r1hn63u447j45qa6zninkvj2d",
+    "name": "Guts - Berserk",
+    "options": [
+      {
+        "height": "21 cm",
+        "price": "35€"
+      },
+      {
+        "height": "27 cm",
+        "price": "85€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/074/191/030/large/nomnom-figures-beautyshot-01.jpg?1711469835",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/074/191/127/large/nomnom-figures-turntable-02.jpg?1711465513",
+    "name": "Gimli y Legolas - El señor de los anillos",
+    "options": [
+      {
+        "height": "10,4 cm",
+        "price": "30€"
+      },
+      {
+        "height": "24,8 cm",
+        "price": "85€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/074/641/101/large/nomnom-figures-bigdaddy-beautyshot-01.jpg?1712591322",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/074/641/141/large/nomnom-figures-turntable-02.jpg?1712591335",
+    "name": "Bouncer - Bioshock",
+    "options": [
+      {
+        "height": "10,1 cm",
+        "price": "30€"
+      },
+      {
+        "height": "24,4 cm",
+        "price": "95€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/073/982/221/large/nomnom-figures-beautyshot-01a.jpg?1710939123",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/073/982/276/large/nomnom-figures-turntable-02.jpg?1710939040",
+    "name": "Chibi Ramona Flowers - Scott Pilgrim",
+    "options": [
+      {
+        "height": "8,8 cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/076/526/919/large/nomnom-figures-melina-beautyshot-01.jpg?1717168942",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/076/526/940/large/nomnom-figures-turntable-01.jpg?1717168872",
+    "name": "Melina - Elden Ring",
+    "options": [
+      {
+        "height": "11,4 cm",
+        "price": "25€"
+      },
+      {
+        "height": "25,4 cm",
+        "price": "60€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/077/551/490/large/nomnom-figures-beautyshot-01.jpg?1719758967",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/077/551/504/large/nomnom-figures-turntable-01.jpg?1719758306",
+    "name": "Johnny Silverhand - Cyberpunk 2077",
+    "options": [
+      {
+        "height": "8,1 cm",
+        "price": "30€"
+      },
+      {
+        "height": "17,9 cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/077/256/969/large/nomnom-figures-beautyshot-01.jpg?1718972213",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/077/256/992/large/nomnom-figures-turntable-01.jpg?1718972206",
+    "name": "Kiki's Delivery Service - Ghibli",
+    "options": [
+      {
+        "height": "10,5 cm",
+        "price": "25€"
+      },
+      {
+        "height": "20,4 cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/34353411/photo-file/f14d6b34-bd9c-44c8-9466-3134b852b5d9/WhatsApp-Image-2024-05-06-at-13.56.30.jpeg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/34353411/photo-file/f14d6b34-bd9c-44c8-9466-3134b852b5d9/WhatsApp-Image-2024-05-06-at-13.56.30.jpeg",
+    "name": "Pack completo exploradores - Outer Wilds",
+    "options": [
+      {
+        "height": "4-8 cm (recomendado)",
+        "price": "45€"
+      },
+      {
+        "height": "10-14 cm",
+        "price": "100€"
+      }
+    ]
+  }
 ]

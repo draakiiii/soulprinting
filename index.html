@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo de productos</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
       <ul>
         <li><a href="#">Catálogo</a></li>
         <li><a href="faq.html">Preguntas frecuentes</a></li>
-        <li id="confirm-purchase"><a href="#">Cesta</a></li>
+        <li id="confirm-purchase"><a href="#"><i class="fas fa-shopping-cart"></i> Cesta <span id="cart-count"></span></a></li>
       </ul>
     </nav>
   </header>
@@ -41,7 +42,7 @@
         </div>
         <div style="display: flex; align-items: center; position: relative;">
           <input type="text" id="search-input" placeholder="Buscar por nombre...">
-          <button id="filter-button">Filtrar</button>
+          <button id="filter-button">Filtrar <i class="fas fa-filter"></i></button>
           <div id="filter-dropdown" class="filter-dropdown" hidden>
             <!-- Aquí se añadirán los checkboxes de las colecciones -->
           </div>

@@ -726,7 +726,7 @@
       },
       {
         "height": "25,5 cm",
-        "price": "85€"
+        "price": "95€"
       }
     ]
   },
@@ -778,11 +778,11 @@
     "options": [
       {
         "height": "21 cm",
-        "price": "35€"
+        "price": "30€"
       },
       {
         "height": "27 cm",
-        "price": "85€"
+        "price": "80€"
       }
     ]
   },
@@ -884,6 +884,17 @@
       {
         "height": "10-14 cm",
         "price": "100€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://public-files.gumroad.com/qae5clfwsxstht1atvcv6yubg25q",
+    "hoverImage": "https://public-files.gumroad.com/he92672nh8gcaz25l808p9jlq1lr",
+    "name": "Griffith - Berserk",
+    "options": [
+      {
+        "height": "+30 cm (aprox)",
+        "price": "75€"
       }
     ]
   }

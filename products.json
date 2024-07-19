@@ -21,11 +21,11 @@
     "options": [
       {
         "height": "10,7 cm",
-        "price": "25€"
+        "price": "30€"
       },
       {
         "height": "24,7 cm",
-        "price": "55€"
+        "price": "75€"
       }
     ]
   },
@@ -838,7 +838,7 @@
       },
       {
         "height": "25,4 cm",
-        "price": "60€"
+        "price": "55€"
       }
     ]
   },
@@ -894,6 +894,21 @@
     "options": [
       {
         "height": "+30 cm (aprox)",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/078/114/454/large/nomnom-figures-beautyshot-01.jpg?1721226314",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/078/114/470/large/nomnom-figures-turntable-01.jpg?1721226256",
+    "name": "Messmer - Elden Ring",
+    "options": [
+      {
+        "height": "8,5 (recomendado)",
+        "price": "30€"
+      },
+      {
+        "height": "24    cm",
         "price": "75€"
       }
     ]

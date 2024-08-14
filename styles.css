@@ -665,3 +665,111 @@ button:hover {
   }
 }
 
+.lazy {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazy.loaded {
+  opacity: 1;
+}
+
+.promo-code-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#promo-code-input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#apply-promo-code {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#apply-promo-code:hover {
+  background-color: #555;
+}
+
+/* Estilos para la página de administración */
+#cupones, #productos {
+    margin-bottom: 40px;
+}
+
+#cupon-form, #producto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#cupon-form input, #producto-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#cupon-form button, #producto-form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#cupon-form button:hover, #producto-form button:hover {
+    background-color: #555;
+}
+
+#cupones-lista, #productos-lista {
+    margin-top: 20px;
+}
+
+#cupones-lista div, #productos-lista div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.opcion {
+    display: flex;
+    gap: 10px;
+}
+
+#agregar-opcion {
+    margin-top: 10px;
+}
+
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#checkout-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+

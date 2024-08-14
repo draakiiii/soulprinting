@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let appliedPromoCode = null;
+    let promoCodeDiscount = 0;
+    let isProcessingOrder = false;
+
     updateCart();
 
 
@@ -19,7 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('checkout-dialog').style.display = 'none';
     });
 
-    
+    // Añade este evento al botón de checkout
+    document.getElementById('checkout-button').addEventListener('click', function(event) {
+        event.preventDefault();
+        checkout();
+    });
 
     // Función para validar el formulario
     function validateForm() {
@@ -139,40 +147,42 @@ document.addEventListener('DOMContentLoaded', function () {
         let priceWithoutShipping = 0;
         cart.forEach(product => {
             if (product.selectedOptionIndex !== undefined) {
-                totalPrice += parseFloat(product.options[product.selectedOptionIndex].price.replace('€', ''));
+                priceWithoutShipping += parseFloat(product.options[product.selectedOptionIndex].price.replace('€', ''));
             }
-            
         });
-    
-        // Añadir costos de envío si el precio total es menor a 50€
-        const shippingCost = totalPrice > 0 && totalPrice < 50 ? 6 : 0;
-        priceWithoutShipping = totalPrice;
-        totalPrice += shippingCost;
-
+        // Calcular descuento antes de añadir costos de envío
         let discount = 0;
+        let discountMessage = '';
 
-        // Descomentar para aplicar descuento por cada producto en la cesta
+        // Aplicar descuento del código promocional o descuento por cantidad de productos
+        if (appliedPromoCode) {
+            promoCodeDiscount = (promoCodeDiscount / 100) * priceWithoutShipping;
+            discount = promoCodeDiscount;
+            discountMessage = 'Descuento por código promocional aplicado. No se aplica descuento por cantidad.';
+        } else if (cart.length >= 2) {
+            discount = 0.1 * priceWithoutShipping; // 10% de descuento por dos productos
+            let extraDiscount = Math.min(cart.length - 2, 2) * 0.05; // 5% extra por cada producto adicional, hasta un máximo del 20%
+            discount += extraDiscount * priceWithoutShipping;
+            discountMessage = 'Descuento por cantidad de productos aplicado.';
+        }
 
-            if (cart.length >= 2) {
-                discount = 0.1 * totalPrice; // 10% de descuento por dos productos
-                let extraDiscount = Math.min(cart.length - 2, 2) * 0.05; // 5% extra por cada producto adicional, hasta un máximo del 20%
-                discount += extraDiscount * totalPrice;
-            }
-             totalPrice -= discount;
-        
+        // Aplicar el descuento al precio sin envío
+        let discountedPrice = priceWithoutShipping - discount;
 
-        // Aplicar un descuento adicional del 20%
-        // let additionalDiscount = 0.2 * totalPrice;
-        // totalPrice -= additionalDiscount;
+        // Añadir costos de envío si el precio con descuento es menor a 50€
+        const shippingCost = discountedPrice > 0 && discountedPrice < 50 ? 6 : 0;
+        totalPrice = discountedPrice + shippingCost;
 
-        // let finalDiscount = discount + additionalDiscount;
-        let finalDiscount = discount;
-    
         // Actualizar el DOM con el precio total, el descuento y los costos de envío
         document.getElementById('subtotal-price').textContent = `${priceWithoutShipping.toFixed(2)}€`;
         document.getElementById('total-price').textContent = `${totalPrice.toFixed(2)}€`;
-        document.getElementById('discount').textContent = finalDiscount > 0 ? `- ${finalDiscount.toFixed(2)}€ (Descuento)` : '';
+        document.getElementById('discount').textContent = discount > 0 ? `- ${discount.toFixed(2)}€ (${discountMessage})` : '';
         document.getElementById('shipping-cost').textContent = shippingCost > 0 ? `+ ${shippingCost.toFixed(2)}€ (Envío)` : 'Envío gratuito';
+
+        // Mostrar notificación al usuario sobre la promoción
+        if (appliedPromoCode) {
+            showNotification('La promoción no es acumulable con el descuento por cantidad de productos.', 'blue');
+        }
     }
 
     function updateCart() {
@@ -185,6 +195,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para finalizar la compra
     function checkout() {
+        // Si ya se está procesando un pedido, no hacer nada
+        if (isProcessingOrder) {
+            return;
+        }
+    
         if (cart.length === 0) {
             showNotification('Tu cesta de la compra está vacía.', "red");
             return;
@@ -194,31 +209,52 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
     
-        let total = 0;
-        cart.forEach(product => {   
-            total += parseFloat(product.price);
-        });
+        // Marcar que se está procesando un pedido
+        isProcessingOrder = true;
+    
+        // Deshabilitar el botón de checkout
+        const checkoutButton = document.getElementById('checkout-button');
+        checkoutButton.disabled = true;
+        checkoutButton.textContent = 'Procesando...';
     
         const formattedCart = formatCartForEmail(cart);
+        const totalPrice = document.getElementById('total-price').textContent;
         const templateParams = {
             nombre: document.getElementById('name-input').value,
             cesta: formattedCart,
             email: document.getElementById('email-input').value,
-            precio: document.getElementById('total-price').textContent,
-            observaciones: document.getElementById('notes-input').value,
+            precio: totalPrice,
+            observaciones: document.getElementById('notes-input').value || "No hay observaciones",
             codigo_postal: document.getElementById('postal-input').value,
             direccion: document.getElementById('address-input').value
         };
     
+        // Enviar email al administrador
         emailjs.send('service_wg7uw2n', 'template_1lrf8gi', templateParams)
             .then(function (response) {
-            }, function (error) {
+                // Si el email al administrador se envía con éxito, enviar email al cliente
+                return emailjs.send("service_wg7uw2n", "template_kvlfl9b", templateParams);
+            })
+            .then(function (response) {
+                showNotification('Tu pedido ha sido recibido. Te hemos enviado un email de confirmación.', 'green');
+                cart = [];
+                localStorage.removeItem('cart');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 3000);
+            })
+            .catch(function (error) {
+                showNotification('Hubo un error al enviar tu pedido. Por favor, inténtalo de nuevo.', 'red');
+                console.error('Error:', error);
+            })
+            .finally(function () {
+                // Restablecer el estado del botón y la bandera de procesamiento solo si el carrito no está vacío
+                if (cart.length > 0) {
+                    isProcessingOrder = false;
+                    checkoutButton.disabled = false;
+                    checkoutButton.textContent = 'Enviar pedido';
+                }
             });
-    
-        alert('Tu pedido ha sido recibido. Si en 48 horas no me he puesto en contacto contigo, por favor, contacta conmigo a través del email o la cuenta de Twitter que aparece en la sección de "Preguntas frecuentes"');
-        cart = [];
-        localStorage.removeItem('cart');
-        window.location.href = 'index.html';
     }
 
     function formatCartForEmail(cart) {
@@ -230,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 formattedCart += `Producto ${index + 1}:\n`;
                 formattedCart += `Nombre: ${product.name}\n`;
                 formattedCart += `Altura: ${selectedOption.height}\n`;
-                formattedCart += `Precio: ${selectedOption.price}\n`;
+                formattedCart += `Precio: ${selectedOption.price}\n\n`;  // Added an extra \n for a blank line between products
             }
         });
         return formattedCart;
@@ -259,7 +295,36 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 3000);
       }
 
-    document.getElementById('checkout-button').addEventListener('click', checkout);
-    displayCartItems(cart);
-});
+    // Nuevo código para manejar los códigos promocionales
+    document.getElementById('apply-promo-code').addEventListener('click', function() {
+        const promoCodeInput = document.getElementById('promo-code-input');
+        const promoCode = promoCodeInput.value.trim().toUpperCase();
 
+        fetch('promo-codes.json')
+            .then(response => response.json())
+            .then(promoCodes => {
+                if (promoCodes.hasOwnProperty(promoCode)) {
+                    const cupon = promoCodes[promoCode];
+                    const fechaActual = new Date();
+                    const fechaCaducidad = cupon.caducidad ? new Date(cupon.caducidad) : null;
+
+                    if (!fechaCaducidad || fechaActual <= fechaCaducidad) {
+                        appliedPromoCode = promoCode;
+                        promoCodeDiscount = cupon.descuento;
+                        showNotification(`Código promocional aplicado: ${promoCodeDiscount}% de descuento`, 'green');
+                        updateCart();
+                    } else {
+                        showNotification('El código promocional ha caducado', 'red');
+                    }
+                } else {
+                    showNotification('Código promocional inválido', 'red');
+                }
+            })
+            .catch(error => {
+                console.error('Error al cargar los códigos promocionales:', error);
+                showNotification('Error al aplicar el código promocional', 'red');
+            });
+
+        promoCodeInput.value = '';
+    });
+});

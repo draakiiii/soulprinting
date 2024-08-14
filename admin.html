@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <nav>
+            <ul>
+                <li><a href="#cupones">Gestionar Cupones</a></li>
+                <li><a href="#productos">Gestionar Productos</a></li>
+                <li><a href="#json-editor">Editor JSON</a></li>
+                <li><a href="index.html">Volver a la Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cupones">
+            <h2>Gestionar Cupones - WIP</h2>
+            <form id="cupon-form">
+                <input type="text" id="cupon-codigo" placeholder="Código del cupón" required>
+                <input type="number" id="cupon-descuento" placeholder="Porcentaje de descuento" required>
+                <input type="date" id="cupon-caducidad" placeholder="Fecha de caducidad (opcional)">
+                <button type="submit">Crear Cupón</button>
+            </form>
+            <div id="cupones-lista"></div>
+        </section>
+
+        <section id="productos">
+            <h2>Gestionar Productos - WIP</h2>
+            <form id="producto-form">
+                <input type="text" id="producto-nombre" placeholder="Nombre del producto" required>
+                <input type="url" id="producto-imagen-default" placeholder="URL imagen por defecto" required>
+                <input type="url" id="producto-imagen-hover" placeholder="URL imagen hover" required>
+                <div id="opciones-container">
+                    <div class="opcion">
+                        <input type="text" class="opcion-altura" placeholder="Altura" required>
+                        <input type="text" class="opcion-precio" placeholder="Precio" required>
+                    </div>
+                </div>
+                <button type="button" id="agregar-opcion">Agregar Opción</button>
+                <button type="submit">Crear Producto</button>
+            </form>
+            <div id="productos-lista"></div>
+        </section>  
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -113,8 +113,8 @@ document.addEventListener('DOMContentLoaded', function () {
       productElement.classList.add('product');
       productElement.innerHTML = `
       <div class="product-image">
-        <img src="${product.defaultImage}" alt="${product.name}" class="default-image">
-        <img src="${product.hoverImage}" alt="${product.name}" class="hover-image">
+        <img src="placeholder.jpg" data-src="${product.defaultImage}" alt="${product.name}" class="default-image lazy">
+        <img src="placeholder.jpg" data-src="${product.hoverImage}" alt="${product.name}" class="hover-image lazy">
       </div>
       <div class="product-details">
         <div class="name">${product.name}</div>
@@ -126,21 +126,6 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>
     `;
 
-      // productElement.innerHTML = `
-      //   <div class="product-image">
-      //     <img src="${product.defaultImage}" alt="${product.name}" class="default-image">
-      //     <img src="${product.hoverImage}" alt="${product.name}" class="hover-image">
-      //   </div>
-      //   <div class="product-details">
-      //     <div class="name">${product.name}</div>
-      //     <div class="description">
-      //       <p data-label="Altura">${heights}</p>
-      //       <p data-label="Precio Original">${prices}</p>
-      //       <p data-label="Precio con Descuento" style="color: red;">${discountedPrices}</p>
-      //     </div>
-      //     <button class="add-to-cart" data-product-id="${product.id}">Agregar a la cesta</button>
-      //   </div>
-      // `;
       productContainer.appendChild(productElement);
 
       const addToCartButton = productElement.querySelector('.add-to-cart');
@@ -152,6 +137,24 @@ document.addEventListener('DOMContentLoaded', function () {
         showNotification(`Ha añadido ${product.name} a la cesta`);
       });
     });
+
+    lazyLoadImages();
+  }
+
+  function lazyLoadImages() {
+    const lazyImages = document.querySelectorAll('img.lazy');
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.remove('lazy');
+          observer.unobserve(img);
+        }
+      });
+    });
+
+    lazyImages.forEach(img => imageObserver.observe(img));
   }
 
   function showNotification(message, color = 'default') {

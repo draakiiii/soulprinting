@@ -5,14 +5,21 @@
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  top: 100%; /* Posiciona el desplegable justo debajo del botón */
-  left: 0;
-  margin-top: 5px; /* Añade un pequeño margen superior */
+  top: 100%;
+  right: 0; /* Cambiado de left: 0 a right: 0 */
+  margin-top: 5px;
+  text-align: right; /* Alinea el texto a la derecha */
 }
 
 .filter-dropdown label {
   display: block;
   margin-bottom: 5px;
+  text-align: left; /* Asegura que el texto dentro de las etiquetas esté alineado a la derecha */
+}
+
+.filter-dropdown input[type="checkbox"] {
+  float: left; /* Mueve los checkboxes a la derecha */
+  margin-left: 5px; /* Añade un pequeño margen a la izquierda de los checkboxes */
 }
 
 #filter-button {

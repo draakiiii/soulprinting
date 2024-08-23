@@ -103,7 +103,7 @@
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/070/643/670/large/nomnom-figures-shadowheart-beautyshot.jpg",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/070/643/662/large/nomnom-figures-scaling.jpg?1703074218",
-    "name": "Shadowheart - Baldur's Gate 3",
+    "name": "Shadowheart - Baldur's Gate",
     "options": [
       {
         "height": "9,5 cm",
@@ -118,7 +118,7 @@
   {
     "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/068/788/815/large/nomnom-figures-beautyshot.jpg?1701779734",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/068/788/831/large/nomnom-figures-scaling.jpg?1698668402",
-    "name": "Karlach - Baldur's Gate 3",
+    "name": "Karlach - Baldur's Gate",
     "options": [
       {
         "height": "6,4 cm",
@@ -133,7 +133,7 @@
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/068/407/174/large/nomnom-figures-beautyshot-01.jpg?1697723647",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/068/407/182/large/nomnom-figures-scaling.jpg?1697723493",
-    "name": "Oso lechuza bebé - Baldur's Gate 3",
+    "name": "Oso lechuza bebé - Baldur's Gate",
     "options": [
       {
         "height": "11,4 cm",
@@ -144,7 +144,7 @@
   {
     "defaultImage": "https://files.cults3d.com/uploaders/17692568/illustration-file/9b13dbd3-6f2f-4f10-bfa2-e3d527b20af9/Cover.jpg",
     "hoverImage": "https://files.cults3d.com/uploaders/17692568/illustration-file/98af0da2-fcae-44d8-88c0-140eed0160ce/IMG_7815.jpg",
-    "name": "Astarion - Baldur's Gate 3",
+    "name": "Astarion - Baldur's Gate",
     "options": [
       {
         "height": "14,6 cm",
@@ -155,7 +155,7 @@
   {
     "defaultImage": "https://files.cults3d.com/uploaders/17692568/illustration-file/79d2a94c-519a-4834-b79d-e0a3d5d7d132/Cover.jpg",
     "hoverImage": "https://files.cults3d.com/uploaders/17692568/illustration-file/8bb6c604-c0d8-4a34-9748-16807bacd89e/IMG_7676-Edit.jpg",
-    "name": "Lae'zel - Baldur's Gate 3",
+    "name": "Lae'zel - Baldur's Gate",
     "options": [
       {
         "height": "15 cm",
@@ -166,7 +166,7 @@
   {
     "defaultImage": "https://files.cults3d.com/uploaders/17692568/illustration-file/bc56141e-1a85-4164-af53-87d91cb40817/Cover.jpg",
     "hoverImage": "https://files.cults3d.com/uploaders/17692568/illustration-file/17db29ff-3ab1-444d-9e33-5620ca16bb5a/Gale_Camera-1_004.jpg",
-    "name": "Gale - Baldur's Gate 3",
+    "name": "Gale - Baldur's Gate",
     "options": [
       {
         "height": "14,7 cm",
@@ -696,7 +696,7 @@
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/072/493/240/large/nomnom-figures-beautyshot-01.jpg?1707481921",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/072/493/247/large/nomnom-figures-turntable-2.jpg?1707481824",
-    "name": "Us - Baldur's Gate 3",
+    "name": "Chibi Us - Baldur's Gate",
     "options": [
       {
         "height": "6,1 cm",
@@ -744,7 +744,7 @@
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/072/965/874/large/nomnom-figures-astarion-beautyshot-01.jpg?1708604450",
     "hoverImage": "https://cdna.artstation.com/p/assets/images/images/072/965/896/large/nomnom-figures-turntable-1.jpg?1708604304 ",
-    "name": "Astarion - Baldur's Gate 3",
+    "name": "Astarion - Baldur's Gate",
     "options": [
       {
         "height": "5,6 cm",
@@ -904,11 +904,138 @@
     "name": "Messmer - Elden Ring",
     "options": [
       {
-        "height": "10,7cm (recomendado)",
+        "height": "10,7cm",
         "price": "30€"
       },
       {
         "height": "24 cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdn2.myminifactory.com/assets/images/static-page/e88d0a4f-leda-color-1.jpg",
+    "hoverImage": "https://cdn2.myminifactory.com/assets/images/static-page/99288285-leda-color-2.jpg",
+    "name": "Leda - Elden Ring",
+    "options": [
+      {
+        "height": "22cm - Casco puesto",
+        "price": "50€"
+      },
+      {
+        "height": "22 cm - Casco quitado",
+        "price": "50€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/079/255/844/large/nomnom-figures-beautyshot-01.jpg?1724401338",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/079/255/859/large/nomnom-figures-turntable-01.jpg?1724401327",
+    "name": "Sauron - El señor de los anillos",
+    "options": [
+      {
+        "height": "10,8cm",
+        "price": "25€"
+      },
+      {
+        "height": "25,5 cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/078/647/690/large/nomnom-figures-beautyshot-01.jpg?1722688305",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/078/647/704/large/nomnom-figures-turntable-01.jpg?1722688306",
+    "name": "Femto - Berserk",
+    "options": [
+      {
+        "height": "9,9cm",
+        "price": "25€"
+      },
+      {
+        "height": "22,7 cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/078/430/003/large/nomnom-figures-beautyshot-01.jpg?1722081784",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/078/430/024/large/nomnom-figures-turntable-01.jpg?1722081791",
+    "name": "Makima y Denji - Chainsaw Man",
+    "options": [
+      {
+        "height": "9,4cm",
+        "price": "30€"
+      },
+      {
+        "height": "22,3 cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/078/338/936/large/nomnom-figures-beautyshot-01.jpg?1721829916",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/078/338/952/large/nomnom-figures-turntable-02.jpg?1721829902",
+    "name": "Chibi Senshi - Tragones y Mazmorras",
+    "options": [
+      {
+        "height": "9,2cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/079/129/082/large/nomnom-figures-beautyshot-01.jpg?1724072275",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/079/151/225/large/nomnom-figures-turntable-02.jpg?1724124989",
+    "name": "Sailor Moon  ",
+    "options": [
+      {
+        "height": "9,3cm",
+        "price": "25€"
+      },
+      {
+        "height": "22,1cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/078/955/371/large/nomnom-figures-mimicchest-beautyshot.jpg?1723552734",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/078/955/379/large/nomnom-figures-turntable-01.jpg?1723552676",
+    "name": "Chibi Mimic - Frieren",
+    "options": [
+      {
+        "height": "8,9cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/076/020/803/large/nomnom-figures-beautyshot-01.jpg?1715960353",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/076/020/824/large/nomnom-figures-turntable-01.jpg?1715959209",
+    "name": "Fern - Frieren",
+    "options": [
+      {
+        "height": "9,7cm",
+        "price": "25€"
+      },
+      {
+        "height": "22,5cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/076/105/575/large/nomnom-figures-beautyshot-01.jpg?1716208555",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/076/105/599/large/nomnom-figures-turntable-01.jpg?1716208541",
+    "name": "Drizzt DoUrden - Baldur's Gate",
+    "options": [
+      {
+        "height": "9,8cm",
+        "price": "30€"
+      },
+      {
+        "height": "21,5cm",
         "price": "75€"
       }
     ]

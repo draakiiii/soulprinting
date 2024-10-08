@@ -969,7 +969,7 @@
       },
       {
         "height": "22,3 cm",
-        "price": "75€"
+        "price": "65€"
       }
     ]
   },
@@ -1036,6 +1036,21 @@
       },
       {
         "height": "21,5cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/067/480/252/large/nomnom-figures-arthas-beautyshot-04.jpg?1701780272",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/067/480/260/large/nomnom-figures-scaling.jpg?1695469784",
+    "name": "Arthas - World of Warcraft",
+    "options": [
+      {
+        "height": "9,7cm",
+        "price": "30€"
+      },
+      {
+        "height": "26,8cm",
         "price": "75€"
       }
     ]

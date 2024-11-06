@@ -1,20 +1,5 @@
 [
   {
-    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/061/474/890/large/nomnom-figures-malenia-beautyshot.jpg?1680879521",
-    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/061/474/900/large/nomnom-figures-scaling.jpg?1680879435",
-    "name": "Malenia - Elden Ring",
-    "options": [
-      {
-        "height": "17,2 cm",
-        "price": "45€"
-      },
-      {
-        "height": "39,4 cm",
-        "price": "125€"
-      }
-    ]
-  },
-  {
     "defaultImage": "https://img-new.cgtrader.com/items/3812588/2637028507/ranni-the-witch-elden-ring-3d-model-2637028507.jpg",
     "hoverImage": "https://img-new.cgtrader.com/items/3812588/e9aa1afc7d/ranni-the-witch-elden-ring-3d-model-e9aa1afc7d.jpg",
     "name": "Ranni - Elden Ring",
@@ -111,7 +96,7 @@
       },
       {
         "height": "21,7 cm",
-        "price": "45€"
+        "price": "50€"
       }
     ]
   },
@@ -126,7 +111,7 @@
       },
       {
         "height": "14,5 cm",
-        "price": "45€"
+        "price": "50€"
       }
     ]
   },
@@ -185,7 +170,22 @@
       },
       {
         "height": "26,1 cm",
-        "price": "75€"
+        "price": "70€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/061/474/890/large/nomnom-figures-malenia-beautyshot.jpg?1680879521",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/061/474/900/large/nomnom-figures-scaling.jpg?1680879435",
+    "name": "Malenia - Elden Ring",
+    "options": [
+      {
+        "height": "17,2 cm",
+        "price": "45€"
+      },
+      {
+        "height": "39,4 cm",
+        "price": "125€"
       }
     ]
   },
@@ -230,7 +230,7 @@
       },
       {
         "height": "23,0 cm",
-        "price": "85€"
+        "price": "80€"
       }
     ]
   },
@@ -245,7 +245,7 @@
       },
       {
         "height": "22,7 cm",
-        "price": "65€"
+        "price": "70€"
       }
     ]
   },
@@ -403,21 +403,6 @@
     ]
   },
   {
-    "defaultImage": "https://cdn.wallapop.com/images/10420/fg/ne/__/c10420p934958169/i3478873980.jpg?pictureSize=W640",
-    "hoverImage": "https://cdn.thingiverse.com/assets/17/13/ae/8e/8a/large_display_4cc316da-1aba-4c5d-855a-4d5e9df62e55.png",
-    "name": "Riebeck - Outer Wilds",
-    "options": [
-      {
-        "height": "6 cm (recomendado)",
-        "price": "12€"
-      },
-      {
-        "height": "12 cm",
-        "price": "30€"
-      }
-    ]
-  },
-  {
     "defaultImage": "https://i.redd.it/leon-kennedy-v0-1umh0k4hi72b1.png?width=2160&format=png&auto=webp&s=b1f55be0699d33124d756a5227c642a9740c7ea6",
     "hoverImage": "https://preview.redd.it/5ck28v4hi72b1.png?width=640&crop=smart&auto=webp&s=d7164f56f1a0da1997864ca71c6539a325f66e2f",
     "name": "Leon - Resident Evil",
@@ -569,7 +554,7 @@
   {
     "defaultImage": "https://files.cults3d.com/uploaders/13839022/illustration-file/840330b1-02bd-4d36-a109-6d606a64c6a7/SonGokuDiorama.png",
     "hoverImage": "https://files.cults3d.com/uploaders/13839022/illustration-file/96c6955d-d800-445e-a4bd-2d7704ff98c5/IMG_20231104_234002_088.jpg",
-    "name": "Dragon Ball diorama",
+    "name": "Diorama - Dragon Ball",
     "options": [
       {
         "height": "30,2 cm",
@@ -670,7 +655,7 @@
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/071/814/956/large/nomnom-figures-beautyshot-01.jpg?1706013069",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/071/814/967/large/nomnom-figures-turntable-4.jpg?1706013064",
-    "name": "Gandalf the White - Lord of the Rings",
+    "name": "Gandalf the White - El Señor de los Anillos",
     "options": [
       {
         "height": "11,9 cm",
@@ -789,7 +774,7 @@
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/074/191/030/large/nomnom-figures-beautyshot-01.jpg?1711469835",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/074/191/127/large/nomnom-figures-turntable-02.jpg?1711465513",
-    "name": "Gimli y Legolas - El señor de los anillos",
+    "name": "Gimli y Legolas - El Señor de los Anillos",
     "options": [
       {
         "height": "10,4 cm",
@@ -873,21 +858,6 @@
     ]
   },
   {
-    "defaultImage": "https://fbi.cults3d.com/uploaders/34353411/photo-file/f14d6b34-bd9c-44c8-9466-3134b852b5d9/WhatsApp-Image-2024-05-06-at-13.56.30.jpeg",
-    "hoverImage": "https://fbi.cults3d.com/uploaders/34353411/photo-file/f14d6b34-bd9c-44c8-9466-3134b852b5d9/WhatsApp-Image-2024-05-06-at-13.56.30.jpeg",
-    "name": "Pack completo exploradores - Outer Wilds",
-    "options": [
-      {
-        "height": "4-8 cm (recomendado)",
-        "price": "45€"
-      },
-      {
-        "height": "10-14 cm",
-        "price": "100€"
-      }
-    ]
-  },
-  {
     "defaultImage": "https://public-files.gumroad.com/qae5clfwsxstht1atvcv6yubg25q",
     "hoverImage": "https://public-files.gumroad.com/he92672nh8gcaz25l808p9jlq1lr",
     "name": "Griffith - Berserk",
@@ -929,9 +899,9 @@
     ]
   },
   {
-    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/079/255/844/large/nomnom-figures-beautyshot-01.jpg?1724401338",
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/079/281/769/large/nomnom-figures-beautyshot-01new.jpg?1724462830",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/079/255/859/large/nomnom-figures-turntable-01.jpg?1724401327",
-    "name": "Sauron - El señor de los anillos",
+    "name": "Sauron - El Señor de los Anillos",
     "options": [
       {
         "height": "10,8cm",
@@ -1052,6 +1022,299 @@
       {
         "height": "26,8cm",
         "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/081/593/329/large/nomnom-figures-beautyshot-01.jpg?1730721827",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/081/593/344/large/nomnom-figures-turntable-01.jpg?1730721825",
+    "name": "Hades - Hercules",
+    "options": [
+      {
+        "height": "9,4cm",
+        "price": "25€"
+      },
+      {
+        "height": "21,9cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/081/384/887/large/nomnom-figures-shiva-beautyshot-01.jpg?1730130723",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/081/384/897/large/nomnom-figures-turntable-01.jpg?1730130249",
+    "name": "Shiva - Final Fantasy XVI",
+    "options": [
+      {
+        "height": "12,8cm",
+        "price": "35€"
+      },
+      {
+        "height": "29,4cm",
+        "price": "95€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/081/378/112/large/nomnom-figures-beautyshot-marcille-v1.jpg?1730118589",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/081/378/153/large/nomnom-figures-turntable-02.jpg?1730118491",
+    "name": "Chibi Marcille Donato - Dungeon Meshi",
+    "options": [
+      {
+        "height": "8,7cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/081/175/166/large/nomnom-figures-beautyshot-01.jpg?1729587877",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/081/175/197/large/nomnom-figures-turntable-01.jpg?1729587126",
+    "name": "Vegeta Vs Broly - Dragon Ball Z",
+    "options": [
+      {
+        "height": "9,0cm",
+        "price": "30€"
+      },
+      {
+        "height": "21,0cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/081/060/381/large/nomnom-figures-beautyshot-01.jpg?1729255743",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/081/060/399/large/nomnom-figures-turntable-01.jpg?1729255570",
+    "name": "Kaiju No. 8",
+    "options": [
+      {
+        "height": "8,1cm",
+        "price": "25€"
+      },
+      {
+        "height": "20,8cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/080/987/689/large/nomnom-figures-mirko-beautyshot.jpg?1729080525",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/080/987/693/large/nomnom-figures-scaleparts.jpg?1729080501",
+    "name": "Mirko - My Hero Academia",
+    "options": [
+      {
+        "height": "18,3cm",
+        "price": "45€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/080/887/971/large/nomnom-figures-anyaxbond-beautyshot.jpg?1728821078",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/080/887/975/large/nomnom-figures-scaleparts.jpg?1728820219",
+    "name": "Anya x Bond - SpyxFamily",
+    "options": [
+      {
+        "height": "12,3cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/080/246/142/large/nomnom-figures-ankha-beautyshot.jpg?1727094504",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/080/246/102/large/nomnom-figures-turntable-01.jpg?1727094309",
+    "name": "Chibi Ankha - Animal Crossing",
+    "options": [
+      {
+        "height": "7,4cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/080/319/140/large/nomnom-figures-beautyshot-01.jpg?1727264542",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/080/319/153/large/nomnom-figures-turntable-01.jpg?1727264539",
+    "name": "Doom Guy - Doom",
+    "options": [
+      {
+        "height": "8,0cm",
+        "price": "30€"
+      },
+      {
+        "height": "20,4cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/080/390/592/large/nomnom-figures-beautyshot-01.jpg?1727436357",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/080/390/617/large/nomnom-figures-turntable-01.jpg?1727436324",
+    "name": "Levi Ackerman - Attack on Titan",
+    "options": [
+      {
+        "height": "10,2cm",
+        "price": "30€"
+      },
+      {
+        "height": "23,4cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/080/644/960/large/nomnom-figures-beautyshot-01.jpg?1728126302",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/080/644/978/large/nomnom-figures-turntable-02.jpg?1728126312",
+    "name": "9S - NieR Automata",
+    "options": [
+      {
+        "height": "8,9cm",
+        "price": "30€"
+      },
+      {
+        "height": "19,8cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/080/701/280/large/nomnom-figures-stark-beautyshot.jpg?1728303708",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/080/701/273/large/nomnom-figures-scaleparts.jpg?1728303565",
+    "name": "Stark - Frieren Beyond Journey's End",
+    "options": [
+      {
+        "height": "17,7cm",
+        "price": "45€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/080/767/964/large/nomnom-figures-sinon-beautyshot.jpg?1728465998",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/080/767/959/large/nomnom-figures-scaleparts.jpg?1728465955",
+    "name": "Sinon - Sword Art Online",
+    "options": [
+      {
+        "height": "21,8cm",
+        "price": "50€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/080/838/684/large/nomnom-figures-beautyshot-this-is-fine.jpg?1728648535",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/080/838/691/large/nomnom-figures-turntable-01.jpg?1728648529",
+    "name": "Chibi This is Fine Meme",
+    "options": [
+      {
+        "height": "7,0cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/080/162/445/large/nomnom-figures-beautyshot-01.jpg?1726835066",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/080/162/476/large/nomnom-figures-turntable-01.jpg?1726835062",
+    "name": "A2 - NieR: Automata",
+    "options": [
+      {
+        "height": "9,4cm",
+        "price": "30€"
+      },
+      {
+        "height": "20,1cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/079/946/914/large/nomnom-figures-lugia-beautyshot.jpg?1726232718",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/079/946/919/large/nomnom-figures-turntable-01.jpg?1726232505",
+    "name": "Chibi Lugia - Pokemon",
+    "options": [
+      {
+        "height": "7,3cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/079/876/069/large/nomnom-figures-olivier-beautyshot.jpg?1726056892",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/079/876/071/large/nomnom-figures-scaleparts.jpg?1726056739",
+    "name": "Olivier Armstrong - Fullmetal Alchemist",
+    "options": [
+      {
+        "height": "22,1cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/079/770/873/large/nomnom-figures-megaera-beautyshot.jpg?1725793270",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/079/770/875/large/nomnom-figures-scaleparts.jpg?1725793157",
+    "name": "Megaera - Hades",
+    "options": [
+      {
+        "height": "23,7cm",
+        "price": "60€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/079/717/310/large/nomnom-figures-misty-beautyshot.jpg?1725624713",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/079/717/314/large/nomnom-figures-scaleparts.jpg?1725624620",
+    "name": "Misty - Pokemon",
+    "options": [
+      {
+        "height": "20,3cm",
+        "price": "50€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/079/717/401/large/nomnom-figures-yuji-beautyshot.jpg?1725624840",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/079/612/125/large/nomnom-figures-scaleparts.jpg?1725374218",
+    "name": "Yuji Itadori - Jujutsu Kaisen",
+    "options": [
+      {
+        "height": "21,0cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/079/410/821/large/nomnom-figures-ein-beautyshot.jpg?1724846691",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/079/410/825/large/nomnom-figures-turntable-01.jpg?1724846626",
+    "name": "Chibi Ein & Edward - Cowboy Bebop",
+    "options": [
+      {
+        "height": "7,1cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/079/340/424/large/nomnom-figures-beautyshot-01.jpg?1724673924",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/079/340/448/large/nomnom-figures-turntable-01.jpg?1724668749",
+    "name": "Artorias - Dark Souls",
+    "options": [
+      {
+        "height": "8,3cm",
+        "price": "30€"
+      },
+      {
+        "height": "17,9cm",
+        "price": "60€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/068/407/337/large/nomnom-figures-beautyshot-01.jpg?1697723919",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/068/407/368/large/nomnom-figures-turntable-front.jpg?1697723852",
+    "name": "Pyramid Head - Silent Hill",
+    "options": [
+      {
+        "height": "9,0cm",
+        "price": "30€"
+      },
+      {
+        "height": "21,4cm",
+        "price": "65€"
       }
     ]
   }

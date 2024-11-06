@@ -39,10 +39,16 @@
       </div>
 
       <div class="total-price-container">
-        Subtotal: <span id="subtotal-price" class="total-price-value">0€</span>
-        <div id="discount" class="discount-info"></div>
-        <div id="shipping-cost" class="shipping-info"></div>
-        Total: <span id="total-price" class="total-price-value">0€</span>
+        <div class="price-breakdown">
+            <div class="price-line">
+                Subtotal: <span id="subtotal-price" class="total-price-value">0€</span>
+            </div>
+            <div class="price-line" id="discount"></div>
+            <div class="price-line" id="shipping-cost"></div>
+            <div class="price-line total">
+                Total: <span id="total-price" class="total-price-value">0€</span>
+            </div>
+        </div>
       </div>
       <!-- ... -->
 

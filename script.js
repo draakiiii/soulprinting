@@ -115,12 +115,14 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="product-image">
         <img src="placeholder.jpg" data-src="${product.defaultImage}" alt="${product.name}" class="default-image lazy">
         <img src="placeholder.jpg" data-src="${product.hoverImage}" alt="${product.name}" class="hover-image lazy">
+        <div class="discount-badge">-20%</div>
       </div>
       <div class="product-details">
         <div class="name">${product.name}</div>
         <div class="description">
           <p data-label="Altura">${heights}</p>
-          <p data-label="Precio Original">${prices}</p>
+          <p data-label="Precio" class="original-price"><s>${prices}</s></p>
+          <p data-label="Precio Black Friday" class="discounted-price">${discountedPrices}</p>
         </div>
         <button class="add-to-cart" data-product-id="${product.id}">Agregar a la cesta</button>
       </div>

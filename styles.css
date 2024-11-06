@@ -780,3 +780,39 @@ button:hover {
     cursor: not-allowed;
 }
 
+.promo-banner {
+  background-color: #ff0000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.original-price {
+  color: #999;
+  font-size: 0.9em;
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.product-image {
+  position: relative;
+}
+

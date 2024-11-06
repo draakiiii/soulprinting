@@ -82,7 +82,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     ${product.options.length > 1 ? `<select class="product-size" data-product-id="${product.id}" style="margin-left: auto;">` : `<p>${product.options[0].height}</p>`}
                     </select>
                 </div>
-                <p data-label="Precio" class="product-price"></p>
+                <p data-label="Precio" class="original-price"><s class="product-original-price"></s></p>
+                <p data-label="Precio Black Friday" class="discounted-price product-price"></p>
             </div>
             <button class="remove-from-cart" data-product-id="${product.id}">Eliminar de la cesta</button>
             `;
@@ -92,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
             const productSizeSelect = productElement.querySelector('.product-size');
             const productPriceElement = productElement.querySelector('.product-price');
+            const productOriginalPriceElement = productElement.querySelector('.product-original-price');
     
             product.options.forEach((option, i) => {
                 const optionElement = document.createElement('option');
@@ -99,7 +101,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 optionElement.text = option.height;
                 if (product.selectedOptionIndex === i) {
                     optionElement.selected = true;
-                    productPriceElement.textContent = option.price;
+                    productOriginalPriceElement.textContent = option.price;
+                    productPriceElement.textContent = calculateDiscountedPrice(option.price);
                 }
                 if (productSizeSelect) {
                     productSizeSelect.appendChild(optionElement);
@@ -108,20 +111,23 @@ document.addEventListener('DOMContentLoaded', function () {
     
             if (productSizeSelect) {
                 if (product.options.length === 1) {
-                    productSizeSelect.style.display = 'none'; // Ocultar si solo hay una opción
-                    product.selectedOptionIndex = 0; // Seleccionar automáticamente la única opción
-                    productPriceElement.textContent = product.options[0].price;
+                    productSizeSelect.style.display = 'none';
+                    product.selectedOptionIndex = 0;
+                    productOriginalPriceElement.textContent = product.options[0].price;
+                    productPriceElement.textContent = calculateDiscountedPrice(product.options[0].price);
                 } else {
                     productSizeSelect.style.display = 'block';
                     if (product.selectedOptionIndex === undefined) {
-                        allSizesSelected = false; // Si alguna opción no está seleccionada, deshabilitar el botón de compra
+                        allSizesSelected = false;
                     }
                 }
         
                 productSizeSelect.addEventListener('change', function (event) {
                     const selectedOptionIndex = event.target.selectedIndex;
                     product.selectedOptionIndex = selectedOptionIndex;
-                    productPriceElement.textContent = product.options[selectedOptionIndex].price;
+                    const originalPrice = product.options[selectedOptionIndex].price;
+                    productOriginalPriceElement.textContent = originalPrice;
+                    productPriceElement.textContent = calculateDiscountedPrice(originalPrice);
                     localStorage.setItem('cart', JSON.stringify(cart));
                     updateCart();
                 });
@@ -142,47 +148,50 @@ document.addEventListener('DOMContentLoaded', function () {
         updateTotalPrice(cart);
     }
 
+    function calculateDiscountedPrice(price) {
+        const originalPrice = parseFloat(price.replace('€', ''));
+        const discountedPrice = originalPrice - (originalPrice * 0.20);
+        return `${discountedPrice.toFixed(2)}€`;
+    }
+
     function updateTotalPrice(cart) {
-        let totalPrice = 0;
-        let priceWithoutShipping = 0;
+        let originalTotal = 0;
+        let discountedTotal = 0;
+
+        // Calcular totales originales y con descuento
         cart.forEach(product => {
             if (product.selectedOptionIndex !== undefined) {
-                priceWithoutShipping += parseFloat(product.options[product.selectedOptionIndex].price.replace('€', ''));
+                const originalPrice = parseFloat(product.options[product.selectedOptionIndex].price.replace('€', ''));
+                originalTotal += originalPrice;
+                const discountedPrice = originalPrice - (originalPrice * 0.20);
+                discountedTotal += discountedPrice;
             }
         });
-        // Calcular descuento antes de añadir costos de envío
-        let discount = 0;
-        let discountMessage = '';
 
-        // Aplicar descuento del código promocional o descuento por cantidad de productos
-        if (appliedPromoCode) {
-            promoCodeDiscount = (promoCodeDiscount / 100) * priceWithoutShipping;
-            discount = promoCodeDiscount;
-            discountMessage = 'Descuento por código promocional aplicado. No se aplica descuento por cantidad.';
-        } else if (cart.length >= 2) {
-            discount = 0.1 * priceWithoutShipping; // 10% de descuento por dos productos
-            let extraDiscount = Math.min(cart.length - 2, 2) * 0.05; // 5% extra por cada producto adicional, hasta un máximo del 20%
-            discount += extraDiscount * priceWithoutShipping;
-            discountMessage = 'Descuento por cantidad de productos aplicado.';
-        }
+        // Calcular el monto del descuento
+        const discountAmount = originalTotal - discountedTotal;
 
-        // Aplicar el descuento al precio sin envío
-        let discountedPrice = priceWithoutShipping - discount;
+        // Añadir costos de envío si el precio con descuento es menor a 35€
+        const shippingCost = discountedTotal > 0 && discountedTotal < 35 ? 6 : 0;
+        const finalTotal = discountedTotal + shippingCost;
 
-        // Añadir costos de envío si el precio con descuento es menor a 50€
-        const shippingCost = discountedPrice > 0 && discountedPrice < 50 ? 6 : 0;
-        totalPrice = discountedPrice + shippingCost;
+        // Actualizar el DOM con el desglose completo
+        document.getElementById('subtotal-price').textContent = `${originalTotal.toFixed(2)}€`;
+        document.getElementById('discount').innerHTML = `
+            <div class="discount-line">
+                - ${discountAmount.toFixed(2)}€ (Black Friday -20%)
+            </div>
+        `;
+        document.getElementById('shipping-cost').textContent = 
+            shippingCost > 0 ? 
+            `+ ${shippingCost.toFixed(2)}€ (Envío)` : 
+            'Envío gratuito';
+        document.getElementById('total-price').textContent = `${finalTotal.toFixed(2)}€`;
 
-        // Actualizar el DOM con el precio total, el descuento y los costos de envío
-        document.getElementById('subtotal-price').textContent = `${priceWithoutShipping.toFixed(2)}€`;
-        document.getElementById('total-price').textContent = `${totalPrice.toFixed(2)}€`;
-        document.getElementById('discount').textContent = discount > 0 ? `- ${discount.toFixed(2)}€ (${discountMessage})` : '';
-        document.getElementById('shipping-cost').textContent = shippingCost > 0 ? `+ ${shippingCost.toFixed(2)}€ (Envío)` : 'Envío gratuito';
-
-        // Mostrar notificación al usuario sobre la promoción
-        if (appliedPromoCode) {
-            showNotification('La promoción no es acumulable con el descuento por cantidad de productos.', 'blue');
-        }
+        // Añadir estilos para el descuento
+        const discountElement = document.getElementById('discount');
+        discountElement.style.color = '#e60000';
+        discountElement.style.fontWeight = 'bold';
     }
 
     function updateCart() {

@@ -1317,5 +1317,38 @@
         "price": "65€"
       }
     ]
+  },
+  {
+    "defaultImage": "https://public-files.gumroad.com/zhaqm6yse2nlu8vc3r32lsyll2bv",
+    "hoverImage": "https://public-files.gumroad.com/frc265kxm5m9j25298kbmicbh6mu",
+    "name": "Goku y Tao Pai Pai - Dragon Ball",
+    "options": [
+      {
+        "height": "20,0cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://public-files.gumroad.com/9u7f3tq1zhot6e8vzs6y8z526ufc",
+    "hoverImage": "https://public-files.gumroad.com/ey10dobj1fw9shfjiw6jc6grjy0f",
+    "name": "Red Rybon - Dragon Ball",
+    "options": [
+      {
+        "height": "16,0cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://public-files.gumroad.com/tpbmc8ef1oz60ycvhziktm65vy5a",
+    "hoverImage": "https://public-files.gumroad.com/cr2tl2orsxld5nmi3684dp10ybpp",
+    "name": "Goku - Dragon Ball Z",
+    "options": [
+      {
+        "height": "20,0cm",
+        "price": "60€"
+      }
+    ]
   }
 ]

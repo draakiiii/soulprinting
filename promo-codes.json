@@ -2,5 +2,13 @@
   "THEREAL20": {
     "descuento": 20,
     "caducidad": "12/31/2024"
+  },
+  "MANEL30": {
+    "descuento": 30,
+    "caducidad": "12/31/2025"
+  },
+  "GRACIAS20": {
+    "descuento": 20,
+    "caducidad": "12/31/2026"
   }
 }

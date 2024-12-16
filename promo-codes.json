@@ -10,5 +10,9 @@
   "GRACIAS20": {
     "descuento": 20,
     "caducidad": "12/31/2026"
+  },
+  "MARC30": {
+    "descuento": 30,
+    "caducidad": "06/30/2025"
   }
 }

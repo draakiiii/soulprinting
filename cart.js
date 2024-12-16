@@ -157,31 +157,52 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateTotalPrice(cart) {
         let originalTotal = 0;
         let discountedTotal = 0;
+        const blackFridayDiscount = 0.20; // 20% Black Friday
 
-        // Calcular totales originales y con descuento
+        // Calcular total original
         cart.forEach(product => {
             if (product.selectedOptionIndex !== undefined) {
                 const originalPrice = parseFloat(product.options[product.selectedOptionIndex].price.replace('€', ''));
                 originalTotal += originalPrice;
-                const discountedPrice = originalPrice - (originalPrice * 0.20);
-                discountedTotal += discountedPrice;
             }
         });
 
-        // Calcular el monto del descuento
-        const discountAmount = originalTotal - discountedTotal;
+        // Determinar qué descuento aplicar
+        let finalDiscountPercentage = blackFridayDiscount;
+        let discountSource = 'Black Friday';
+        
+        if (promoCodeDiscount > 0) {
+            const promoDiscountDecimal = promoCodeDiscount / 100;
+            if (promoDiscountDecimal > blackFridayDiscount) {
+                finalDiscountPercentage = promoDiscountDecimal;
+                discountSource = `Código ${appliedPromoCode}`;
+            } else {
+                showNotification('El código de descuento es igual o inferior al descuento actual y no se aplicará', 'red');
+                promoCodeDiscount = 0;
+                appliedPromoCode = null;
+            }
+        }
+
+        // Aplicar el descuento final
+        discountedTotal = originalTotal - (originalTotal * finalDiscountPercentage);
 
         // Añadir costos de envío si el precio con descuento es menor a 35€
         const shippingCost = discountedTotal > 0 && discountedTotal < 35 ? 6 : 0;
         const finalTotal = discountedTotal + shippingCost;
 
-        // Actualizar el DOM con el desglose completo
+        // Actualizar el DOM con el desglose
         document.getElementById('subtotal-price').textContent = `${originalTotal.toFixed(2)}€`;
-        document.getElementById('discount').innerHTML = `
+        
+        // Mostrar el descuento aplicado
+        const discountAmount = originalTotal * finalDiscountPercentage;
+        const discountHTML = `
             <div class="discount-line">
-                - ${discountAmount.toFixed(2)}€ (Black Friday -20%)
+                - ${discountAmount.toFixed(2)}€ (${discountSource} -${(finalDiscountPercentage * 100).toFixed(0)}%)
             </div>
         `;
+        
+        document.getElementById('discount').innerHTML = discountHTML;
+        
         document.getElementById('shipping-cost').textContent = 
             shippingCost > 0 ? 
             `+ ${shippingCost.toFixed(2)}€ (Envío)` : 

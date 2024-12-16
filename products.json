@@ -685,7 +685,7 @@
     "options": [
       {
         "height": "6,1 cm",
-        "price": "20€"
+        "price": "25€"
       }
     ]
   },
@@ -1058,7 +1058,7 @@
   {
     "defaultImage": "https://cdna.artstation.com/p/assets/images/images/081/378/112/large/nomnom-figures-beautyshot-marcille-v1.jpg?1730118589",
     "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/081/378/153/large/nomnom-figures-turntable-02.jpg?1730118491",
-    "name": "Chibi Marcille Donato - Dungeon Meshi",
+    "name": "Chibi Marcille Donato - Tragones y Mazmorras",
     "options": [
       {
         "height": "8,7cm",
@@ -1229,7 +1229,7 @@
     "options": [
       {
         "height": "7,3cm",
-        "price": "30€"
+        "price": "25€"
       }
     ]
   },
@@ -1240,7 +1240,7 @@
     "options": [
       {
         "height": "22,1cm",
-        "price": "55€"
+        "price": "50€"
       }
     ]
   },
@@ -1348,6 +1348,184 @@
       {
         "height": "20,0cm",
         "price": "60€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/082/938/614/large/nomnom-figures-beautyshot-02.jpg?1734350678",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/082/938/622/large/nomnom-figures-scaleparts.jpg?1734350633",
+    "name": "Chibi Beholder - Dungeons and Dragons",
+    "options": [
+      {
+        "height": "7,4cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/082/933/394/large/nomnom-figures-beautyshot-02.jpg?1734339462",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/082/933/397/large/nomnom-figures-scaleparts.jpg?1734339439",
+    "name": "Chibi Chilchuck Tims - Tragones y Mazmorras",
+    "options": [
+      {
+        "height": "6,7cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/082/933/344/large/nomnom-figures-beautyshot-03.jpg?1734339242",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/082/933/327/large/nomnom-figures-scaleparts.jpg?1734339174",
+    "name": "Chibi Laios Touden - Tragones y Mazmorras",
+    "options": [
+      {
+        "height": "6,7cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/082/713/580/large/nomnom-figures-beautyshot-01.jpg?1733748589",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/082/713/592/large/nomnom-figures-turntable-01.jpg?1733748497",
+    "name": "Chibi Themberchaud - Dungeons & Dragons",
+    "options": [
+      {
+        "height": "9,1cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/082/635/473/large/nomnom-figures-beautyshot-01.jpg?1733495472",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/082/635/503/large/nomnom-figures-turntable-01.jpg?1733495343",
+    "name": "Nezuko Kamado - Demon Slayer",
+    "options": [
+      {
+        "height": "6,8cm",
+        "price": "25€"
+      },
+      {
+        "height": "21,3cm",
+        "price": "60€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/082/635/337/large/nomnom-figures-beautyshot-01.jpg?1733495230",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/082/635/361/large/nomnom-figures-turntable-01.jpg?1733495105",
+    "name": "Zenitsu Agatsuma - Demon Slayer",
+    "options": [
+      {
+        "height": "7,7cm",
+        "price": "25€"
+      },
+      {
+        "height": "22,4cm",
+        "price": "60€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/082/635/232/large/nomnom-figures-beautyshot-01.jpg?1733495006",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/082/635/256/large/nomnom-figures-turntable-01.jpg?1733494903",
+    "name": "Inosuke Hashibira - Demon Slayer",
+    "options": [
+      {
+        "height": "7,4cm",
+        "price": "25€"
+      },
+      {
+        "height": "22,4cm",
+        "price": "60€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/082/233/397/large/nomnom-figures-beautyshot-01.jpg?1732448291",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/082/233/404/large/nomnom-figures-turntable-01.jpg?1732448300",
+    "name": "Kyojuro Rengoku - Demon Slayer",
+    "options": [
+      {
+        "height": "8,0cm",
+        "price": "30€"
+      },
+      {
+        "height": "23,8cm",
+        "price": "70€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/082/301/378/large/nomnom-figures-beautyshot-01.jpg?1732625681",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/082/301/412/large/nomnom-figures-turntable-01.jpg?1732625683",
+    "name": "Ezio Auditore - Assassin's Creed",
+    "options": [
+      {
+        "height": "11,7cm",
+        "price": "30€"
+      },
+      {
+        "height": "28,0cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/082/178/745/large/nomnom-figures-beautyshot-01.jpg?1732280259",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/082/178/748/large/nomnom-figures-scaleparts.jpg?1732268280",
+    "name": "Chibi Going Merry - One Piece",
+    "options": [
+      {
+        "height": "9,5cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/082/077/673/large/nomnom-figures-beautyshot-01.jpg?1732018195",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/082/077/697/large/nomnom-figures-turntable-01.jpg?1732018205",
+    "name": "Dark Magician Girl - Yu-Gi-Oh!",
+    "options": [
+      {
+        "height": "9,1cm",
+        "price": "30€"
+      },
+      {
+        "height": "23,1cm",
+        "price": "60€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/082/002/335/large/nomnom-figures-beautyshot-adawong.jpg?1731827790",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/082/002/338/large/nomnom-figures-turntable.jpg?1731827783",
+    "name": "Ada Wong - Resident Evil",
+    "options": [
+      {
+        "height": "16,7cm",
+        "price": "45€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/081/929/138/large/nomnom-figures-beautyshot-01.jpg?1731672275",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/081/929/145/large/nomnom-figures-turntable-01.jpg?1731596079",
+    "name": "Chibi Meowscular Chef - Monster Hunter",
+    "options": [
+      {
+        "height": "6,8cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/081/924/082/large/nomnom-figures-anntakamaki-beautyshot.jpg?1731585921",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/081/924/095/large/nomnom-figures-turntable.jpg?1731585914",
+    "name": "Ann Takamaki - Persona 5",
+    "options": [
+      {
+        "height": "23,3cm",
+        "price": "50€"
       }
     ]
   }

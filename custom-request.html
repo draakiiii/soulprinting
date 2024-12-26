@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de figura personalizada</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <p>draakiiii - solicitud de figura personalizada</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Catálogo</a></li>
+        <li><a href="faq.html">Preguntas frecuentes</a></li>
+        <li><a href="#">Solicitar figura personalizada</a></li>
+        <li><a href="#" id="confirm-purchase"><i class="fas fa-shopping-cart"></i> Cesta <span id="cart-count"></span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="custom-request">
+      <h2>Solicitud de figura personalizada</h2>
+      <p class="description">¿No encuentras la figura que buscas? ¡No hay problema! Rellena este formulario y me pondré en contacto contigo para discutir los detalles.</p>
+      
+      <div class="custom-request-form">
+        <input type="text" id="name-input" placeholder="Nombre y apellido" required>
+        <input type="email" id="email-input" placeholder="Email" required>
+        <input type="text" id="figure-name-input" placeholder="Nombre de la figura que deseas" required>
+        <textarea id="figure-description" placeholder="Descripción detallada de la figura (personaje, pose, tamaño aproximado, diseñador, etc.)" rows="5" required></textarea>
+        <textarea id="additional-notes" placeholder="Notas adicionales (opcional)" rows="3"></textarea>
+        <button id="submit-request">Enviar solicitud</button>
+      </div>
+
+      <div class="info-section">
+        <h3>Información importante</h3>
+        <ul>
+          <li>Una vez envíes la solicitud, me pondré en contacto contigo en un máximo de 48 horas.</li>
+          <li>Para agilizar el proceso, puedes enviar imágenes de referencia a draakiiiifigures@gmail.com</li>
+          <li>El precio final dependerá del tamaño y complejidad de la figura. Puedes indicar el precio que tengas en mente en las notas adicionales, pero no siempre se podrá mantener.</li>
+          <li>El tiempo de producción puede variar según la complejidad del modelo.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <div id="notification-container" class="notification-container"></div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('DeIfgGqMtsWtFM_GR');
+    })();
+  </script>
+  <script src="custom-request.js"></script>
+</body>
+
+</html> 

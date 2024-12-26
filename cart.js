@@ -262,10 +262,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Enviar email al administrador
         emailjs.send('service_wg7uw2n', 'template_1lrf8gi', templateParams)
             .then(function (response) {
-                // Si el email al administrador se envía con éxito, enviar email al cliente
-                return emailjs.send("service_wg7uw2n", "template_kvlfl9b", templateParams);
-            })
-            .then(function (response) {
                 showNotification('Tu pedido ha sido recibido. Te hemos enviado un email de confirmación.', 'green');
                 cart = [];
                 localStorage.removeItem('cart');

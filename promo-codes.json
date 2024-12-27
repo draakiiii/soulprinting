@@ -14,5 +14,9 @@
   "MARC30": {
     "descuento": 30,
     "caducidad": "06/30/2025"
+  },
+  "30DESCUENTO2025": {
+    "descuento": 30,
+    "caducidad": "12/30/2025"
   }
 }

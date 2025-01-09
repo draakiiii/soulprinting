@@ -21,7 +21,7 @@ while True:
     if not height:
         break
     price = input("Introduce el precio del producto: ")
-    options.append({"height": f"{height}cm", "price": price})
+    options.append({"height": f"{height}cm", "price": price + "€"})
 
 # Crear el nuevo producto
 new_product = {

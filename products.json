@@ -1528,5 +1528,252 @@
         "price": "50€"
       }
     ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/083/426/066/large/nomnom-figures-beautyshot-01.jpg?1735907404",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/083/426/085/large/nomnom-figures-turntable-01.jpg?1735907409",
+    "name": "Armored Titan - Attack on Titan",
+    "options": [
+      {
+        "height": "7,9",
+        "price": "30€"
+      },
+      {
+        "height": "17,90",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/083/245/135/large/nomnom-figures-beautyshot-01.jpg?1735300358",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/083/245/146/large/nomnom-figures-turntable-01.jpg?1735300363",
+    "name": "Momo Ayase - DanDaDan",
+    "options": [
+      {
+        "height": "8,4",
+        "price": "30€"
+      },
+      {
+        "height": "18",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/083/160/257/large/nomnom-figures-beautyshot-01.jpg?1734965845",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/083/160/279/large/nomnom-figures-turntable-02.jpg?1734965660",
+    "name": "Mulan",
+    "options": [
+      {
+        "height": "9,7cm",
+        "price": "25€"
+      },
+      {
+        "height": "24,3cm",
+        "price": "70€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/083/079/734/large/nomnom-figures-beautyshot-01.jpg?1734700733",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/083/079/748/large/nomnom-figures-turntable-01.jpg?1734700235",
+    "name": "Skull Kid - The Legend of Zelda",
+    "options": [
+      {
+        "height": "10,3cm",
+        "price": "25€"
+      },
+      {
+        "height": "22,4cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/083/634/718/large/nomnom-figures-beautyshot-01.jpg?1736427693",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/083/634/733/large/nomnom-figures-turntable-01.jpg?1736427578",
+    "name": "Chibi Alphonse Elric - Full Metal Alchemist",
+    "options": [
+      {
+        "height": "7,2cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/dec79217-3bb8-4bdb-ae4d-1b3df6139b22/Dark-Urge-cover.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/3eab9999-db3a-49f4-a10c-5611d558b2c0/IMG_1096.jpg",
+    "name": "Dark Urge - Baldur's Gate",
+    "options": [
+      {
+        "height": "19cm",
+        "price": "40€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/93248270-91de-436a-a893-4cc5fd3c4b39/Withers-Cover.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/234ca249-97be-406d-9398-a0fb0bd9227e/Withers.jpg",
+    "name": "Withers - Baldur's Gate",
+    "options": [
+      {
+        "height": "21,7cm",
+        "price": "40€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/299a8d6d-f2a8-4eea-b9e6-b0f4380df2fc/Thanatos-Cover.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/30b5c2be-53c7-4b07-9c53-d4f4eb04e91e/Thanatos.jpg",
+    "name": "Thanatos - Hades",
+    "options": [
+      {
+        "height": "25cm",
+        "price": "50€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/8603844b-6962-40b8-afc7-0f41f72c0d52/Penguin.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/4df0dde9-7374-4b05-b4f8-cc9e00d09a7d/IMG_2766.jpg",
+    "name": "Oz - The Penguin",
+    "options": [
+      {
+        "height": "15,9cm",
+        "price": "40€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/37fd3e94-89bd-4a69-9dfa-538e939d0265/Boromir1.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/9ae15180-86f7-48ff-b6c9-fec5c9a00d4e/IMG_2678.jpg",
+    "name": "Boromir - Lord of the Rings",
+    "options": [
+      {
+        "height": "14,9cm",
+        "price": "40€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/a0d2f407-501d-4f0b-a387-4d71ac008270/Davy-Jones-1.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/22e83b62-0b92-4c83-9597-23516d14d172/IMG_2562.jpg",
+    "name": "Davy Jones - Piratas del Caribe",
+    "options": [
+      {
+        "height": "18,5cm",
+        "price": "50€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/63585992-9319-4171-9430-3b2c173b2402/Wyll_Camera-1_008.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/47580c38-370e-4482-92d7-69fc11b4ca4a/Wyll_Camera-1_001.jpg",
+    "name": "Wyll - Baldur's Gate",
+    "options": [
+      {
+        "height": "16,9cm",
+        "price": "40€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://images.cults3d.com/aqUU-r__NMAakkauMNz8DPbcsSw=/516x516/filters:no_upscale():format(webp)/https://fbi.cults3d.com/uploaders/17692568/illustration-file/a9507544-5f32-4322-93c1-1a09a5e11856/Wolverine_Camera-1_007.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/a55dc656-2476-4b71-9c55-5fb0474a25af/IMG_2271.jpg",
+    "name": "Wolverine",
+    "options": [
+      {
+        "height": "17,2cm",
+        "price": "45€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/8039a6b6-3ba3-41c1-803b-dccdd3b35ef9/Gordon_Camera-1.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/1bbbafb8-0990-4325-8ee7-9f3f1d8e8bc6/IMG_2219.jpg",
+    "name": "Gordon Freeman",
+    "options": [
+      {
+        "height": "20,5cm",
+        "price": "40€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/17692568/illustration-file/aaf2ee90-077d-40bd-9049-da2d277e2f9b/AstarionStand_Camera-1_001.jpg",
+    "hoverImage": "https://images.cults3d.com/JFXoJQOkyk0N0p68AXUwUMGu4xs=/516x516/filters:no_upscale():format(webp)/https://fbi.cults3d.com/uploaders/17692568/illustration-file/4663d405-f479-4857-b1a7-132d66205aff/IMG_1020.jpg",
+    "name": "Soporte para teléfono Astarion - Baldur's Gate",
+    "options": [
+      {
+        "height": "13,4cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/3c9c230d-94f1-414e-9acf-4c51051a0811/Wukong_color-1.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/814188cf-9ddd-4131-bcc7-25e2d5cd873b/Wukong_dimensions.jpg",
+    "name": "Destined One - Black Myth: Wukong",
+    "options": [
+      {
+        "height": "32,7cm",
+        "price": "70€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/05a42dc4-53c6-4eff-8279-a6a722a8090d/rust_color-1.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/a8e93413-153d-492c-a490-ca61fe2a9437/rust_dimensions.jpg",
+    "name": "Survivor",
+    "options": [
+      {
+        "height": "23,8cm",
+        "price": "45€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/51acaf3a-9e25-4312-91b9-9fd43b3eafda/emperor_color-1.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/8b908f97-62ea-483c-ae37-3ba3056dc77a/emperor_dimensions.jpg",
+    "name": "The Emperor - Baldur's Gate",
+    "options": [
+      {
+        "height": "36,5cm",
+        "price": "70€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/650c0f02-7950-42fc-be49-c2768d94c4ff/laezel_color-1.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/33480bdc-0772-40d3-94bb-70687aeb8eb3/laezel_dimensions.jpg",
+    "name": "Lae'zel - Baldur's Gate",
+    "options": [
+      {
+        "height": "27,7cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/6bed9757-99e6-4ab1-b92a-65c622eed964/Orin_color-1.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/71b6f57c-16d4-4196-86e9-f84d748180bf/Orin_dimensions.jpg",
+    "name": "Orin the Red - Baldur's Gate",
+    "options": [
+      {
+        "height": "20,4cm",
+        "price": "45€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/7dd5c4ef-a3da-47d6-9341-adbd1173a754/camp_pets_color-1.jpg",
+    "hoverImage": "https://fbi.cults3d.com/uploaders/19485196/illustration-file/c6d0cfbb-bbfd-43c0-b487-907d5a6c030b/camp_pets_dimensions.jpg",
+    "name": "Scratch and Owlbear cub - Baldur's Gate",
+    "options": [
+      {
+        "height": "13,9cm",
+        "price": "40€"
+      }
+    ]
   }
 ]

@@ -96,7 +96,7 @@
       },
       {
         "height": "21,7 cm",
-        "price": "50€"
+        "price": "45€"
       }
     ]
   },
@@ -1155,7 +1155,7 @@
       },
       {
         "height": "23,4cm",
-        "price": "75€"
+        "price": "55€"
       }
     ]
   },
@@ -1315,17 +1315,6 @@
       {
         "height": "21,4cm",
         "price": "65€"
-      }
-    ]
-  },
-  {
-    "defaultImage": "https://public-files.gumroad.com/zhaqm6yse2nlu8vc3r32lsyll2bv",
-    "hoverImage": "https://public-files.gumroad.com/frc265kxm5m9j25298kbmicbh6mu",
-    "name": "Goku y Tao Pai Pai - Dragon Ball",
-    "options": [
-      {
-        "height": "20,0cm",
-        "price": "75€"
       }
     ]
   },

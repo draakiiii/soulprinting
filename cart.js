@@ -186,8 +186,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Aplicar el descuento final
         discountedTotal = originalTotal - (originalTotal * finalDiscountPercentage);
 
-        // Añadir costos de envío si el precio con descuento es menor a 35€
-        const shippingCost = discountedTotal > 0 && discountedTotal < 35 ? 6 : 0;
+        // Añadir costos de envío si el precio con descuento es menor a 50€
+        const shippingCost = discountedTotal > 0 && discountedTotal < 50 ? 6 : 0;
         const finalTotal = discountedTotal + shippingCost;
 
         // Actualizar el DOM con el desglose

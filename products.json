@@ -1753,5 +1753,57 @@
         "price": "40€"
       }
     ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/083/959/651/large/nomnom-figures-beautyshot-01.jpg?1737202896",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/083/959/676/large/nomnom-figures-turntable-01.jpg?1737202918",
+    "name": "Raziel - Soul Reaver",
+    "options": [
+      {
+        "height": "9,9cm",
+        "price": "25€"
+      },
+      {
+        "height": "22,5cm",
+        "price": "45€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/083/890/205/large/nomnom-figures-arrancar-beautyshot.jpg?1737029359",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/083/890/212/large/nomnom-figures-scaleparts.jpg?1737028942",
+    "name": "Arrancar Ichigo Kurosaki - Bleach",
+    "options": [
+      {
+        "height": "21,1cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/084/100/787/large/nomnom-figures-beautyshot-01.jpg?1737549849",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/084/100/823/large/nomnom-figures-turntable-01.jpg?1737549872",
+    "name": "Yennefer - The Witcher",
+    "options": [
+      {
+        "height": "9,2cm",
+        "price": "25€"
+      },
+      {
+        "height": "21,3cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/084/024/987/large/nomnom-figures-beautyshot-05.jpg?1737380878",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/084/025/008/large/nomnom-figures-turntable-01.jpg?1737380821",
+    "name": "Chibi Growlithe - Pokemon",
+    "options": [
+      {
+        "height": "6,9cm",
+        "price": "25€"
+      }
+    ]
   }
 ]

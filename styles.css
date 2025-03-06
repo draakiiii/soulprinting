@@ -919,3 +919,124 @@ button:hover {
   }
 }
 
+/* Estilos para la sección de escalas */
+.scales-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scales-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.scales-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scales-table th,
+.scales-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.scales-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+.scales-table tr:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+.scales-table td {
+  color: #555;
+}
+
+/* Responsive design para la tabla */
+@media (max-width: 768px) {
+  .scales-table {
+    font-size: 14px;
+  }
+  
+  .scales-table th,
+  .scales-table td {
+    padding: 10px;
+  }
+}
+
+/* Estilos adicionales para la sección de información de escalas */
+.scales-info {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.scales-info h3 {
+  color: #333;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.scales-info p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.scales-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.scales-info li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.scales-info li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* Ajustes responsive para la sección de información */
+@media (max-width: 768px) {
+  .scales-info {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .scales-info h3 {
+    font-size: 1.2em;
+  }
+
+  .scales-info p,
+  .scales-info li {
+    font-size: 0.95em;
+  }
+}
+

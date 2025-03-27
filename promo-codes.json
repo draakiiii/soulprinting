@@ -22,5 +22,9 @@
   "ELONMUSKPAYASO": {
     "descuento": 30,
     "caducidad": "01/30/2025"
+  },
+  "WALLAPOP": {
+    "descuento": 20,
+    "caducidad": "12/30/2026"
   }
 }

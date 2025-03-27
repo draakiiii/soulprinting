@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </select>
                 </div>
                 <p data-label="Precio" class="original-price"><s class="product-original-price"></s></p>
-                <p data-label="Precio Black Friday" class="discounted-price product-price"></p>
+                <p data-label="Precio Oferta" class="discounted-price product-price"></p>
             </div>
             <button class="remove-from-cart" data-product-id="${product.id}">Eliminar de la cesta</button>
             `;
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Determinar qué descuento aplicar
         let finalDiscountPercentage = blackFridayDiscount;
-        let discountSource = 'Black Friday';
+        let discountSource = 'Oferta';
         
         if (promoCodeDiscount > 0) {
             const promoDiscountDecimal = promoCodeDiscount / 100;

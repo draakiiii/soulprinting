@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="description">
           <p data-label="Altura">${heights}</p>
           <p data-label="Precio" class="original-price"><s>${prices}</s></p>
-          <p data-label="Precio Black Friday" class="discounted-price">${discountedPrices}</p>
+          <p data-label="Precio Oferta" class="discounted-price">${discountedPrices}</p>
         </div>
         <button class="add-to-cart" data-product-id="${product.id}">Agregar a la cesta</button>
       </div>

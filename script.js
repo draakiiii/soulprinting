@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function calculateDiscountedPrice(price) {
     const originalPrice = parseFloat(price.replace('€', ''));
-    const discountedPrice = originalPrice - (originalPrice * 0.20);
+    const discountedPrice = originalPrice - (originalPrice * 0.10);
     return `${discountedPrice.toFixed(2)}€`;
   }
 

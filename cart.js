@@ -150,14 +150,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function calculateDiscountedPrice(price) {
         const originalPrice = parseFloat(price.replace('€', ''));
-        const discountedPrice = originalPrice - (originalPrice * 0.20);
+        const discountedPrice = originalPrice - (originalPrice * 0.10);
         return `${discountedPrice.toFixed(2)}€`;
     }
 
     function updateTotalPrice(cart) {
         let originalTotal = 0;
         let discountedTotal = 0;
-        const blackFridayDiscount = 0.20; // 20% Black Friday
+        const blackFridayDiscount = 0.10; // 20% Black Friday
 
         // Calcular total original
         cart.forEach(product => {

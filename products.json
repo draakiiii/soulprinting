@@ -1805,5 +1805,287 @@
         "price": "25€"
       }
     ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/084/733/095/medium/nomnom-figures-sora-beautyshot-lootbox.jpg?1739101445",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/084/733/109/medium/nomnom-figures-scaleparts.jpg?1739101373",
+    "name": "Sora - Kingdom Hearts 3",
+    "options": [
+      {
+        "height": "16,5cm",
+        "price": "45€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/084/237/200/medium/nomnom-figures-beautyshot-01.jpg?1737895382",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/084/237/208/medium/nomnom-figures-turntable-01.jpg?1737895399",
+    "name": "The Dark Lord - Diablo",
+    "options": [
+      {
+        "height": "11,7cm",
+        "price": "30€"
+      },
+      {
+        "height": "29,2cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/084/678/016/medium/nomnom-figures-beautyshot-01.jpg?1738929271",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/084/678/057/medium/nomnom-figures-turntable-01.jpg?1738929169",
+    "name": "Seiko & Granny - DanDaDan",
+    "options": [
+      {
+        "height": "11,8cm",
+        "price": "30€"
+      },
+      {
+        "height": "28cm",
+        "price": "75€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/084/809/444/medium/nomnom-figures-joker-persona-beautyshot-lootbox-edit.jpg?1739275432",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/084/809/450/medium/nomnom-figures-scaleparts.jpg?1739275123",
+    "name": "Joker - Persona 5",
+    "options": [
+      {
+        "height": "18,7cm",
+        "price": "45€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/084/855/495/medium/nomnom-figures-beautyshot-01.jpg?1739367411",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/084/855/515/medium/nomnom-figures-turntable-01.jpg?1739367134",
+    "name": "Felicia Rosemary - Darkstalkers",
+    "options": [
+      {
+        "height": "9,3cm",
+        "price": "25€"
+      },
+      {
+        "height": "21,1cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/084/933/106/medium/nomnom-figures-beautyshot-01.jpg?1739534012",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/084/933/123/medium/nomnom-figures-turntable-01.jpg?1739533932",
+    "name": "Cha Hae-In - Solo Leveling",
+    "options": [
+      {
+        "height": "12,5cm",
+        "price": "30€"
+      },
+      {
+        "height": "26,8cm",
+        "price": "70€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/084/963/613/medium/nomnom-figures-beautyshot-01.jpg?1739626879",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/084/963/646/medium/nomnom-figures-scaleparts.jpg?1739626851",
+    "name": "Chibi Jeff - Marvel Rivals",
+    "options": [
+      {
+        "height": "9,8cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/085/060/078/medium/nomnom-figures-beautyshot-01.jpg?1739885344",
+    "hoverImage": "https://minisanddeco.com/wp-content/uploads/2025/03/Turntable_01-1.jpg",
+    "name": "Chibi Rathalos - Monster Hunter World",
+    "options": [
+      {
+        "height": "9,7cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/085/174/207/medium/nomnom-figures-beautyshot-01.jpg?1740139480",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/085/174/225/medium/nomnom-figures-turntable-01.jpg?1740138153",
+    "name": "Raven - Teen Titans",
+    "options": [
+      {
+        "height": "10cm",
+        "price": "30€"
+      },
+      {
+        "height": "23,5cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/085/231/566/medium/nomnom-figures-beautyshot-01.jpg?1740311967",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/085/231/592/medium/nomnom-figures-turntable-01.jpg?1740311878",
+    "name": "Jin Sakai - Ghost of Tsushima",
+    "options": [
+      {
+        "height": "10cm",
+        "price": "30€"
+      },
+      {
+        "height": "22,6cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/085/484/118/medium/nomnom-figures-beautyshot-01.jpg?1740924599",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/085/484/162/medium/nomnom-figures-scaleparts.jpg?1740924560",
+    "name": "Chibi Astro Bot",
+    "options": [
+      {
+        "height": "8,8cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/085/559/959/medium/nomnom-figures-beautyshot-01.jpg?1741098442",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/085/560/028/medium/nomnom-figures-scaleparts.jpg?1741098143",
+    "name": "Chibi Heimerdinger - Arcane",
+    "options": [
+      {
+        "height": "7,4cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/085/674/057/medium/nomnom-figures-beautyshot-01.jpg?1741353279",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/085/674/082/medium/nomnom-figures-turntable-01.jpg?1741353282",
+    "name": "Crash - Crash Bandicoot",
+    "options": [
+      {
+        "height": "10cm",
+        "price": "30€"
+      },
+      {
+        "height": "20cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/085/821/343/medium/nomnom-figures-dante-devil-mary-cry-beautyshot.jpg?1741721445",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/085/821/352/medium/nomnom-figures-scaleparts.jpg?1741721373",
+    "name": "Dante - Devil May Cry",
+    "options": [
+      {
+        "height": "19cm",
+        "price": "50€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/085/821/456/medium/nomnom-figures-shampo-ranma12-beautyshot-v2.jpg?1741721612",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/085/821/450/medium/nomnom-figures-scaleparts.jpg?1741721503",
+    "name": "Shampoo - Ranma 1/2",
+    "options": [
+      {
+        "height": "18cm",
+        "price": "45€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/085/821/503/medium/nomnom-figures-ainz-ooal-gown-beautyshot.jpg?1741721788",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/085/821/505/medium/nomnom-figures-scaleparts.jpg?1741721669",
+    "name": "Ainz Ooal Gown - Overlord",
+    "options": [
+      {
+        "height": "22,1cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/086/014/010/medium/nomnom-figures-beautyshot-01.jpg?1742213269",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/086/014/016/medium/nomnom-figures-scaleparts.jpg?1742207419",
+    "name": "Chibi Turbo Granny Cat - Dandadan",
+    "options": [
+      {
+        "height": "7,6cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/086/093/308/medium/nomnom-figures-beautyshot-01.jpg?1742376415",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/086/093/331/medium/nomnom-figures-turntable-01.jpg?1742375874",
+    "name": "Raiden - Metal Gear",
+    "options": [
+      {
+        "height": "8,3cm",
+        "price": "30€"
+      },
+      {
+        "height": "19,3cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/086/181/434/medium/nomnom-figures-beautyshot-01.jpg?1742562555",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/086/181/559/medium/nomnom-figures-turntable-01.jpg?1742562693",
+    "name": "Turbo Okarun - Dandadan",
+    "options": [
+      {
+        "height": "8,3cm",
+        "price": "30€"
+      },
+      {
+        "height": "17cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/086/320/134/medium/nomnom-figures-beautyshot-01.jpg?1742901564",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/086/320/149/medium/nomnom-figures-turntable-01.jpg?1742901553",
+    "name": "Illidan Stormrage - World of Warcraft",
+    "options": [
+      {
+        "height": "13,1cm",
+        "price": "40€"
+      },
+      {
+        "height": "30cm",
+        "price": "90€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/086/672/317/medium/nomnom-figures-casca-berserk-beautyshot.jpg?1743769062",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/086/672/322/medium/nomnom-figures-scaleparts.jpg?1743763235",
+    "name": "Casca - Berserk",
+    "options": [
+      {
+        "height": "19,6cm",
+        "price": "50€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/086/734/339/medium/nomnom-figures-shego-kim-possible-beautyshot-v2.jpg?1743952169",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/086/734/354/medium/nomnom-figures-scaleparts.jpg?1743952089",
+    "name": "Shego - Kim Possible",
+    "options": [
+      {
+        "height": "18,2cm",
+        "price": "50€"
+      }
+    ]
   }
 ]

@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="product-image">
         <img src="placeholder.jpg" data-src="${product.defaultImage}" alt="${product.name}" class="default-image lazy">
         <img src="placeholder.jpg" data-src="${product.hoverImage}" alt="${product.name}" class="hover-image lazy">
-        <div class="discount-badge">-20%</div>
+        <div class="discount-badge">-10%</div>
       </div>
       <div class="product-details">
         <div class="name">${product.name}</div>

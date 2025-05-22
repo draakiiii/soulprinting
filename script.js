@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', function () {
   let products = [];
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
   let collections = new Set();
+  let discountConfig = null;
+
+  // Load discount configuration
+  fetch('discount-config.json')
+    .then(response => response.json())
+    .then(config => {
+      discountConfig = config;
+      updateDiscountBanner();
+    })
+    .catch(error => console.error('Error loading discount configuration:', error));
 
   fetch('products.json')
     .then(response => response.json())
@@ -16,6 +26,40 @@ document.addEventListener('DOMContentLoaded', function () {
       populateFilterDropdown(collections);
     })
     .catch(error => console.error('Error loading products:', error));
+
+  // Function to update the discount banner based on config
+  function updateDiscountBanner() {
+    const promoBanner = document.querySelector('.promo-banner');
+    const discountsSection = document.querySelector('.discounts');
+    
+    if (!discountConfig) return;
+
+    if (discountConfig.discountType === 'fixed') {
+      const percentage = discountConfig.fixedDiscount.percentage;
+      const threshold = discountConfig.fixedDiscount.shippingThreshold;
+      promoBanner.textContent = `${percentage}% DE DESCUENTO EN TODO EL CATÁLOGO Y ENVÍO GRATUITO A ESPAÑA PARA PEDIDOS SUPERIORES A ${threshold}€`;
+      discountsSection.hidden = true;
+      
+      // Update discount badges on products
+      document.querySelectorAll('.discount-badge').forEach(badge => {
+        badge.textContent = `-${percentage}%`;
+      });
+    } else {
+      // Quantity-based discount
+      promoBanner.textContent = 'DESCUENTOS POR CANTIDAD EN TODO EL CATÁLOGO';
+      
+      // Generate the tiers text
+      const tiersHTML = discountConfig.quantityDiscount.tiers.map(tier => 
+        `<p>${tier.quantity} productos: ${tier.percentage}%</p>`
+      ).join('');
+      
+      discountsSection.innerHTML = `
+        <p>Descuentos por cantidad (no acumulables con otras promociones):</p>
+        ${tiersHTML}
+      `;
+      discountsSection.hidden = false;
+    }
+  }
 
   const searchInput = document.getElementById('search-input');
   searchInput.addEventListener('input', function () {
@@ -90,7 +134,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function calculateDiscountedPrice(price) {
     const originalPrice = parseFloat(price.replace('€', ''));
-    const discountedPrice = originalPrice - (originalPrice * 0.10);
+    let discountPercentage = 0;
+    
+    if (!discountConfig) {
+      // Si no hay configuración, usar descuento fijo por defecto de 20%
+      discountPercentage = 0.20;
+    } else if (discountConfig.discountType === 'fixed') {
+      discountPercentage = discountConfig.fixedDiscount.percentage / 100;
+    } else {
+      // For quantity discounts, we'll show the fixed discount in catalog
+      // The actual quantity discount will be applied in cart
+      discountPercentage = 0; // No discount shown in product listing for quantity-based
+    }
+    
+    const discountedPrice = originalPrice - (originalPrice * discountPercentage);
     return `${discountedPrice.toFixed(2)}€`;
   }
 
@@ -98,7 +155,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const prices = product.options.map(option => parseFloat(option.price.replace('€', '')));
     return Math.min(...prices);
   }
-
 
   function displayProducts(products) {
     const productContainer = document.querySelector('.product-container');
@@ -109,20 +165,35 @@ document.addEventListener('DOMContentLoaded', function () {
       const prices = product.options.map(option => option.price).join(' / ');
       const discountedPrices = product.options.map(option => calculateDiscountedPrice(option.price)).join(' / ');
 
+      // Determine if we should show discount badges and prices
+      const showDiscounts = discountConfig ? 
+        (discountConfig.discountType === 'fixed' || 
+         (discountConfig.discountType === 'quantity' && discountConfig.quantityDiscount.enabled)) : true;
+      
+      const discountPercentage = discountConfig && discountConfig.discountType === 'fixed' ? 
+        discountConfig.fixedDiscount.percentage : 20; // Default to 20% if config not loaded
+      
+      const discountBadgeHTML = showDiscounts ? 
+        `<div class="discount-badge">${discountConfig && discountConfig.discountType === 'fixed' ? `-${discountPercentage}%` : '-20%'}</div>` : '';
+      
+      const priceHTML = showDiscounts ? 
+        `<p data-label="Precio" class="original-price"><s>${prices}</s></p>
+         <p data-label="Precio Oferta" class="discounted-price">${discountConfig && discountConfig.discountType === 'fixed' ? discountedPrices : prices}</p>` :
+        `<p data-label="Precio">${prices}</p>`;
+
       const productElement = document.createElement('div');
       productElement.classList.add('product');
       productElement.innerHTML = `
       <div class="product-image">
         <img src="placeholder.jpg" data-src="${product.defaultImage}" alt="${product.name}" class="default-image lazy">
         <img src="placeholder.jpg" data-src="${product.hoverImage}" alt="${product.name}" class="hover-image lazy">
-        <div class="discount-badge">-10%</div>
+        ${discountBadgeHTML}
       </div>
       <div class="product-details">
         <div class="name">${product.name}</div>
         <div class="description">
           <p data-label="Altura">${heights}</p>
-          <p data-label="Precio" class="original-price"><s>${prices}</s></p>
-          <p data-label="Precio Oferta" class="discounted-price">${discountedPrices}</p>
+          ${priceHTML}
         </div>
         <button class="add-to-cart" data-product-id="${product.id}">Agregar a la cesta</button>
       </div>

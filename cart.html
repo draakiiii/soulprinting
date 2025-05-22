@@ -7,6 +7,54 @@
   <title>Cesta de compra</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .dialog {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .dialog-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 5px;
+    }
+    
+    .checkout-container input,
+    .checkout-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    .checkout-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    
+    .checkout-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 
 <body>
@@ -60,14 +108,14 @@
         <div class="dialog-content">
           <span class="close-button" id="close-button">&times;</span>
           <div class="checkout-container" id="checkout-form">
-            <div class="checkout-container" id="checkout-form">
-              <input type="text" id="name-input" placeholder="Nombre y apellido" required>
-              <input type="email" id="email-input" placeholder="Email" required>
-              <textarea id="address-input" placeholder="Dirección completa" rows="3" required></textarea>
-              <input type="text" id="postal-input" placeholder="Código postal" required>
-              <textarea id="notes-input" placeholder="Observaciones..." rows="5"></textarea>
-              <button id="checkout-button">Enviar pedido</button>
-            </div>
+            <h2>Datos para el pedido</h2>
+            <input type="text" id="name" placeholder="Nombre y apellido *" required>
+            <input type="email" id="email" placeholder="Email *" required>
+            <input type="tel" id="phone" placeholder="Teléfono *" required>
+            <textarea id="address" placeholder="Dirección completa de envío *" rows="3" required></textarea>
+            <textarea id="shipping-info" placeholder="Información adicional para el envío (opcional)" rows="2"></textarea>
+            <button id="checkout-button">Realizar pedido</button>
+            <p style="font-size: 0.8em; margin-top: 15px;">* Campos obligatorios</p>
           </div>
         </div>
       </div>

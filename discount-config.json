@@ -1,0 +1,15 @@
+{
+  "discountType": "quantity",
+  "fixedDiscount": {
+    "percentage": 20,
+    "shippingThreshold": 65
+  },
+  "quantityDiscount": {
+    "enabled": false,
+    "tiers": [
+      { "quantity": 2, "percentage": 10 },
+      { "quantity": 3, "percentage": 15 },
+      { "quantity": 4, "percentage": 20 }
+    ]
+  }
+} 

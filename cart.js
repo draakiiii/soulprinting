@@ -3,13 +3,23 @@ document.addEventListener('DOMContentLoaded', function () {
     let appliedPromoCode = null;
     let promoCodeDiscount = 0;
     let isProcessingOrder = false;
+    let discountConfig = null;
 
-    updateCart();
-
+    // Load discount configuration
+    fetch('discount-config.json')
+      .then(response => response.json())
+      .then(config => {
+        discountConfig = config;
+        updateCart();
+      })
+      .catch(error => {
+        console.error('Error loading discount configuration:', error);
+        updateCart();
+      });
 
     if (cart.length === 0) {
         window.location.href = 'index.html';
-      }
+    }
 
     document.getElementById('checkout-button-top').addEventListener('click', function () {
         document.getElementById('checkout-dialog').style.display = 'block';
@@ -82,18 +92,41 @@ document.addEventListener('DOMContentLoaded', function () {
                     ${product.options.length > 1 ? `<select class="product-size" data-product-id="${product.id}" style="margin-left: auto;">` : `<p>${product.options[0].height}</p>`}
                     </select>
                 </div>
-                <p data-label="Precio" class="original-price"><s class="product-original-price"></s></p>
-                <p data-label="Precio Oferta" class="discounted-price product-price"></p>
+                <div class="price-row" style="display: flex; justify-content: space-between;">
+                    <p data-label="Precio"></p>
+                    <p class="original-price"><span class="product-original-price"></span></p>
+                </div>
+                <div class="discount-row" style="display: flex; justify-content: space-between;">
+                    <p data-label="Precio Oferta"></p>
+                    <p class="discounted-price product-price"></p>
+                </div>
             </div>
             <button class="remove-from-cart" data-product-id="${product.id}">Eliminar de la cesta</button>
             `;
-
 
             cartContainer.appendChild(productElement);
     
             const productSizeSelect = productElement.querySelector('.product-size');
             const productPriceElement = productElement.querySelector('.product-price');
             const productOriginalPriceElement = productElement.querySelector('.product-original-price');
+            const discountedPriceRow = productElement.querySelector('.discount-row');
+            const originalPriceRow = productElement.querySelector('.price-row');
+            
+            // Only show product-price and original-price elements when a discount applies
+            function updateProductPriceVisibility(originalPrice, discountedPrice) {
+                const hasDiscount = originalPrice !== discountedPrice;
+                
+                if (!hasDiscount) {
+                    // Si no hay descuento aplicable, mostrar solo el precio original sin tachar
+                    productOriginalPriceElement.textContent = originalPrice;
+                    discountedPriceRow.style.display = 'none';
+                } else {
+                    // Si hay descuento, mostrar ambos precios con el original tachado
+                    productOriginalPriceElement.innerHTML = `<s>${originalPrice}</s>`;
+                    productPriceElement.textContent = discountedPrice;
+                    discountedPriceRow.style.display = 'flex';
+                }
+            }
     
             product.options.forEach((option, i) => {
                 const optionElement = document.createElement('option');
@@ -101,8 +134,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 optionElement.text = option.height;
                 if (product.selectedOptionIndex === i) {
                     optionElement.selected = true;
-                    productOriginalPriceElement.textContent = option.price;
-                    productPriceElement.textContent = calculateDiscountedPrice(option.price);
+                    const originalPrice = option.price;
+                    const discountedPrice = calculateDiscountedPrice(option.price, cart.length);
+                    updateProductPriceVisibility(originalPrice, discountedPrice);
                 }
                 if (productSizeSelect) {
                     productSizeSelect.appendChild(optionElement);
@@ -113,8 +147,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (product.options.length === 1) {
                     productSizeSelect.style.display = 'none';
                     product.selectedOptionIndex = 0;
-                    productOriginalPriceElement.textContent = product.options[0].price;
-                    productPriceElement.textContent = calculateDiscountedPrice(product.options[0].price);
+                    const originalPrice = product.options[0].price;
+                    const discountedPrice = calculateDiscountedPrice(originalPrice, cart.length);
+                    updateProductPriceVisibility(originalPrice, discountedPrice);
                 } else {
                     productSizeSelect.style.display = 'block';
                     if (product.selectedOptionIndex === undefined) {
@@ -126,15 +161,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     const selectedOptionIndex = event.target.selectedIndex;
                     product.selectedOptionIndex = selectedOptionIndex;
                     const originalPrice = product.options[selectedOptionIndex].price;
-                    productOriginalPriceElement.textContent = originalPrice;
-                    productPriceElement.textContent = calculateDiscountedPrice(originalPrice);
+                    const discountedPrice = calculateDiscountedPrice(originalPrice, cart.length);
+                    updateProductPriceVisibility(originalPrice, discountedPrice);
                     localStorage.setItem('cart', JSON.stringify(cart));
                     updateCart();
                 });
             }
             
-            
-    
             const removeFromCartButton = productElement.querySelector('.remove-from-cart');
             removeFromCartButton.addEventListener('click', function () {
                 cart.splice(index, 1);
@@ -148,18 +181,47 @@ document.addEventListener('DOMContentLoaded', function () {
         updateTotalPrice(cart);
     }
 
-    function calculateDiscountedPrice(price) {
+    function calculateDiscountedPrice(price, cartItemCount) {
         const originalPrice = parseFloat(price.replace('€', ''));
-        const discountedPrice = originalPrice - (originalPrice * 0.10);
-        return `${discountedPrice.toFixed(2)}€`;
+        let discountPercentage = 0;
+        
+        if (!discountConfig) {
+            // Si no hay configuración, usar descuento fijo por defecto de 20%
+            discountPercentage = 0.20;
+        } else if (discountConfig.discountType === 'fixed') {
+            // Fixed discount applies to all items
+            discountPercentage = discountConfig.fixedDiscount.percentage / 100;
+        } else if (discountConfig.discountType === 'quantity') {
+            // Quantity-based discount
+            // Find the highest applicable tier based on cart item count
+            const applicableTiers = discountConfig.quantityDiscount.tiers
+                .filter(tier => cartItemCount >= tier.quantity)
+                .sort((a, b) => b.percentage - a.percentage);
+                
+            if (applicableTiers.length > 0) {
+                discountPercentage = applicableTiers[0].percentage / 100;
+            } else {
+                // No applicable tier found, return original price
+                return price;
+            }
+        }
+        
+        // Apply discount if applicable
+        if (discountPercentage > 0) {
+            const discountedPrice = originalPrice - (originalPrice * discountPercentage);
+            return `${discountedPrice.toFixed(2)}€`;
+        }
+        
+        return price; // Return original price if no discount applies
     }
 
     function updateTotalPrice(cart) {
         let originalTotal = 0;
         let discountedTotal = 0;
-        const blackFridayDiscount = 0.10; // 20% Black Friday
-
-        // Calcular total original
+        let finalDiscountPercentage = 0;
+        let discountSource = '';
+        
+        // Calculate original total
         cart.forEach(product => {
             if (product.selectedOptionIndex !== undefined) {
                 const originalPrice = parseFloat(product.options[product.selectedOptionIndex].price.replace('€', ''));
@@ -167,13 +229,32 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Determinar qué descuento aplicar
-        let finalDiscountPercentage = blackFridayDiscount;
-        let discountSource = 'Oferta';
+        // Determine which discount to apply
+        if (!discountConfig) {
+            // Si no hay configuración, usar descuento fijo por defecto
+            finalDiscountPercentage = 0.20; // 20%
+            discountSource = 'Descuento fijo';
+        } else if (discountConfig.discountType === 'fixed') {
+            // Fixed discount
+            finalDiscountPercentage = discountConfig.fixedDiscount.percentage / 100;
+            discountSource = 'Descuento fijo';
+        } else if (discountConfig.discountType === 'quantity') {
+            // Quantity-based discount
+            const cartItemCount = cart.length;
+            const applicableTiers = discountConfig.quantityDiscount.tiers
+                .filter(tier => cartItemCount >= tier.quantity)
+                .sort((a, b) => b.percentage - a.percentage);
+                
+            if (applicableTiers.length > 0) {
+                finalDiscountPercentage = applicableTiers[0].percentage / 100;
+                discountSource = `Descuento por cantidad (${cartItemCount} productos)`;
+            }
+        }
         
+        // Check if promo code offers a better discount
         if (promoCodeDiscount > 0) {
             const promoDiscountDecimal = promoCodeDiscount / 100;
-            if (promoDiscountDecimal > blackFridayDiscount) {
+            if (promoDiscountDecimal > finalDiscountPercentage) {
                 finalDiscountPercentage = promoDiscountDecimal;
                 discountSource = `Código ${appliedPromoCode}`;
             } else {
@@ -183,36 +264,43 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // Aplicar el descuento final
+        // Apply the final discount
         discountedTotal = originalTotal - (originalTotal * finalDiscountPercentage);
 
-        // Añadir costos de envío si el precio con descuento es menor a 50€
-        const shippingCost = discountedTotal > 0 && discountedTotal < 50 ? 6 : 0;
+        // Add shipping costs if the discounted price is less than the threshold
+        const shippingThreshold = discountConfig && discountConfig.discountType === 'fixed' 
+            ? discountConfig.fixedDiscount.shippingThreshold 
+            : 65; // Default threshold
+            
+        const shippingCost = discountedTotal > 0 && discountedTotal < shippingThreshold ? 6 : 0;
         const finalTotal = discountedTotal + shippingCost;
 
-        // Actualizar el DOM con el desglose
+        // Update the DOM with the breakdown
         document.getElementById('subtotal-price').textContent = `${originalTotal.toFixed(2)}€`;
         
-        // Mostrar el descuento aplicado
-        const discountAmount = originalTotal * finalDiscountPercentage;
-        const discountHTML = `
-            <div class="discount-line">
-                - ${discountAmount.toFixed(2)}€ (${discountSource} -${(finalDiscountPercentage * 100).toFixed(0)}%)
-            </div>
-        `;
+        // Show the applied discount
+        const discountElement = document.getElementById('discount');
         
-        document.getElementById('discount').innerHTML = discountHTML;
+        if (finalDiscountPercentage > 0) {
+            const discountAmount = originalTotal * finalDiscountPercentage;
+            const discountHTML = `
+                <div class="discount-line">
+                    - ${discountAmount.toFixed(2)}€ (${discountSource} -${(finalDiscountPercentage * 100).toFixed(0)}%)
+                </div>
+            `;
+            
+            discountElement.innerHTML = discountHTML;
+            discountElement.style.color = '#e60000';
+            discountElement.style.fontWeight = 'bold';
+        } else {
+            discountElement.innerHTML = '';
+        }
         
         document.getElementById('shipping-cost').textContent = 
             shippingCost > 0 ? 
             `+ ${shippingCost.toFixed(2)}€ (Envío)` : 
             'Envío gratuito';
         document.getElementById('total-price').textContent = `${finalTotal.toFixed(2)}€`;
-
-        // Añadir estilos para el descuento
-        const discountElement = document.getElementById('discount');
-        discountElement.style.color = '#e60000';
-        discountElement.style.fontWeight = 'bold';
     }
 
     function updateCart() {
@@ -225,101 +313,93 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función para finalizar la compra
     function checkout() {
-        // Si ya se está procesando un pedido, no hacer nada
         if (isProcessingOrder) {
+            showNotification('El pedido ya está siendo procesado, por favor espere...', 'orange');
             return;
         }
-    
-        if (cart.length === 0) {
-            showNotification('Tu cesta de la compra está vacía.', "red");
+        
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const address = document.getElementById('address').value.trim();
+        const shippingInfo = document.getElementById('shipping-info').value.trim();
+        
+        if (!name || !email || !phone || !address) {
+            showNotification('Por favor, complete todos los campos obligatorios.', 'red');
             return;
         }
-    
-        if (!validateForm()) {
+        
+        // Basic email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            showNotification('Por favor, introduzca un correo electrónico válido.', 'red');
             return;
         }
-    
-        // Marcar que se está procesando un pedido
+        
         isProcessingOrder = true;
-    
-        // Deshabilitar el botón de checkout
-        const checkoutButton = document.getElementById('checkout-button');
-        checkoutButton.disabled = true;
-        checkoutButton.textContent = 'Procesando...';
-    
-        const formattedCart = formatCartForEmail(cart);
+        document.getElementById('checkout-button').disabled = true;
+        document.getElementById('checkout-button').textContent = 'Procesando...';
+        
+        // Prepare the order details
         const totalPrice = document.getElementById('total-price').textContent;
+        const orderDetails = cart.map(product => {
+            const selectedOption = product.options[product.selectedOptionIndex];
+            return `${product.name} - ${selectedOption.height} - ${selectedOption.price}`;
+        }).join('\n');
+        
+        // Prepare the email template
         const templateParams = {
-            nombre: document.getElementById('name-input').value,
-            cesta: formattedCart,
-            email: document.getElementById('email-input').value,
+            nombre: name,
+            email: email,
+            phone: phone,
+            direccion: address,
+            codigo_postal: document.getElementById('postal-input') ? document.getElementById('postal-input').value.trim() : "No especificado",
+            observaciones: shippingInfo || 'No proporcionada',
+            cesta: orderDetails,
             precio: totalPrice,
-            observaciones: document.getElementById('notes-input').value || "No hay observaciones",
-            codigo_postal: document.getElementById('postal-input').value,
-            direccion: document.getElementById('address-input').value
+            promo_code: appliedPromoCode || 'Ninguno'
         };
-    
-        // Enviar email al administrador
+        
+        // Send the email using EmailJS
         emailjs.send('service_wg7uw2n', 'template_1lrf8gi', templateParams)
-            .then(function (response) {
-                showNotification('Tu pedido ha sido recibido. Te hemos enviado un email de confirmación.', 'green');
-                cart = [];
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                showNotification('¡Pedido realizado con éxito! Te contactaremos pronto.', 'green');
+                
+                // Clear the cart and redirect to home page
                 localStorage.removeItem('cart');
-                setTimeout(() => {
+                setTimeout(function() {
                     window.location.href = 'index.html';
                 }, 3000);
-            })
-            .catch(function (error) {
-                showNotification('Hubo un error al enviar tu pedido. Por favor, inténtalo de nuevo.', 'red');
-                console.error('Error:', error);
-            })
-            .finally(function () {
-                // Restablecer el estado del botón y la bandera de procesamiento solo si el carrito no está vacío
-                if (cart.length > 0) {
-                    isProcessingOrder = false;
-                    checkoutButton.disabled = false;
-                    checkoutButton.textContent = 'Enviar pedido';
-                }
+            }, function(error) {
+                console.log('FAILED...', error);
+                showNotification('Hubo un error al procesar tu pedido. Por favor, inténtalo de nuevo.', 'red');
+                isProcessingOrder = false;
+                document.getElementById('checkout-button').disabled = false;
+                document.getElementById('checkout-button').textContent = 'Realizar pedido';
             });
     }
 
-    function formatCartForEmail(cart) {
-        let formattedCart = '';
-        cart.forEach((product, index) => {
-            // Asegúrate de que la opción seleccionada esté definida
-            if (product.selectedOptionIndex !== undefined) {
-                const selectedOption = product.options[product.selectedOptionIndex];
-                formattedCart += `Producto ${index + 1}:\n`;
-                formattedCart += `Nombre: ${product.name}\n`;
-                formattedCart += `Altura: ${selectedOption.height}\n`;
-                formattedCart += `Precio: ${selectedOption.price}\n\n`;  // Added an extra \n for a blank line between products
-            }
-        });
-        return formattedCart;
-    }
-
-    function showNotification(message, color = 'default') {
+    function showNotification(message, color = 'green') {
         const notification = document.createElement('div');
         notification.classList.add('notification');
         notification.textContent = message;
-        if (color !== 'default') {
-          notification.style.backgroundColor = color;
-        }
-      
-        const container = document.getElementById('notification-container');
-        container.appendChild(notification);
-      
-        // Hacer que la notificación sea visible
-        setTimeout(() => {
-          notification.style.opacity = 1;
-        }, 100);
-      
-        // Ocultar y eliminar la notificación después de 3 segundos
-        setTimeout(() => {
-          notification.style.opacity = 0;
-          notification.addEventListener('transitionend', () => notification.remove());
+        
+        notification.style.backgroundColor = color;
+
+        document.body.appendChild(notification);
+
+        setTimeout(function() {
+            notification.style.opacity = '1';
+        }, 10);
+
+        setTimeout(function() {
+            notification.style.opacity = '0';
+            setTimeout(function() {
+                notification.remove();
+            }, 500);
         }, 3000);
-      }
+    }
 
     // Nuevo código para manejar los códigos promocionales
     document.getElementById('apply-promo-code').addEventListener('click', function() {

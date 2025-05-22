@@ -2087,5 +2087,186 @@
         "price": "50€"
       }
     ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/086/834/808/large/nomnom-figures-magik-marvel-rivals-beautyshot.jpg?1744193639",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/086/834/810/large/nomnom-figures-scaleparts.jpg?1744193356",
+    "name": "Magik - Marvel Rivals",
+    "options": [
+      {
+        "height": "21,1cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/086/906/141/large/nomnom-figures-beautyshot-01.jpg?1744367387",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/086/906/159/large/nomnom-figures-scaleparts.jpg?1744367372",
+    "name": "Chibi Gengar - Pokemon",
+    "options": [
+      {
+        "height": "7,8cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/086/983/792/large/nomnom-figures-beautyshot-01.jpg?1744625365",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/086/983/807/large/nomnom-figures-scaleparts.jpg?1744613002",
+    "name": "Chibi Arcanine - Pokemon",
+    "options": [
+      {
+        "height": "7,4cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/087/133/531/large/nomnom-figures-beautyshot-01-1.jpg?1744978151",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/087/133/553/large/nomnom-figures-turntable-01.jpg?1744977532",
+    "name": "Master Chief - Halo",
+    "options": [
+      {
+        "height": "9cm",
+        "price": "30€"
+      },
+      {
+        "height": "20,8cm",
+        "price": "60€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/087/183/785/large/nomnom-figures-beautyshot-01.jpg?1745135615",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/087/183/814/large/nomnom-figures-scaleparts.jpg?1745135669",
+    "name": "Chibi Ghost Diorama - Pokemon",
+    "options": [
+      {
+        "height": "12,2cm",
+        "price": "35€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/087/293/857/large/nomnom-figures-beautyshot-01.jpg?1745415274",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/087/293/872/large/nomnom-figures-turntable-01.jpg?1745415261",
+    "name": "General Grievous - Star Wars",
+    "options": [
+      {
+        "height": "11,2cm",
+        "price": "30€"
+      },
+      {
+        "height": "26,9cm",
+        "price": "70€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/087/455/158/large/nomnom-figures-beautyshot-01.jpg?1745846631",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/087/455/183/large/nomnom-figures-turntable-01.jpg?1745846637",
+    "name": "Shinobu Kochou - Demon Slayer",
+    "options": [
+      {
+        "height": "6,2cm",
+        "price": "25€"
+      },
+      {
+        "height": "19,9cm",
+        "price": "60€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/087/589/539/large/nomnom-figures-beautyshot-01.jpg?1746187509",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/087/590/314/large/nomnom-figures-scaleparts.jpg?1746187540",
+    "name": "Chibi Pooh - Lorcana",
+    "options": [
+      {
+        "height": "7,3cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/087/718/888/large/nomnom-figures-mipha-legend-of-zelda-beautyshot.jpg?1746528402",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/087/718/892/large/nomnom-figures-scaleparts.jpg?1746528326",
+    "name": "Mipha - Zelda Breath of the Wild",
+    "options": [
+      {
+        "height": "19,4cm",
+        "price": "55€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdna.artstation.com/p/assets/images/images/087/765/170/large/nomnom-figures-revali-breath-of-the-wild-beautyshot.jpg?1746631429",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/087/765/174/large/nomnom-figures-scaleparts.jpg?1746631418",
+    "name": "Revali - Zelda Breath of the Wild",
+    "options": [
+      {
+        "height": "24,1cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/087/801/443/large/nomnom-figures-daruk-breath-of-the-wild-beautyshot.jpg?1746712651",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/087/801/450/large/nomnom-figures-scaleparts.jpg?1746712631",
+    "name": "Daruk - Zelda Breath of the Wild",
+    "options": [
+      {
+        "height": "25,1cm",
+        "price": "65€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/087/830/797/large/nomnom-figures-urbosa-breath-of-the-wild-beautyshot-v1.jpg?1746786240",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/087/830/805/large/nomnom-figures-scaleparts.jpg?1746786146",
+    "name": "Urbosa - Zelda Breath of the Wild",
+    "options": [
+      {
+        "height": "34cm",
+        "price": "70€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/087/963/815/large/nomnom-figures-beautyshot-01.jpg?1747134547",
+    "hoverImage": "https://cdnb.artstation.com/p/assets/images/images/087/963/737/large/nomnom-figures-scaleparts.jpg?1747134405",
+    "name": "Chibi Blue Eyes White Dragon - Yugioh",
+    "options": [
+      {
+        "height": "9,1cm",
+        "price": "30€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/088/082/257/large/nomnom-figures-beautyshot-01.jpg?1747390715",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/088/082/340/large/nomnom-figures-scaleparts.jpg?1747390759",
+    "name": "Chibi Shadow Tank - Solo Leveling",
+    "options": [
+      {
+        "height": "6,9cm",
+        "price": "25€"
+      }
+    ]
+  },
+  {
+    "defaultImage": "https://cdnb.artstation.com/p/assets/images/images/088/176/831/large/nomnom-figures-beautyshot-01.jpg?1747651692",
+    "hoverImage": "https://cdna.artstation.com/p/assets/images/images/088/176/846/large/nomnom-figures-turntable-01.jpg?1747649386",
+    "name": "Beru Shadow - Solo Leveling",
+    "options": [
+      {
+        "height": "12,1cm",
+        "price": "30€"
+      },
+      {
+        "height": "27,8cm",
+        "price": "75€"
+      }
+    ]
   }
 ]

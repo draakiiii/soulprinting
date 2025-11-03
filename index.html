@@ -4,71 +4,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de productos</title>
+  <meta name="description" content="Tienda online de figuras 3D impresas sin pintar. Descubre nuestro catálogo de modelos de alta calidad.">
+  <title>draakiiii - Figuras 3D Personalizadas</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+  <!-- Header con diseño moderno -->
   <header>
-    <p>draakiiii - catálogo de figuras sin pintar</p>
+    <p>✨ draakiiii - Figuras 3D Personalizadas</p>
     <nav>
       <ul>
-        <li><a href="#">Catálogo</a></li>
-        <li><a href="faq.html">Preguntas frecuentes</a></li>
-        <li><a href="custom-request.html">Solicitar figura personalizada</a></li>
-        <li><a href="scales.html">Escalas y Precios</a></li>
-        <li id="confirm-purchase"><a href="#"><i class="fas fa-shopping-cart"></i> Cesta <span id="cart-count"></span></a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i> Catálogo</a></li>
+        <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+        <li><a href="custom-request.html"><i class="fas fa-magic"></i> Figura Personalizada</a></li>
+        <li><a href="scales.html"><i class="fas fa-ruler"></i> Escalas y Precios</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cesta <span id="cart-count">0</span></a></li>
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="catalog">
-      <div class="title-container" hidden>
-        <h2 class="title">Catálogo</h2>
-        <p class="subtitle">Los modelos se entregarán sin pintar ni lijar y en algunos casos se requerirá montaje. Los
-          pedidos no se realizan en esta web. El precio no incluye envío.</p>
+      <!-- Banner de promoción con efecto shimmer -->
+      <div class="promo-banner">
+        🎉 20% DE DESCUENTO EN TODO EL CATÁLOGO + ENVÍO GRATUITO A ESPAÑA (PEDIDOS +65€) 🎉
       </div>
+
+      <!-- Contenedor de búsqueda y filtros -->
       <div class="search-sort-container">
-        <div
-          style="display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-right: auto;">
-          <div>
-            <p class="promo-banner">20% DE DESCUENTO EN TODO EL CATÁLOGO Y ENVÍO GRATUITO A ESPAÑA PARA PEDIDOS SUPERIORES A 65€</p>
-            <div class="discounts" hidden>
-              <p>Descuentos por cantidad (no acumulables con otras promociones):</p>
-              <p>2 productos: 10%</p>
-              <p>3 productos: 15%</p>
-              <p>4 o más productos: 20%</p>
-            </div>
-          </div>
-        </div>
         <div style="display: flex; align-items: center; position: relative;">
-          <input type="text" id="search-input" placeholder="Buscar por nombre...">
-          <button id="filter-button">Filtrar <i class="fas fa-filter"></i></button>
+          <input type="text" id="search-input" placeholder="🔍 Buscar por nombre...">
+          <button id="filter-button"><i class="fas fa-filter"></i> Filtrar</button>
           <div id="filter-dropdown" class="filter-dropdown" hidden>
-            <!-- Aquí se añadirán los checkboxes de las colecciones -->
+            <!-- Los checkboxes de colecciones se añadirán dinámicamente -->
           </div>
           <select id="sort-options">
-            <option value="recent">Productos destacados</option>
-            <option value="recently-added">Añadidos recientemente</option>
-            <option value="price-desc">Precio: de mayor a menor</option>
-            <option value="price-asc">Precio: de menor a mayor</option>
+            <option value="recent">⭐ Productos destacados</option>
+            <option value="recently-added">🆕 Añadidos recientemente</option>
+            <option value="price-desc">💰 Precio: mayor a menor</option>
+            <option value="price-asc">💵 Precio: menor a mayor</option>
           </select>
         </div>
       </div>
+
+      <!-- Grid de productos -->
       <div class="product-container">
-        <!-- Los productos se cargarán aquí -->
+        <!-- Los productos se cargarán dinámicamente aquí -->
       </div>
     </section>
-    <section class="scales-section">
-      <div class="title-c" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  </main>
+
+  <!-- Contenedor de notificaciones -->
+  <div id="notification-container" class="notification-container"></div>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
       emailjs.init('rKLszUiM-CRKaJOiA');
     })();
   </script>
   <script src="script.js"></script>
-  <div id="notification-container" class="notification-container"></div>
 </body>
 
 </html>

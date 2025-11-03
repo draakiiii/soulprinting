@@ -4,126 +4,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cesta de compra</title>
+  <meta name="description" content="Tu cesta de compra - draakiiii Figuras 3D">
+  <title>Cesta de Compra - draakiiii</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    .dialog {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    
-    .dialog-content {
-      background-color: #fefefe;
-      margin: 10% auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-      max-width: 600px;
-      border-radius: 5px;
-    }
-    
-    .checkout-container input,
-    .checkout-container textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    
-    .checkout-container button {
-      width: 100%;
-      padding: 12px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      margin-top: 15px;
-    }
-    
-    .checkout-container button:hover {
-      background-color: #45a049;
-    }
-  </style>
 </head>
 
 <body>
+  <!-- Header con diseño moderno -->
   <header>
-    <p>draakiiii - cesta de compra</p>
+    <p>🛒 draakiiii - Tu Cesta de Compra</p>
     <nav>
       <ul>
-        <li><a href="index.html">Catálogo</a></li>
-        <li><a href="faq.html">Preguntas frecuentes</a></li>
-        <li><a href="#"><i class="fas fa-shopping-cart"></i> Cesta <span id="cart-count"></span></a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i> Catálogo</a></li>
+        <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+        <li><a href="custom-request.html"><i class="fas fa-magic"></i> Figura Personalizada</a></li>
+        <li><a href="scales.html"><i class="fas fa-ruler"></i> Escalas y Precios</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cesta <span id="cart-count">0</span></a></li>
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="cart">
-
+      <!-- Botón de checkout superior -->
       <div class="checkout-container-top">
-        <button id="checkout-button-top">Finalizar compra</button>
+        <button id="checkout-button-top">
+          <i class="fas fa-check-circle"></i> Finalizar Compra
+        </button>
       </div>
 
+      <!-- Grid de productos en el carrito -->
       <div class="cart-container">
-        <!-- Los productos del carrito se cargarán aquí -->
+        <!-- Los productos del carrito se cargarán aquí dinámicamente -->
       </div>
 
-
-      <!-- ... -->
+      <!-- Sección de código promocional -->
       <div class="promo-code-container">
-        <input type="text" id="promo-code-input" placeholder="Código promocional">
-        <button id="apply-promo-code">Aplicar</button>
+        <input type="text" id="promo-code-input" placeholder="✨ Código promocional">
+        <button id="apply-promo-code">
+          <i class="fas fa-tag"></i> Aplicar
+        </button>
       </div>
 
+      <!-- Desglose de precios -->
       <div class="total-price-container">
         <div class="price-breakdown">
-            <div class="price-line">
-                Subtotal: <span id="subtotal-price" class="total-price-value">0€</span>
-            </div>
-            <div class="price-line" id="discount"></div>
-            <div class="price-line" id="shipping-cost"></div>
-            <div class="price-line total">
-                Total: <span id="total-price" class="total-price-value">0€</span>
-            </div>
-        </div>
-      </div>
-      <!-- ... -->
-
-      <div class="checkout-container-bottom">
-        <button id="checkout-button-bottom">Finalizar compra</button>
-      </div>
-
-      <div class="dialog" id="checkout-dialog">
-        <div class="dialog-content">
-          <span class="close-button" id="close-button">&times;</span>
-          <div class="checkout-container" id="checkout-form">
-            <h2>Datos para el pedido</h2>
-            <input type="text" id="name" placeholder="Nombre y apellido *" required>
-            <input type="email" id="email" placeholder="Email *" required>
-            <input type="tel" id="phone" placeholder="Teléfono *" required>
-            <textarea id="address" placeholder="Dirección completa de envío *" rows="3" required></textarea>
-            <textarea id="shipping-info" placeholder="Información adicional para el envío (opcional)" rows="2"></textarea>
-            <button id="checkout-button">Realizar pedido</button>
-            <p style="font-size: 0.8em; margin-top: 15px;">* Campos obligatorios</p>
+          <div class="price-line">
+            <span><i class="fas fa-receipt"></i> Subtotal:</span>
+            <span id="subtotal-price" class="total-price-value">0€</span>
+          </div>
+          <div class="price-line" id="discount">
+            <!-- Descuento se mostrará aquí -->
+          </div>
+          <div class="price-line" id="shipping-cost">
+            <!-- Coste de envío se mostrará aquí -->
+          </div>
+          <div class="price-line total">
+            <span><i class="fas fa-shopping-bag"></i> Total:</span>
+            <span id="total-price" class="total-price-value">0€</span>
           </div>
         </div>
       </div>
 
+      <!-- Botón de checkout inferior -->
+      <div class="checkout-container-bottom">
+        <button id="checkout-button-bottom">
+          <i class="fas fa-check-circle"></i> Finalizar Compra
+        </button>
+      </div>
 
+      <!-- Modal de checkout -->
+      <div class="dialog" id="checkout-dialog">
+        <div class="dialog-content">
+          <span class="close-button" id="close-button">&times;</span>
+          <div class="checkout-container" id="checkout-form">
+            <h2 style="text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1.5rem;">
+              <i class="fas fa-shipping-fast"></i> Datos para el Pedido
+            </h2>
+            <input type="text" id="name" placeholder="👤 Nombre y apellido *" required>
+            <input type="email" id="email" placeholder="📧 Email *" required>
+            <input type="tel" id="phone" placeholder="📱 Teléfono *" required>
+            <textarea id="address" placeholder="📍 Dirección completa de envío *" rows="3" required></textarea>
+            <textarea id="shipping-info" placeholder="📝 Información adicional para el envío (opcional)" rows="2"></textarea>
+            <button id="checkout-button">
+              <i class="fas fa-paper-plane"></i> Realizar Pedido
+            </button>
+            <p style="font-size: 0.875rem; text-align: center; color: var(--gray-500); margin-top: 1rem;">
+              * Campos obligatorios
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+
+  <!-- Contenedor de notificaciones -->
   <div id="notification-container" class="notification-container"></div>
+
+  <!-- EmailJS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {

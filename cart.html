@@ -16,14 +16,14 @@
 <body>
   <!-- Header con diseño moderno -->
   <header>
-    <p>🛒 draakiiii - Tu Cesta de Compra</p>
+    <p>🛒 draakiiii</p>
     <nav>
       <ul>
-        <li><a href="index.html"><i class="fas fa-home"></i> Catálogo</a></li>
-        <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-        <li><a href="custom-request.html"><i class="fas fa-magic"></i> Figura Personalizada</a></li>
-        <li><a href="scales.html"><i class="fas fa-ruler"></i> Escalas y Precios</a></li>
-        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cesta <span id="cart-count">0</span></a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i> <span class="nav-text">Catálogo</span></a></li>
+        <li><a href="faq.html"><i class="fas fa-question-circle"></i> <span class="nav-text">FAQ</span></a></li>
+        <li><a href="custom-request.html"><i class="fas fa-magic"></i> <span class="nav-text">Personalizada</span></a></li>
+        <li><a href="scales.html"><i class="fas fa-ruler"></i> <span class="nav-text">Precios</span></a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="nav-text">Cesta</span> <span id="cart-count">0</span></a></li>
       </ul>
     </nav>
   </header>
@@ -111,6 +111,16 @@
     (function () {
       emailjs.init('DeIfgGqMtsWtFM_GR');
     })();
+  </script>
+  <script>
+    // Update cart count on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const cartCountElement = document.getElementById('cart-count');
+      if (cartCountElement) {
+        cartCountElement.textContent = cart.length > 0 ? cart.length : '';
+      }
+    });
   </script>
   <script src="cart.js"></script>
 </body>

@@ -208,6 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
         cart.push(selectedProduct);
         localStorage.setItem('cart', JSON.stringify(cart));
         showNotification(`Ha añadido ${product.name} a la cesta`);
+        updateCartCount();
       });
     });
 
@@ -261,5 +262,16 @@ document.addEventListener('DOMContentLoaded', function () {
       filterDropdown.hidden = true;
     }
   });
+
+  // Function to update cart count
+  function updateCartCount() {
+    const cartCountElement = document.getElementById('cart-count');
+    if (cartCountElement) {
+      cartCountElement.textContent = cart.length > 0 ? cart.length : '';
+    }
+  }
+
+  // Initial cart count update
+  updateCartCount();
 
 });
